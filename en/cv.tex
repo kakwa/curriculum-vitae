@@ -1,0 +1,142 @@
+% start of file `template_en.tex'.
+% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[10pt,a4paper]{moderncv}
+\usepackage[utf8]{inputenc}
+
+\linespread{0.9}
+
+% moderncv themes
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman'
+% (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                 
+%\usepackage{fontawesome}
+
+\usepackage{moderncviconsawesome}
+%\moderncvicons{awesome}
+%\usepackage[latin1]{inputenc}
+
+% character encoding
+% replace by the encoding you are using
+
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+
+% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{1cm}  
+
+% only for the classic theme, if you want to change the width of
+% your name placeholder (to leave more space for your address details
+\AtBeginDocument{\setlength{\maketitlenamewidth}{8cm}}
+
+% required when changes are made to page layout lengths
+\AtBeginDocument{\recomputelengths}
+
+% personal data
+\firstname{Pierre-François}
+\familyname{Carpentier}
+
+% optional, remove the line if not wanted
+%title{}
+
+% optional, remove the line if not wanted
+\address{41 rue de la Tombe Issoire}{75014 Paris}    
+
+% optional, remove the line if not wanted
+\mobile{06 70 47 10 17}
+
+% optional, remove the line if not wanted
+%\phone{phone (optional)}
+
+% optional, remove the line if not wanted
+%\fax{fax (optional)}
+
+% optional, remove the line if not wanted
+\email{carpentier.pf@gmail.com}
+
+% optional, remove the line if not wanted
+% \extrainfo{Permis B} 
+\extrainfo{%
+\faGithub~\httplink{www.github.com/kakwa/}\\%
+\faLinkedinSign~\httplink{www.github.com/raphink}\\
+Permis B
+}
+%
+% '64pt' is the height the picture must be resized to 
+% and 'picture' is the name of the picture file; 
+% optional, remove the line if not wanted
+\photo[64pt]{ID.jpg}
+
+% uncomment to suppress automatic page numbering for CVs longer than one page
+%\nopagenumbers{}
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Formation}
+\cventry{2010--présent}{Master Recherche Réseau}
+{Université Pierre et Marie Curie Paris 6}{Paris}{}{Master effectué en parallèle avec la 3ème année d’école d’ingénieur. Sujets : Sécurité, Routage,
+QoS, Réseaux, P2P. . .}
+
+\cventry{2008--présent}{Etudes d'ingénieur en Informatique}{Ensiie}{Evry}{}
+{Etudes à l'Ecole Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE), grande école d'ingénieurs
+généraliste en informatique recrutant sur le concours Centrale-Supelec. Spécialisation Système et Réseaux.
+}  % arguments 3 to 6 are optional
+\cventry{2005--2008}{Classe Préparatoire aux Grandes Ecoles}
+{Lycée de Kerichen}{Brest}{}{Filière MP (Mathématiques-Physique) option Informatique.}
+
+\section{Expérience}
+\subsection{Stages}
+
+\cventry{2010}{Developpement web: création et déploiement d'un site web}{INRIA}{Roquencourt}{}{Stage dans le cadre du projet européen Ideas, 
+conception, réalisation et deploiement d'un site permettant de visionner des manuscrits orientaux ainsi que leurs traductions.
+ Le site a été réalisé grace au framework Django. Il a par ailleurs fallu mettre en place un serveur pour heberger le site.
+\newline Technologies utillisées: Python, Django, HTML, CSS, Apache, Linux.}                % arguments 3 to 6 are optional
+
+\cventry{2009}{Modélisation biologique: création d'un modèle de tumeur}{Laboratoire IBISC}{EVRY}{}{Stage de recherche en Bio-Informatique. Conception
+et réalisation d'un modèle de tumeur
+cancéreuse afin d'étudier l'action de la molécule PA-1 (molécule suspectée de favoriser la migration des cellules cancéreuses et donc l'apparition de
+métastases). \newline Technologies utillisées: C, Doxygen.}                % arguments 3 to 6 are optional
+
+
+\subsection{Divers}
+\cventry{2008}{Stagiaire au Crédit Mutuel de Bretagne}{}{Brest}{}{Stage d'un mois, au département du Libre Service Bancaire (gestion des automates bancaires).
+Mise à jour et amélioration d'une étude de fréquentation des distributeurs suite à l'installation d'une nouvelle interface
+utilisateur. Tests pratiques sur la nouvelle interface avant sa mise en production.
+}
+
+\section{Langues}
+\cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
+\cvlanguage{Espanol}{Notions}{Niveau Bac}
+
+\section{Compétences}
+\cvline{OS}{Gnu/Linux, Mac OSX, Ms Windows}{}{}
+\cvline{Scripting}{Bash, Python}{}{}
+\cvline{Réseau}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{}{}
+%\cvline(Réseau}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{}{}
+\cvline{Théorie}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}{}{}
+\cvline{Programmation}{C, Java, Ocaml, Prolog, VHDL, ASM, Coq}{}{}
+\cvline{Développement web}{Django, HTML, PHP,CSS, PostgreSQL}{}{}
+\cvline{Divers}{Open Office, Ms Office, Lex \& Yacc, RPC, Corba, \LaTeX}{}{}
+
+%\section{Centres d'intéret}
+%\cvline{Sport}{\small Pratique de la voile en compétition pendant neuf ans.}
+%\cvline{Musique}{\small Apprentissage et pratique de la guitare et du piano depuis plusieurs années, ainsi que, depuis peu, de la batterie.}
+%\cvline{Electronique}{\small Fabrication et réparation d'appareils divers et variés.}
+%\cvline{Informatique}{\small Parallèlement à ma formation, je me renseigne sur tout ce qui touche à l'informatique (de l'histoire de l'informatique à
+%l'architecture des systèmes d'exploitation en passant par l'apprentissage du langage Python.)
+%}
+
+\end{document}
+
+   
+%% end of file `template_en.tex'.
