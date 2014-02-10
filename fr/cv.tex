@@ -8,13 +8,14 @@
 \documentclass[11pt,a4paper]{moderncv}
 \usepackage[utf8x]{luainputenc}
 \usepackage[T1]{fontenc}
+\usepackage[firstyear=2005,lastyear=2014]{moderntimeline}
 
 \linespread{0.9}
 
 % moderncv themes
 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman'
 % (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[blue]{classic}                 
+\moderncvtheme[blue]{classic}
 %\usepackage{fontawesome}
 
 \usepackage{moderncviconsawesome}
@@ -84,23 +85,15 @@ Permis B
 \maketitle
 
 \section{Compétences}
-\cvline{OS}{Debian/CentOS/Gentoo Gnu/Linux, FreeBSD}{}{}
-\cvline{Déploiement}{Puppet, Kickstart, Preseed}{}{}
-\cvline{Packaging}{deb, rpm, ebuild}{}{}
-\cvline{Virtualisation}{ESXi, VirtualBox, Vagrant, KVM}{}{}
-\cvline{Programmation}{Shell/Bash, Python, Perl, Ruby, C, Ocaml, Java}{}{}
-\cvline{Base de données}{Mysql, Posgresql, Redis}{}{}
-\cvline{Réseau}{DHCPd, VLANs, OpenVPN, Keepalived}{}{}
-\cvline{Annuaires}{389 Directory, OpenLdap}{}{}
-\cvline{Serveur Web}{Apache, Lighttd, Nginx, Tomcat}{}{}
-\cvline{Sécurité}{Syslog-ng, rsyslog, ssh, iptables, pf}{}{}
-\cvline{Développement web}{Django, HTML, CSS}{}{}
-\cvline{Supervision}{Nagios, Nrpe, Logstash}{}{}
-\cvline{Gestionnaire de révisions}{Git, Subversion, Mercurial}{}{}
-\cvline{Autres services}{Bind, Ntpd, Cups}{}{}
-\cvline{Théorie des Réseaux}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{}{}
-\cvline{Théorie Informatique}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}{}{}
-\cvline{Documentation}{reStructuredText, Markdown, \LaTeX, OpenOffice}{}{}
+\cvcomputer{OS}{Debian/CentOS/Gentoo Gnu/Linux, FreeBSD}{Déploiement}{Puppet, Kickstart, Preseed}
+\cvcomputer{Packaging}{deb, rpm, ebuild}{Virtualisation}{ESXi, VirtualBox, Vagrant, KVM}
+\cvcomputer{Programmation}{Shell/Bash, Python, Perl, Ruby, C, Ocaml, Java}{Base de données}{Mysql, Posgresql, Redis}
+\cvcomputer{Réseau}{DHCPd, VLANs, OpenVPN, Keepalived}{Annuaires}{389 Directory, OpenLdap}
+\cvcomputer{Serveur Web}{Apache, Lighttd, Nginx, Tomcat}{Sécurité}{Syslog-ng, Rsyslog, Openssh, Iptables, PF}
+\cvcomputer{Développement web}{Django, HTML, CSS}{Supervision}{Nagios, Nrpe, Logstash, Snmpd}
+\cvcomputer{Gestionnaires de révisions}{Git, Subversion, Mercurial}{Autres services}{Bind, Ntpd, Cups}
+\cvcomputer{Théorie des Réseaux}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{Théorie Informatique}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}
+\cvcomputer{Documentation}{reStructuredText, Markdown, \LaTeX, OpenOffice}{}{}
 
 \section{Langues}
 \cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
@@ -108,7 +101,7 @@ Permis B
 
 \section{Parcours professionnel}
 
-\cventry{2011-présent}{Ingénieur Intégrateur}
+\cventry{2011--présent}{Ingénieur Intégrateur}
               {Communication et Systèmes}
               {Le Plessis Robinson}
               {}
