@@ -1,5 +1,5 @@
 BUILD=./out/
-LANG=fr
+LANG=en
 
 all:
 	
