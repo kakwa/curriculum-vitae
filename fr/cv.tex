@@ -5,7 +5,7 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[10pt,a4paper]{moderncv}
 \usepackage[utf8x]{luainputenc}
 \usepackage[T1]{fontenc}
 \usepackage[firstyear=2005,lastyear=2014]{moderntimeline}
@@ -85,13 +85,21 @@ Permis B
 \maketitle
 
 \section{Compétences}
-\cvcomputer{OS}{Debian/CentOS/Gentoo Gnu/Linux, FreeBSD}{Déploiement}{Puppet, Kickstart, Preseed}
-\cvcomputer{Packaging}{deb, rpm, ebuild}{Virtualisation}{ESXi, VirtualBox, Vagrant, KVM}
-\cvcomputer{Programmation}{Shell/Bash, Python, Perl, Ruby, C, Ocaml, Java}{Base de données}{Mysql, Posgresql, Redis}
-\cvcomputer{Réseau}{DHCPd, VLANs, OpenVPN, Keepalived}{Annuaires}{389 Directory, OpenLdap}
-\cvcomputer{Serveur Web}{Apache, Lighttd, Nginx, Tomcat}{Sécurité}{Syslog-ng, Rsyslog, Openssh, Iptables, PF}
-\cvcomputer{Développement web}{Django, HTML, CSS}{Supervision}{Nagios, Nrpe, Logstash, Snmpd}
-\cvcomputer{Gestionnaires de révisions}{Git, Subversion, Mercurial}{Autres services}{Bind, Ntpd, Cups}
+
+\subsection{Système}
+\cvcomputer{OS}{Debian, CentOS, Gentoo, FreeBSD}{Virtualisation}{ESXi, VirtualBox, Vagrant, KVM}
+\cvcomputer{Packaging}{deb, rpm, ebuild}{Déploiement}{Puppet, Kickstart, Preseed}
+\cvcomputer{Réseau}{Keepalived, OpenVPN, DHCPd, VLANs}{}{}
+
+\subsection{Services}
+\cvcomputer{Serveurs Web}{Apache, Lighttd, Nginx, Tomcat}{Annuaires}{389 Directory, OpenLdap}
+\cvcomputer{Base de données}{Mysql, Posgresql, Redis}{Autres services}{Bind, Ntpd, Cups}
+\cvcomputer{Supervision}{Nagios, Nrpe, Logstash, Snmpd}{Sécurité}{Syslog-ng, Rsyslog, Openssh, Iptables, PF}
+
+\subsection{Programmation}
+\cvcomputer{Langages}{Shell/Bash, Python, Perl, Ruby, C, Ocaml, Java}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
+
+\subsection{Autre}
 \cvcomputer{Théorie des Réseaux}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{Théorie Informatique}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}
 \cvcomputer{Documentation}{reStructuredText, Markdown, \LaTeX, OpenOffice}{}{}
 
@@ -99,7 +107,9 @@ Permis B
 \cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
 \cvlanguage{Espanol}{Notions}{Niveau Bac}
 
-\section{Parcours professionnel}
+
+\section{Expérience}
+\subsection{Parcours professionnel}
 
 \cventry{2011--présent}{Ingénieur Intégrateur}
               {Communication et Systèmes}
@@ -109,8 +119,7 @@ Permis B
                 \begin{itemize}
                 \item Déploiement Automatique (Puppet)
                 \item Packaging logiciel Debian et Redhat/CentOS
-                \item Création de dépots de packages (reprepro/createrepo)
-                \item Signature de packages (GPG)
+                \item Création de dépots et signature de packages (reprepro/createrepo, GPG)
                 \item Build (Make, ant)
                 \item Automatisation et versionnement de la génération des livrables.
                 \item Installation automatique (Kickstart/Preseed)
@@ -141,8 +150,6 @@ Permis B
                \newline Technologies utillisées: Linux, S/MIME, x509, thunderbird, ldap, tls, C, librairie polarSSL.
               }
 
-
-
 \cventry{2010}{Stage, Développement web: conception, réalisation et déploiement d'un site web}
               {INRIA}
               {Roquencourt}
@@ -163,7 +170,6 @@ Permis B
                 \newline Technologies utillisées: C, Doxygen.
               }
 
-
 \cventry{2008}{Stage, Crédit Mutuel de Bretagne}{}{Brest}{}{Stage d'un mois, 
     au département du Libre Service Bancaire (gestion des automates bancaires).
     Mise à jour et amélioration d'une étude de fréquentation des distributeurs 
@@ -183,8 +189,6 @@ généraliste en informatique recrutant sur le concours Centrale-Supelec. Spéci
 \cventry{2005--2008}{Classe Préparatoire aux Grandes Ecoles}
 {Lycée de Kerichen}{Brest}{}{Filière MP (Mathématiques-Physique) option Informatique.}
 
-
-
 \section{Centres d'intéret}
 \cvline{Sport}{\small Pratique de la voile en compétition pendant neuf ans.}
 \cvline{Musique}{\small Apprentissage et pratique de la guitare et du piano depuis plusieurs années.}
@@ -194,5 +198,4 @@ généraliste en informatique recrutant sur le concours Centrale-Supelec. Spéci
 
 \end{document}
 
-   
 %% end of file `template_en.tex'.
