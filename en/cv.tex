@@ -6,14 +6,16 @@
 % available at http://www.latex-project.org/lppl/.
 
 \documentclass[10pt,a4paper]{moderncv}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8x]{luainputenc}
+\usepackage[T1]{fontenc}
+\usepackage[firstyear=2005,lastyear=2014]{moderntimeline}
 
 \linespread{0.9}
 
 % moderncv themes
 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman'
 % (for roman fonts, instead of sans serif fonts)
-\moderncvtheme[blue]{classic}                 
+\moderncvtheme[blue]{classic}
 %\usepackage{fontawesome}
 
 \usepackage{moderncviconsawesome}
@@ -48,7 +50,7 @@
 \address{41 rue de la Tombe Issoire}{75014 Paris}    
 
 % optional, remove the line if not wanted
-\mobile{06 70 47 10 17}
+\mobile{+33 (0) 670 471 017}
 
 % optional, remove the line if not wanted
 %\phone{phone (optional)}
@@ -61,9 +63,9 @@
 
 % optional, remove the line if not wanted
 % \extrainfo{Permis B} 
-\extrainfo{%
-\faGithub~\httplink{www.github.com/kakwa/}\\%
-\faLinkedinSign~\httplink{www.github.com/raphink}\\
+\extrainfo{
+\faGithub~\httplink{www.github.com/kakwa/}\\
+\faLinkedinSign~\httplink{fr.linkedin.com/in/pfcarpentier/}\\
 Permis B
 }
 %
@@ -82,61 +84,118 @@ Permis B
 \begin{document}
 \maketitle
 
-\section{Formation}
-\cventry{2010--présent}{Master Recherche Réseau}
-{Université Pierre et Marie Curie Paris 6}{Paris}{}{Master effectué en parallèle avec la 3ème année d’école d’ingénieur. Sujets : Sécurité, Routage,
+\section{Skills}
+
+\subsection{System}
+\cvcomputer{OS}{Debian, CentOS, Gentoo, FreeBSD}{Virtualization}{ESXi, VirtualBox, Vagrant, KVM}
+\cvcomputer{Packaging}{deb, rpm, ebuild}{Deployment}{Puppet, Kickstart, Preseed}
+\cvcomputer{Network}{Keepalived, OpenVPN, DHCPd, VLANs}{}{}
+
+\subsection{Services}
+\cvcomputer{Web Server}{Apache, Lighttd, Nginx, Tomcat}{Directory}{389 Directory, OpenLdap}
+\cvcomputer{Database}{Mysql, Posgresql, Redis}{Other}{Bind, Ntpd, Cups}
+\cvcomputer{Monitoring}{Nagios, Nrpe, Logstash, Snmpd}{Security}{Syslog-ng, Rsyslog, Openssh, Iptables, PF}
+
+\subsection{Programming}
+\cvcomputer{Language}{Shell/Bash, Python, Perl, Ruby, C, Ocaml, Java}{SCM}{Git, Subversion, Mercurial}
+
+\subsection{Other}
+\cvcomputer{Network theory}{Security, Routing, QoS, TCP/IP, ATM, MPLS}{Computer Sciences}{Operations research, Compilation, Graph Theory, Data analysis, UML}
+\cvcomputer{Documentation}{reStructuredText, Markdown, \LaTeX, OpenOffice}{}{}
+
+\section{Language}
+\cvlanguage{French}{Native}{Mother Tongue}
+\cvlanguage{English}{Fluent}{TOEIC score of 940/990, daily practice}
+
+
+\section{Experience}
+\subsection{Professional Experience}
+
+\cventry{2011--present}{System Engineer}
+              {Communication et Systèmes}
+              {Le Plessis Robinson}
+              {France}
+              {Réalisation de systèmes complexes pour clients Etatiques/Parapubliques:
+                \begin{itemize}
+                \item Déploiement Automatique (Puppet)
+                \item Packaging logiciel Debian et Redhat/CentOS
+                \item Création de dépots et signature de packages (reprepro/createrepo, GPG)
+                \item Build (Make, ant)
+                \item Automatisation et versionnement de la génération des livrables.
+                \item Installation automatique (Kickstart/Preseed)
+                \item Configuration DNS (bind)
+                \item Configuration SGBD (Mysql/Postgresql)
+                \item Configuration annuaires (389 Directory/OpenLdap)
+                \item Configuration serveurs Web (Apache, Nginx, Tomcat)
+                \item Haute Disponibilité (Réplication SQL/LDAP, Keepalived)
+                \item Configuration Debian/CentOS
+                \item Supervision (Nagios, nrpe, snmp, logstash)
+                \item Virtualisation (VMware ESXi, VirtualBox/Vagrant, KVM)
+                \item Scripting varié en Python/Shell/Perl/Ruby
+                \item Rédaction de manuels et procédures d'exploitation (reStructuredText)
+                \item Rédaction de fiches de tests (Testlink)
+                \item Déploiement de solution de gestion de projet (Trac)
+                \end{itemize}
+              }
+
+\subsection{Internships}
+
+\cventry{2011}{Stage, Intégration/Développement: conception, d'une infrastucture de messagerie sécurisée}
+              {Communication et Systèmes}
+              {Le Plessis Robinson}
+              {France}
+              {Conception et réalisation d'une infrastructure de messagerie chiffrée de bout en bout par
+               Certificat X509. Conception et réalisation d'un POC de mailling list chiffrée de bout en bout
+               (cryptographie à N destinataires).
+               \newline Technologies: Linux, S/MIME, x509, thunderbird, ldap, tls, C, librairie polarSSL.
+              }
+
+\cventry{2010}{Stage, Développement web: conception, réalisation et déploiement d'un site web}
+              {INRIA}
+              {Roquencourt}
+              {France}
+              {Stage dans le cadre du projet européen Ideas, 
+                 conception, réalisation et déploiement d'un site permettant de visionner 
+                 des manuscrits orientaux ainsi que leurs traductions.
+                 \newline Technologies utillisées: Python, Django, HTML, CSS, Apache, Linux.
+              }
+
+\cventry{2009}{Stage, Modélisation biologique: création d'un modèle de tumeur}
+              {Laboratoire IBISC}
+              {Evry}
+              {France}
+              {Stage de recherche en Bio-Informatique. Conception
+                et réalisation d'un modèle de tumeur
+                cancéreuse afin d'étudier l'action de la molécule PA-1.
+                \newline Technologies utillisées: C, Doxygen.
+              }
+
+\cventry{2008}{Stage}{Crédit Mutuel de Bretagne}{Brest}{France}{Stage d'un mois, 
+    au département du Libre Service Bancaire (gestion des automates bancaires).
+    Mise à jour et amélioration d'une étude de fréquentation des distributeurs 
+    suite à l'installation d'une nouvelle interface
+    utilisateur. Tests pratiques sur la nouvelle interface avant sa mise en production.
+}
+
+\section{Education}
+\cventry{2010--2011}{Master Recherche Réseau}
+{Université Pierre et Marie Curie Paris 6}{Paris}{France}{Master effectué en parallèle avec la 3ème année d’école d’ingénieur. Sujets : Sécurité, Routage,
 QoS, Réseaux, P2P. . .}
 
-\cventry{2008--présent}{Etudes d'ingénieur en Informatique}{Ensiie}{Evry}{}
+\cventry{2008--2011}{Etudes d'ingénieur en Informatique}{Ensiie}{Evry}{France}
 {Etudes à l'Ecole Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE), grande école d'ingénieurs
 généraliste en informatique recrutant sur le concours Centrale-Supelec. Spécialisation Système et Réseaux.
-}  % arguments 3 to 6 are optional
+}
 \cventry{2005--2008}{Classe Préparatoire aux Grandes Ecoles}
 {Lycée de Kerichen}{Brest}{}{Filière MP (Mathématiques-Physique) option Informatique.}
 
-\section{Expérience}
-\subsection{Stages}
-
-\cventry{2010}{Developpement web: création et déploiement d'un site web}{INRIA}{Roquencourt}{}{Stage dans le cadre du projet européen Ideas, 
-conception, réalisation et deploiement d'un site permettant de visionner des manuscrits orientaux ainsi que leurs traductions.
- Le site a été réalisé grace au framework Django. Il a par ailleurs fallu mettre en place un serveur pour heberger le site.
-\newline Technologies utillisées: Python, Django, HTML, CSS, Apache, Linux.}                % arguments 3 to 6 are optional
-
-\cventry{2009}{Modélisation biologique: création d'un modèle de tumeur}{Laboratoire IBISC}{EVRY}{}{Stage de recherche en Bio-Informatique. Conception
-et réalisation d'un modèle de tumeur
-cancéreuse afin d'étudier l'action de la molécule PA-1 (molécule suspectée de favoriser la migration des cellules cancéreuses et donc l'apparition de
-métastases). \newline Technologies utillisées: C, Doxygen.}                % arguments 3 to 6 are optional
-
-
-\subsection{Divers}
-\cventry{2008}{Stagiaire au Crédit Mutuel de Bretagne}{}{Brest}{}{Stage d'un mois, au département du Libre Service Bancaire (gestion des automates bancaires).
-Mise à jour et amélioration d'une étude de fréquentation des distributeurs suite à l'installation d'une nouvelle interface
-utilisateur. Tests pratiques sur la nouvelle interface avant sa mise en production.
+\section{Centres d'intéret}
+\cvline{Sport}{\small Pratique de la voile en compétition pendant neuf ans.}
+\cvline{Musique}{\small Apprentissage et pratique de la guitare et du piano depuis plusieurs années.}
+\cvline{Electronique}{\small Fabrication et réparation d'appareils divers et variés.}
+\cvline{Informatique}{\small Plusieurs projets personnels (plusieurs libraries publiées sur Github), mis en place de services (Bind, openvpn, lighttpd, NFS) pour mes propres besoins.
 }
-
-\section{Langues}
-\cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
-\cvlanguage{Espanol}{Notions}{Niveau Bac}
-
-\section{Compétences}
-\cvline{OS}{Gnu/Linux, Mac OSX, Ms Windows}{}{}
-\cvline{Scripting}{Bash, Python}{}{}
-\cvline{Réseau}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{}{}
-%\cvline(Réseau}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{}{}
-\cvline{Théorie}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}{}{}
-\cvline{Programmation}{C, Java, Ocaml, Prolog, VHDL, ASM, Coq}{}{}
-\cvline{Développement web}{Django, HTML, PHP,CSS, PostgreSQL}{}{}
-\cvline{Divers}{Open Office, Ms Office, Lex \& Yacc, RPC, Corba, \LaTeX}{}{}
-
-%\section{Centres d'intéret}
-%\cvline{Sport}{\small Pratique de la voile en compétition pendant neuf ans.}
-%\cvline{Musique}{\small Apprentissage et pratique de la guitare et du piano depuis plusieurs années, ainsi que, depuis peu, de la batterie.}
-%\cvline{Electronique}{\small Fabrication et réparation d'appareils divers et variés.}
-%\cvline{Informatique}{\small Parallèlement à ma formation, je me renseigne sur tout ce qui touche à l'informatique (de l'histoire de l'informatique à
-%l'architecture des systèmes d'exploitation en passant par l'apprentissage du langage Python.)
-%}
 
 \end{document}
 
-   
 %% end of file `template_en.tex'.
