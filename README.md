@@ -12,8 +12,8 @@ sudo aptitude install texlive-full fonts-font-awesome
 ```
 Notes: 
 
-* package texlive-full is probably to much, but quicker
-option for lazzy people like me.
+* package texlive-full is too much, but it's the quicker
+option for lazy people like me.
 
 * this cv use fonts-font-awesome, support for this 
 font comes with textlive releases above 2013.
@@ -40,7 +40,7 @@ Adding a language
 
 Just create a new directory and put cv.tex inside it.
 
-Changing the photo
-------------------
+Changing the ID picture
+-----------------------
 
 Just replace `picture/ID.jpg`.
