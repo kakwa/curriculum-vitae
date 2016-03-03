@@ -18,7 +18,7 @@
 \fi
 
 % moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 \moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -42,7 +42,7 @@
 
 \email{carpentier.pf@gmail.com}
 
-\social[linkedin]{pfcarpentier}                        % optional, remove / comment the line if not wanted
+\social[linkedin]{pfcarpentier}                     % optional, remove / comment the line if not wanted
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{kakwa}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
@@ -67,7 +67,7 @@ Permis B
 \section{Compétences}
 
 \subsection{Système}
-\cvcomputer{OS}{Debian, CentOS, Gentoo, FreeBSD}{Virtualisation}{ESXi, VirtualBox, Vagrant, KVM}
+\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualization}{ESXi, VirtualBox, Vagrant, KVM}
 \cvcomputer{Packaging}{deb, rpm, ebuild}{Déploiement}{Puppet, Kickstart, Preseed}
 \cvcomputer{Réseau}{Keepalived, OpenVPN, DHCPd, VLANs}{}{}
 
@@ -83,7 +83,7 @@ Permis B
 
 \subsection{Autre}
 \cvcomputer{Théorie des Réseaux}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{Théorie Informatique}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}
-\cvcomputer{Documentation}{reStructuredText, Markdown, \LaTeX, OpenOffice}{}{}
+\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, OpenOffice}{}{}
 
 \section{Langues}
 \cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
@@ -104,12 +104,14 @@ Permis B
                 \item Création de dépôts et signature de packages (Reprepro/Createrepo, GPG)
                 \item Rédaction de scripts de build (Make, Ant)
                 \item Automatisation et versionnement de la génération des livrables.
+		\item Intégration continue (Jenkins).
+		\item Déploiement continu.
                 \item Mise en place de mécanismes d'installation automatique (Kickstart/Preseed)
                 \item Configuration DNS (Bind)
                 \item Configuration SGBD (MySQL/PostgreSQL)
                 \item Configuration annuaires (389 Directory/OpenLDAP)
                 \item Configuration serveurs web (Apache, Nginx, Tomcat)
-                \item Mise en place de mécanismes de haute disponibilité (Réplication SQL/LDAP, Keepalived)
+                \item Mise en place de mécanismes de haute disponibilité (Réplication SQL/LDAP, répartition de charge Apache/Ngninx, VRRP/Keepalived)
                 \item Configuration Debian/CentOS
                 \item Mise en place de supervision (Nagios, NRPE, SNMP, Logstash)
                 \item Virtualisation (VMware ESXi, VirtualBox/Vagrant, KVM)
@@ -119,7 +121,7 @@ Permis B
                 \item Déploiement de solution de gestion de projet (Trac)
                 \end{itemize}
               }
-
+\newpage
 \subsection{Projet personnels}
 \cventry{2012--present}{Divers projets open source publiés sur GitHub}
               {}
@@ -168,13 +170,6 @@ Permis B
                 cancéreuse afin d'étudier l'action de la molécule PA-1.
                 \newline Technologies utilisées: C, Doxygen.
               }
-
-\cventry{2008}{Stage, Crédit Mutuel de Bretagne}{}{Brest}{}{Stage d'un mois, 
-    au département du Libre Service Bancaire (gestion des automates bancaires).
-    Mise à jour et amélioration d'une étude de fréquentation des distributeurs 
-    suite à l'installation d'une nouvelle interface
-    utilisateur. Tests pratiques sur la nouvelle interface avant sa mise en production.
-}
 
 \section{Formation}
 \cventry{2010--2011}{Master Recherche Réseau}
