@@ -15,30 +15,25 @@ Notes:
 * package texlive-full is too much, but it's the quicker
 option for lazy people like me.
 
-* this cv use fonts-font-awesome, support for this 
-font comes with textlive releases above 2013.
-
-In order to use this cv with older releases, you wil have
-to remove `\usepackage{moderncviconsawesome}`, `\faGithub~`
-and `\faLinkedinSign~`.
-
-Building the cv
----------------
+Building the CVs
+----------------
 
 ```bash
-make pdf LANG=fr
+# build a specific language
+$ make pdf LANG=fr
 
-# or default language (english)
-make pdf
+# build all the language in // 
+$ make -j 42 
 
-# or the quick and dirty build script building all languages
-./build.sh
+# the CVs are located in the out directory
+$ ls out/
+CV_CARPENTIER_en.pdf  CV_CARPENTIER_fr.pdf
 ```
 
 Adding a language
 -----------------
 
-Just create a new directory and put cv.tex inside it.
+Just create a new directory, put cv.tex inside it and symlink the picture if needed.
 
 Changing the ID picture
 -----------------------
