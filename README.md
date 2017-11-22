@@ -12,7 +12,7 @@ sudo aptitude install texlive-full fonts-font-awesome
 ```
 Notes: 
 
-* package texlive-full is too much, but it's the quicker
+* package texlive-full is too much, but it's the quickest
 option for lazy people like me.
 
 Building the CVs
