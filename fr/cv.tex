@@ -49,8 +49,8 @@
 \extrainfo{
 Permis B
 }
-% '64pt' is the height the picture must be resized to 
-% and 'picture' is the name of the picture file; 
+% '64pt' is the height the picture must be resized to
+% and 'picture' is the name of the picture file;
 % optional, remove the line if not wanted
 \photo[64pt]{ID.jpg}
 
@@ -66,24 +66,26 @@ Permis B
 
 \section{Compétences}
 
+
 \subsection{Système}
-\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualization}{ESXi, VirtualBox, Vagrant, KVM}
-\cvcomputer{Packaging}{deb, rpm, ebuild}{Déploiement}{Puppet, Kickstart, Preseed}
-\cvcomputer{Réseau}{Keepalived, OpenVPN, DHCPd, VLANs}{}{}
+\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualisation/Containérisation}{ESXi, VirtualBox, Vagrant, KVM, LXD, OpenVZ}
+\cvcomputer{Packaging}{deb, rpm, ebuild}{Déploiement}{Puppet, Salt, Ansible, Kickstart, Preseed, Terraform, Boto}
+\cvcomputer{Réseau}{Keepalived, OpenVPN, DHCPd}{Fournisseur Cloud}{AWS, Azure}
 
 \subsection{Services}
 \cvcomputer{Serveurs Web}{Apache, Lighttpd, Nginx, Tomcat}{Annuaires}{389 Directory, OpenLDAP, Samba4}
-\cvcomputer{Base de données}{MySQL, PosgreSQL, Redis}{Autres services}{Bind, Ntpd, Cups}
-\cvcomputer{Supervision}{Nagios, NRPE, Logstash, Snmpd}{Sécurité}{Syslog-ng, Rsyslog, OpenSSH, IPTables, PF}
-\cvcomputer{Network FS}{Samba, NFS}{}{}
+\cvcomputer{Base de données}{MySQL, PosgreSQL, Redis, DynamoDB, RDS}{Autres services}{Bind, Ntpd, Cups}
+\cvcomputer{Supervision}{Nagios, NRPE, Logstash, Snmpd, OpenTSDB, Grafana}{Sécurité}{Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF}
+\cvcomputer{Network FS}{Samba, NFS}{Queueing}{Kafka}
 
 \subsection{Programmation}
-\cvcomputer{Langages}{Shell/Bash, Python, Perl, C, Ocaml, Java}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
+\cvcomputer{Langages}{Shell/Bash, Python, Perl, C, Ocaml}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
+\cvcomputer{Framework}{Cherrypy, Flask}{Spécification}{Swagger/OpenAPI}
 \cvcomputer{Build}{Make, CMake, gcc, clang}{}{}
 
 \subsection{Autre}
 \cvcomputer{Théorie des Réseaux}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{Théorie Informatique}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}
-\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, OpenOffice}{}{}
+\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, LibreOffice}{Outils}{Jira, Confluence, Github, Travis-ci, Jenkins, Slack}
 
 \section{Langues}
 \cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
@@ -93,7 +95,27 @@ Permis B
 \section{Expérience}
 \subsection{Parcours professionnel}
 
-\cventry{2011--présent}{Ingénieur Intégrateur}
+
+\cventry{2016--present}{Devops}
+              {Adobe Inc.}
+              {Arcueil}
+              {}
+	      {Membre de l'équipe Techops oppérant Adobe Campaign (plate-forme de campagne marketing):
+                \begin{itemize}
+                \item Maintient et évoluation de l'automatisation (Ansible/Terraform/Cloudformation)
+                \item Mise en place de l'infrastructure SaltStack
+                \item Migration d'instances clientes entre Datacenters et entre Datacenter et AWS
+                \item Creation d'outils facilitant l'exploitation de la solution
+                \item Redaction de procédures et de documentation (Wiki Confluence, reStructuredText)
+                \item Optimisation des coûts AWS
+                \item Dialogue avec les équipes R&D pour améliorer la robustesse de la solution (Devops)
+                \item Gestion des alertes de supervision et réponse aux tickets clients (On-Call et astreinte)
+                \item Investigation des problèmes produit et d'implémentation client
+                \item Analyse et recommandation pour optimiser les requètes SQL exécutées par le produit
+                \end{itemize}
+              }
+
+\cventry{2011--2016}{Ingénieur Intégrateur}
               {Communication et Systèmes}
               {Le Plessis Robinson}
               {}
@@ -155,8 +177,8 @@ Permis B
               {INRIA}
               {Roquencourt}
               {}
-              {Stage dans le cadre du projet européen Ideas, 
-                 conception, réalisation et déploiement d'un site permettant de visionner 
+              {Stage dans le cadre du projet européen Ideas,
+                 conception, réalisation et déploiement d'un site permettant de visionner
                  des manuscrits orientaux ainsi que leurs traductions.
                  \newline Technologies utilisées: Python, Django, HTML, CSS, Apache, Linux.
               }
@@ -179,7 +201,7 @@ QoS, Réseaux, P2P. . .}
 \cventry{2008--2011}{Études d'ingénieur en Informatique}{Ensiie}{Evry}{}
 {Études à l'École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE), grande école d'ingénieurs
 généraliste en informatique recrutant sur le concours Centrale-Supelec. Spécialisation Système et Réseaux.
-} 
+}
 \cventry{2005--2008}{Classe Préparatoire aux Grandes Écoles}
 {Lycée de Kerichen}{Brest}{}{Filière MP (Mathématiques-Physique) option Informatique.}
 
