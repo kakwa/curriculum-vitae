@@ -1,32 +1,26 @@
 # Some variables
 NAME=CARPENTIER
-BUILD=./out/
 
 # recover all the languages
-ALL_LANG=$(shell find ./* -maxdepth 0 -type d |grep -v 'out\|picture')
-pdf_LANG=$(addprefix pdf_,$(ALL_LANG))
+ifeq ("$(CV_LANG)", "")
+ALL_LANG=$(shell find ./* -maxdepth 0 -type d -exec basename {} \; |grep -v 'out\|picture')
+else
+ALL_LANG=$(CV_LANG)
+endif
 
-# build all the languages
-all: $(pdf_LANG)
+PDF_LANG=$(addsuffix .pdf,$(addprefix CV_CARPENTIER_,$(ALL_LANG)))
+SRC_LANG=$(addsuffix /cv.tex,$,$(ALL_LANG))
 
-$(pdf_LANG):
-	mkdir -p $(BUILD)/
-	cd $(patsubst pdf_%,%,$@) &&\
-	xelatex -interaction=batchmode cv.tex &&\
-	mv cv.pdf ../$(BUILD)/CV_$(NAME)_$(patsubst pdf_./%,%,$@).pdf
+all: $(PDF_LANG)
 
-# build a specific language 
-# must be passed like: make pdf LANG=<target language>
-pdf:
-	echo $(LANG)
-	mkdir -p $(BUILD)/
-	cd $(LANG) &&\
-	xelatex -interaction=batchmode cv.tex &&\
-	mv cv.pdf ../$(BUILD)/CV_$(NAME)_$(LANG).pdf
+$(PDF_LANG): $(SRC_LANG)
+	cd $(subst CV_CARPENTIER_,,$(subst .pdf,,$@)) && \
+	xelatex -interaction=batchmode cv.tex && \
+	mv cv.pdf ../$@
 
 # cleaning
 clean:
-	echo $@
-	rm -rf $(BUILD)/
+	rm -f *.pdf
+	rm -f cv.*
 
-.PHONY: $(pdf_LANG) clean all pdf
+.PHONY: clean all
