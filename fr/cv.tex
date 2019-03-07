@@ -38,7 +38,7 @@
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
 \address{41 rue de la Tombe Issoire}{75014 Paris}
 
-\phone[mobile]{+33 (0) 670 471 017}
+\phone[mobile]{06 70 47 10 17}
 
 \email{carpentier.pf@gmail.com}
 
@@ -68,19 +68,19 @@ Permis B
 
 
 \subsection{Système}
-\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualisation/Containérisation}{ESXi, VirtualBox, Vagrant, KVM, LXD, OpenVZ}
+\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualisation}{ESXi, VirtualBox, Vagrant, KVM, LXD, OpenVZ}
 \cvcomputer{Packaging}{deb, rpm, ebuild}{Déploiement}{Puppet, Salt, Ansible, Kickstart, Preseed, Terraform, Boto}
 \cvcomputer{Réseau}{Keepalived, OpenVPN, DHCPd}{Fournisseur Cloud}{AWS, Azure}
 
 \subsection{Services}
 \cvcomputer{Serveurs Web}{Apache, Lighttpd, Nginx, Tomcat}{Annuaires}{389 Directory, OpenLDAP, Samba4}
 \cvcomputer{Base de données}{MySQL, PosgreSQL, Redis, DynamoDB, RDS}{Autres services}{Bind, Ntpd, Cups}
-\cvcomputer{Supervision}{Nagios, NRPE, Logstash, Snmpd, OpenTSDB, Grafana}{Sécurité}{Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF}
+\cvcomputer{Supervision}{Nagios, NRPE, Logstash, Snmpd, OpenTSDB, Grafana, CollectD}{Sécurité}{Syslog-ng, Rsyslog, OpenSSH, sssd, IPTables, PF, stunnel}
 \cvcomputer{Network FS}{Samba, NFS}{Queueing}{Kafka}
 
 \subsection{Programmation}
-\cvcomputer{Langages}{Shell/Bash, Python, Perl, C, Ocaml}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
-\cvcomputer{Framework}{Cherrypy, Flask}{Spécification}{Swagger/OpenAPI}
+\cvcomputer{Langages}{Shell/Bash, Python, C, Perl, Ocaml}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
+\cvcomputer{Framework}{CherryPy, Flask}{Spécification}{Swagger/OpenAPI}
 \cvcomputer{Build}{Make, CMake, gcc, clang}{}{}
 
 \subsection{Autre}
@@ -96,23 +96,25 @@ Permis B
 \subsection{Parcours professionnel}
 
 
-\cventry{2016--present}{Devops}
+\cventry{2016--present}{DevOps}
               {Adobe Inc.}
               {Arcueil}
               {}
-	      {Membre de l'équipe Techops oppérant Adobe Campaign (plate-forme de campagne marketing):
-                \begin{itemize}
-                \item Maintient et évoluation de l'automatisation (Ansible/Terraform/Cloudformation)
-                \item Mise en place de l'infrastructure SaltStack
-                \item Migration d'instances clientes entre Datacenters et entre Datacenter et AWS
-                \item Creation d'outils facilitant l'exploitation de la solution
-                \item Redaction de procédures et de documentation (Wiki Confluence, reStructuredText)
-                \item Optimisation des coûts AWS
-                \item Dialogue avec les équipes R&D pour améliorer la robustesse de la solution (Devops)
-                \item Gestion des alertes de supervision et réponse aux tickets clients (On-Call et astreinte)
-                \item Investigation des problèmes produit et d'implémentation client
-                \item Analyse et recommandation pour optimiser les requètes SQL exécutées par le produit
-                \end{itemize}
+	      {Membre de l'équipe Techops opérant Adobe Campaign (plate-forme de campagne marketing):
+                 \begin{itemize}
+                 \item Maintenance et évolution de l'automatisation (Ansible/Terraform/Cloudformation).
+                 \item Mise en place d'une infrastructure SaltStack.
+                 \item Migration d'instances clientes entre Datacenters et entre Datacenters et AWS.
+                 \item Développement d'outils facilitant l'exploitation de la solution.
+                 \item Rédaction de procédures et de documentation (Wiki Confluence, reStructuredText).
+		 \item Intégration Continue (Jenkins/JenkinsFile).
+                 \item Optimisation des coûts AWS.
+		 \item Configuration des domaine pour campaign d'envoi d'email de masse (SPF, DKIM, DMARC).
+                 \item Dialogue avec les équipes R\&D pour tracer les nouvelles fonctionnalités et améliorer la robustesse de la solution (DevOps).
+                 \item Gestion des alertes de supervision et réponse aux tickets clients (On-Call et astreintes).
+                 \item Investigation des problèmes produit et d'implémentation client.
+		 \item Analyses et recommandations pour optimiser les requêtes SQL exécutées par le produit.
+                 \end{itemize}
               }
 
 \cventry{2011--2016}{Ingénieur Intégrateur}
@@ -121,44 +123,45 @@ Permis B
               {}
               {Réalisation de systèmes complexes pour clients Étatiques/Parapubliques:
                 \begin{itemize}
-                \item Mise en place de déploiement Automatique (Puppet)
-                \item Packaging logiciel Debian et Redhat/CentOS
-                \item Création de dépôts et signature de packages (Reprepro/Createrepo, GPG)
+                \item Mise en place de déploiement Automatique (Puppet).
+                \item Packaging logiciel Debian et Redhat/CentOS.
+                \item Création de dépôts et signature de packages (Reprepro/Createrepo, GPG).
                 \item Rédaction de scripts de build (Make, Ant)
                 \item Automatisation et versionnement de la génération des livrables.
-		\item Intégration continue (Jenkins).
-		\item Déploiement continu.
-                \item Mise en place de mécanismes d'installation automatique (Kickstart/Preseed)
-                \item Configuration DNS (Bind)
-                \item Configuration SGBD (MySQL/PostgreSQL)
-                \item Configuration annuaires (389 Directory/OpenLDAP)
-                \item Configuration serveurs web (Apache, Nginx, Tomcat)
-                \item Mise en place de mécanismes de haute disponibilité (Réplication SQL/LDAP, répartition de charge Apache/Ngninx, VRRP/Keepalived)
-                \item Configuration Debian/CentOS
-                \item Mise en place de supervision (Nagios, NRPE, SNMP, Logstash)
-                \item Virtualisation (VMware ESXi, VirtualBox/Vagrant, KVM)
-                \item Scripting varié en Python/Shell/Perl/Ruby
-                \item Rédaction de manuels et procédures d'exploitation (reStructuredText)
-                \item Rédaction de fiches de tests (Testlink)
-                \item Déploiement de solution de gestion de projet (Trac)
+                \item Intégration continue (Jenkins).
+                \item Déploiement continu.
+                \item Mise en place de mécanismes d'installation automatique (Kickstart/Preseed).
+                \item Configuration DNS (Bind).
+                \item Configuration SGBD (MySQL/PostgreSQL).
+                \item Configuration annuaires (389 Directory/OpenLDAP).
+                \item Configuration serveurs web (Apache, Nginx, Tomcat).
+                \item Mise en place de mécanismes de haute disponibilité (Réplication SQL/LDAP, répartition de charge Apache/Ngninx, VRRP/Keepalived).
+                \item Configuration Debian/CentOS.
+                \item Mise en place de supervision (Nagios, NRPE, SNMP, Logstash).
+                \item Virtualisation (VMware ESXi, VirtualBox/Vagrant, KVM).
+                \item Scripting varié en Python/Shell/Perl/Ruby.
+                \item Rédaction de manuels et procédures d'exploitation (reStructuredText).
+                \item Rédaction de fiches de tests (Testlink).
+                \item Déploiement de solution de gestion de projet (Trac).
                 \end{itemize}
               }
-\newpage
 \subsection{Projet personnels}
 \cventry{2012--present}{Divers projets open source publiés sur GitHub}
               {}
               {}
               {}
               {
-              \begin{itemize}
-              \item \href{https://github.com/kakwa/puppet-samba}{puppet-samba}, module Puppet pour gérer samba.
-              \item \href{https://github.com/kakwa/py-ascii-graph}{ascii-graph}, librairie Python pour affciher des données sous forme d'histogrammes ascii.
-              \item \href{https://github.com/kakwa/ldapcherry}{ldapcherry}, application web en Python/CherryPY pour gérer des utilisateurs/groupes dans de multiples annuaires/bases.
-              \item \href{https://github.com/kakwa/libemf2svg}{libemf2svg}, librairie/utilitaire pour convertir des fichiers Microsoft (MS) EMF en SVG, écrit en C.
-              \item \href{https://github.com/kakwa/libvisio2svg}{libvisio2svg}, librairie/utilitaires pour des fichiers Microsoft (MS) Visio (VSS et VSD) en SVG, écrit en C++.
-              \item \href{https://github.com/kakwa/packages}{packages}, divers packages deb/rpm pour mes besoins.
-              \item Beaucoup d'autres projets sur GitHub: \url{https://github.com/kakwa?tab=repositories}
-              \end{itemize}
+                \begin{itemize}
+                \item \href{https://github.com/kakwa/py-ascii-graph}{ascii-graph}, librairie pour affciher des données sous forme d'histogrammes ascii (Python).
+                \item \href{https://github.com/kakwa/ldapcherry}{ldapcherry}, application web pour gérer des utilisateurs/groupes dans de multiples annuaires/bases (Python/CherryPY).
+                \item \href{https://github.com/kakwa/libemf2svg}{libemf2svg}, librairie/utilitaire pour convertir des fichiers Microsoft (MS) EMF en SVG (C).
+                \item \href{https://github.com/kakwa/libvisio2svg}{libvisio2svg}, librairie/utilitaires pour des fichiers Microsoft (MS) Visio (VSS et VSD) en SVG, (C/C++).
+                \item \href{https://github.com/kakwa/amkecpak}{amkecpak}, packaging framework et divers packages deb/rpm pour mes besoins (Makefile, shell).
+                \item \href{https://github.com/kakwa/uts-server}{uts-server}, serveur RFC 3161 (horodatage cryptographique) (C).
+                \item \href{https://github.com/kakwa/collectd-opentsdb}{collectd-opentsdb}, writer module CollectD pour OpenTSDB (C).
+                \item \href{https://github.com/kakwa/puppet-samba}{puppet-samba}, module Puppet pour gérer Samba (Puppet, Ruby, Python).
+                \item Beaucoup d'autres projets sur GitHub: \url{https://github.com/kakwa?tab=repositories}
+                \end{itemize}
 }
 
 \subsection{Stages}
