@@ -70,23 +70,24 @@ Permis B
 \section{Skills}
 
 \subsection{System}
-\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualization}{ESXi, VirtualBox, Vagrant, KVM}
-\cvcomputer{Packaging}{deb, rpm, ebuild}{Deployment}{Puppet, Kickstart, Preseed}
-\cvcomputer{Network}{Keepalived, OpenVPN, DHCPd, VLANs}{}{}
+\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualization}{ESXi, VirtualBox, Vagrant, KVM, LXD, OpenVZ}
+\cvcomputer{Packaging}{deb, rpm, ebuild}{Deployment}{Puppet, Ansible, Kickstart, Preseed, Terraform, Boto}
+\cvcomputer{Network}{Keepalived, OpenVPN, DHCPd, VLANs}{Cloud Providers}{AWS, Azure}
 
 \subsection{Services}
 \cvcomputer{Web Server}{Apache, Lighttpd, Nginx, Tomcat}{Directory}{389 Directory, OpenLDAP, Samba4}
-\cvcomputer{Database}{MySQL, PosgreSQL, Redis}{Other}{Bind, Ntpd, Cups}
-\cvcomputer{Monitoring}{Nagios, NRPE, Logstash, Snmpd}{Security}{Syslog-ng, Rsyslog, OpenSSH, IPTables, PF}
-\cvcomputer{Network FS}{Samba, NFS}{}{}
+\cvcomputer{Database}{MySQL, PosgreSQL, Redis, DynamoDB, RDS}{Other}{Bind, Ntpd, Cups}
+\cvcomputer{Monitoring}{Nagios, NRPE, Logstash, Snmpd, OpenTSDB, Grafana, CollectD}{Security}{Syslog-ng, Rsyslog, OpenSSH, sssd, IPTables, PF, stunnel}
+\cvcomputer{Network FS}{Samba, NFS}{Queueing}{Kafka}
 
 \subsection{Programming}
 \cvcomputer{Language}{Shell/Bash, Python, Perl, C, Ocaml, Java}{SCM}{Git, Subversion, Mercurial}
+\cvcomputer{Framework}{CherryPy, Flask}{Spécification}{Swagger/OpenAPI}
 \cvcomputer{Build}{Make, CMake, gcc, clang}{}{}
 
 \subsection{Other}
 \cvcomputer{Network theory}{Security, Routing, QoS, TCP/IP, ATM, MPLS}{Computer Sciences}{Operations research, Compilation, Graph Theory, Data analysis, UML}
-\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, OpenOffice}{}{}
+\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, OpenOffice}{Tools}{Jira, Confluence, Github, Travis-ci, Jenkins, Slack}
 
 \section{Language}
 \cvlanguage{French}{Native}{Native language}
@@ -95,7 +96,28 @@ Permis B
 \section{Experience}
 
 \subsection{Professional Experience}
-\cventry{2011--present}{System Engineer}
+\cventry{2016--present}{DevOps}
+              {Adobe Inc.}
+              {Arcueil}
+              {France}
+              {Member of the Techops team oparating Adobe Campaign (marketing campaign platform):
+                 \begin{itemize}
+                 \item Maintenance and evolution of the automatisation (Ansible/Terraform/Cloudformation).
+                 \item Deployment of a SaltStack infrastructure.
+                 \item DC to DC and DC to AWS migration of customer instance.
+                 \item Creation of various tools helping with the day to day administration
+                 \item Redacting documentation and procedures (Confluence Wiki, reStructuredText).
+                 \item Continuous Integration (Jenkins/JenkinsFile).
+                 \item Cost optimization on AWS.
+		 \item Setup domains to send mass email campaigns (SPF, DKIM, DMARC).
+                 \item Communicate with R\&D teams to track new feature and improve solution robustness (DevOps).
+		 \item Handling of monitoring alerts and customer tickets (On-call).
+                 \item Troubleshooting of product issues and specific customer issues
+                 \item Analyzes and recommandations to optimize the SQL queries execusted by the product.
+                 \end{itemize}
+              }
+
+\cventry{2011--2016}{System Engineer}
               {Communication et Systèmes}
               {Le Plessis Robinson}
               {France}
@@ -123,7 +145,7 @@ Permis B
                 \item Project management system deployment (Trac)
                 \end{itemize}
               }
-\newpage
+
 \subsection{Home Projects}
 \cventry{2012--present}{Various open sourced projects on GitHub}
               {}
@@ -148,7 +170,7 @@ Permis B
               {Le Plessis Robinson}
               {France}
               {Conception and construction of a secured mail infrastructure, with end to end encryption
-              based on x509 certificates. Conception and construction of POC mailing list system with end to end encryption. 
+              based on x509 certificates. Conception and construction of POC mailing list system with end to end encryption.
               (cryptography with N receivers).
               \newline Technologies: Linux, S/MIME, x509, Dovecot, Postfix, Thunderbird, ldap, tls, C, polarSSL library.
               }
