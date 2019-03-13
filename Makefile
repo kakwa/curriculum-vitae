@@ -13,7 +13,7 @@ SRC_LANG=$(addsuffix /cv.tex,$,$(ALL_LANG))
 
 all: $(PDF_LANG)
 
-$(PDF_LANG): $(SRC_LANG)
+$(PDF_LANG): $(SRC_LANG) picture/ID.jpg
 	cd $(subst CV_CARPENTIER_,,$(subst .pdf,,$@)) && \
 	xelatex -interaction=batchmode cv.tex && \
 	mv cv.pdf ../$@
