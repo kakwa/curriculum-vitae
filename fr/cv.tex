@@ -36,7 +36,7 @@
 % personal data
 \name{Pierre-Francois}{Carpentier}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
-\address{41 rue de la Tombe Issoire}{75014 Paris}
+\address{114 rue de la Glacière}{75013 Paris}
 
 \phone[mobile]{06 70 47 10 17}
 
@@ -74,18 +74,18 @@ Permis B
 
 \subsection{Services}
 \cvcomputer{Serveurs Web}{Apache, Lighttpd, Nginx, Tomcat}{Annuaires}{389 Directory, OpenLDAP, Samba4}
-\cvcomputer{Base de données}{MySQL, PosgreSQL, Redis, DynamoDB, RDS}{Autres services}{Bind, Ntpd, Cups}
+\cvcomputer{Base de données}{MySQL, PosgreSQL, Redis, DynamoDB, RDS}{Autres services}{Bind, Ntpd, Cups, Bacula}
 \cvcomputer{Supervision}{Nagios, NRPE, Logstash, Snmpd, OpenTSDB, Grafana, CollectD}{Sécurité}{Syslog-ng, Rsyslog, OpenSSH, sssd, IPTables, PF, stunnel}
 \cvcomputer{Network FS}{Samba, NFS}{Queueing}{Kafka}
 
 \subsection{Programmation}
-\cvcomputer{Langages}{Shell/Bash, Python, C, Perl, Ocaml}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
-\cvcomputer{Framework}{CherryPy, Flask}{Spécification}{Swagger/OpenAPI}
+\cvcomputer{Langages}{Shell/Bash, Python, C, Perl, Golang, Ocaml}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
+\cvcomputer{Framework}{CherryPy, Flask, Twisted}{Spécification}{Swagger/OpenAPI}
 \cvcomputer{Build}{Make, CMake, gcc, clang}{}{}
 
 \subsection{Autre}
 \cvcomputer{Théorie des Réseaux}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{Théorie Informatique}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}
-\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, LibreOffice}{Outils}{Jira, Confluence, Github, Travis-ci, Jenkins, Slack}
+\cvcomputer{Documentation}{reStructuredText, Markdown, \LaTeX, LibreOffice}{Outils}{Jira, Confluence, Github, Vim, Travis-ci, Jenkins, Slack}
 
 \section{Langues}
 \cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
@@ -100,20 +100,23 @@ Permis B
               {Adobe Inc.}
               {Arcueil}
               {}
-	      {Membre de l'équipe Techops opérant Adobe Campaign (plate-forme de campagne marketing):
+	      {Membre de l'équipe SRE (Techops) opérant Adobe Campaign (plate-forme de campagne marketing):
                  \begin{itemize}
                  \item Maintenance et évolution de l'automatisation (Ansible/Terraform/Cloudformation).
-                 \item Mise en place d'une infrastructure SaltStack.
+                 \item Mise en place de l'infrastructure SaltStack.
                  \item Migration d'instances clientes entre Datacenters et entre Datacenters et AWS.
                  \item Développement d'outils facilitant l'exploitation de la solution.
                  \item Rédaction de procédures et de documentation (Wiki Confluence, reStructuredText).
-		 \item Intégration Continue (Jenkins/JenkinsFile).
+		 \item Intégration Continue, tests unitaires et couverture de code (Jenkins/JenkinsFile/pytest/go test).
                  \item Optimisation des coûts AWS.
-		 \item Configuration des domaine pour campaign d'envoi d'email de masse (SPF, DKIM, DMARC).
+		 \item Configuration des domaines pour campaign d'envoi d'email de masse (SPF, DKIM, DMARC).
                  \item Dialogue avec les équipes R\&D pour tracer les nouvelles fonctionnalités et améliorer la robustesse de la solution (DevOps).
                  \item Gestion des alertes de supervision et réponse aux tickets clients (On-Call et astreintes).
+		 \item Conception et implémentations de service d'infrastructure améliorant la robustesse et la sécurité de la solution.
                  \item Investigation des problèmes produit et d'implémentation client.
 		 \item Analyses et recommandations pour optimiser les requêtes SQL exécutées par le produit.
+		 \item Packaging RPM/DEB.
+		 \item Contexte internationale, avec des équipes aux Etats-Unis, en Inde, en Irelande et en France.
                  \end{itemize}
               }
 
@@ -160,7 +163,7 @@ Permis B
                 \item \href{https://github.com/kakwa/uts-server}{uts-server}, serveur RFC 3161 (horodatage cryptographique) (C).
                 \item \href{https://github.com/kakwa/collectd-opentsdb}{collectd-opentsdb}, writer module CollectD pour OpenTSDB (C).
                 \item \href{https://github.com/kakwa/puppet-samba}{puppet-samba}, module Puppet pour gérer Samba (Puppet, Ruby, Python).
-                \item Beaucoup d'autres projets sur GitHub: \url{https://github.com/kakwa?tab=repositories}
+                \item Autres projets secondaires sur GitHub: \url{https://github.com/kakwa?tab=repositories}
                 \end{itemize}
 }
 
@@ -218,3 +221,4 @@ généraliste en informatique recrutant sur le concours Centrale-Supelec. Spéci
 \end{document}
 
 %% end of file `template_en.tex'.
+l
