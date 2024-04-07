@@ -19,7 +19,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{purple}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -37,13 +37,9 @@
 \name{Pierre-Francois}{Carpentier}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
 \address{114 rue de la Glacière}{75013 Paris}
-
 \phone[mobile]{06 70 47 10 17}
-
 \email{carpentier.pf@gmail.com}
-
 \social[linkedin]{pfcarpentier}                     % optional, remove / comment the line if not wanted
-%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{kakwa}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \extrainfo{
@@ -64,59 +60,56 @@ Permis B
 \begin{document}
 \maketitle
 
-\section{Compétences}
-
-
-\subsection{Système}
-\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualisation}{ESXi, VirtualBox, Vagrant, KVM, LXD, OpenVZ}
-\cvcomputer{Packaging}{deb, rpm, ebuild}{Déploiement}{Puppet, Salt, Ansible, Kickstart, Preseed, Terraform, Boto}
-\cvcomputer{Réseau}{Keepalived, OpenVPN, DHCPd}{Fournisseur Cloud}{AWS, Azure}
-
-\subsection{Services}
-\cvcomputer{Serveurs Web}{Apache, Lighttpd, Nginx, Tomcat}{Annuaires}{389 Directory, OpenLDAP, Samba4}
-\cvcomputer{Base de données}{MySQL, PosgreSQL, Redis, DynamoDB, RDS}{Autres services}{Bind, Ntpd, Cups, Bacula}
-\cvcomputer{Supervision}{Nagios, NRPE, Logstash, Snmpd, OpenTSDB, Grafana, CollectD}{Sécurité}{Syslog-ng, Rsyslog, OpenSSH, sssd, IPTables, PF, stunnel}
-\cvcomputer{Network FS}{Samba, NFS}{Queueing}{Kafka}
-
-\subsection{Programmation}
-\cvcomputer{Langages}{Shell/Bash, Python, C, Perl, Golang, Ocaml}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
-\cvcomputer{Framework}{CherryPy, Flask, Twisted}{Spécification}{Swagger/OpenAPI}
-\cvcomputer{Build}{Make, CMake, gcc, clang}{}{}
-
-\subsection{Autre}
-\cvcomputer{Théorie des Réseaux}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{Théorie Informatique}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}
-\cvcomputer{Documentation}{reStructuredText, Markdown, \LaTeX, LibreOffice}{Outils}{Jira, Confluence, Github, Vim, Travis-ci, Jenkins, Slack}
-
-\section{Langues}
-\cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
-\cvlanguage{Espagnol}{Notions}{Niveau Bac}
-
 
 \section{Expérience}
 \subsection{Parcours professionnel}
 
-
-\cventry{2016--present}{DevOps}
+\cventry{2016--présent}{SRE/Ingénieur Logiciel}
         {Adobe Inc.}
-        {Arcueil}
+        {Arcueil/Paris}
         {}
-        {Membre de l'équipe SRE (Techops) opérant Adobe Campaign (plate-forme de campagne marketing):
+        {}
+
+\cventry{2020--présent}{}
+        {}
+        {}
+        {}
+        {En tant que membre de l'équipe "Managed Service Engineering":
             \begin{itemize}
-            \item Maintenance et évolution de l'automatisation (Ansible/Terraform/Cloudformation).
-            \item Mise en place de l'infrastructure SaltStack.
-            \item Migration d'instances clientes entre Datacenters et entre Datacenters et AWS.
-            \item Développement d'outils facilitant l'exploitation de la solution.
+            \item Conception et réalisation de services et d'APIs d'infrastructure (Golang/REST/Swagger/Postgres/Redis).
+            \item Collecte et analyse des besoins utilisateurs et spécification de nouvelles fonctionnalités (de-facto PM).
+            \item Planification et priorisation des tâches (Sprint Planning, Jira).
+            \item Animation d'une équipe de 3 développeurs (Scrum Master).
+            \item Coordination avec les équipes Indienne et Américaine.
+            \item Monitoring et rédaction de fiches réflexes (NewRelic/PagerDuty/Confluence).
+            \item Déploiement de services en production (Docker/Kubernetes/Argo).
+            \item Mise en place et maintenance de l'infrastructure de CI (Jenkins/Docker).
+            \item Rédaction de documentation utilisateur (Confluence).
+            \item Création de scripts ETL pour la migration de données (Python).
+            \item Développement Frontend (React/JS).
+            \end{itemize}
+        }
+
+\cventry{2016--2020}{}
+        {}
+        {}
+        {}
+        {En tant que membre de l'équipe "Techops" (SRE) opérant Adobe Campaign (plate-forme de campagne marketing):
+            \begin{itemize}
+            \item Mise en place et évolution de l'automatisation (SaltStack/Ansible/Terraform/Cloudformation).
+            \item Migration de Datacenters historique vers AWS.
+            \item Développement d'outils facilitant l'exploitation du service.
             \item Rédaction de procédures et de documentation (Wiki Confluence, reStructuredText).
             \item Intégration Continue, tests unitaires et couverture de code (Jenkins/JenkinsFile/pytest/go test).
             \item Optimisation des coûts AWS.
-            \item Configuration des domaines pour campaign d'envoi d'email de masse (SPF, DKIM, DMARC).
-            \item Dialogue avec les équipes R\&D pour tracer les nouvelles fonctionnalités et améliorer la robustesse de la solution (DevOps).
+            \item Configuration DNS pour l'envoi d'email (SPF, DKIM, DMARC).
+            \item Coordination avec les équipes R\&D sur la mise en production des nouvelles fonctionnalités/améliorations (DevOps).
             \item Gestion des alertes de supervision et réponse aux tickets clients (On-Call et astreintes).
             \item Conception et implémentations de service d'infrastructure améliorant la robustesse et la sécurité de la solution.
             \item Investigation des problèmes produit et d'implémentation client.
-            \item Analyses et recommandations pour optimiser les requêtes SQL exécutées par le produit.
-            \item Packaging RPM/DEB.
-            \item Contexte internationale, avec des équipes aux Etats-Unis, en Inde, en Irlande et en France.
+            \item Analyses et optimisation SQL.
+            \item Packaging logiciel Debian et Redhat/CentOS.
+            \item Contexte international, avec des équipes aux Etats-Unis, en Inde, en Irlande et en France.
             \end{itemize}
         }
 
@@ -131,8 +124,7 @@ Permis B
             \item Création de dépôts et signature de packages (Reprepro/Createrepo, GPG).
             \item Rédaction de scripts de build (Make, Ant)
             \item Automatisation et versionnement de la génération des livrables.
-            \item Intégration continue (Jenkins).
-            \item Déploiement continu.
+            \item Déploiement CI/CD (Jenkins/Scripting).
             \item Mise en place de mécanismes d'installation automatique (Kickstart/Preseed).
             \item Configuration DNS (Bind).
             \item Configuration SGBD (MySQL/PostgreSQL).
@@ -145,26 +137,26 @@ Permis B
             \item Scripting varié en Python/Shell/Perl/Ruby.
             \item Rédaction de manuels et procédures d'exploitation (reStructuredText).
             \item Rédaction de fiches de tests (Testlink).
-            \item Déploiement de solution de gestion de projet (Trac).
+            \item Déploiement de solution de gestion de projet (Trac/Gitea).
             \end{itemize}
         }
 
 \subsection{Projet personnels}
-\cventry{2012--present}{Divers projets open source publiés sur GitHub}
+\cventry{2012--présent}{Divers projets open source publiés sur GitHub}
         {}
         {}
         {}
         {
             \begin{itemize}
-            \item \href{https://github.com/kakwa/py-ascii-graph}{ascii-graph}, librairie pour affciher des données sous forme d'histogrammes ascii (Python).
-            \item \href{https://github.com/kakwa/ldapcherry}{ldapcherry}, application web pour gérer des utilisateurs/groupes dans de multiples annuaires/bases (Python/CherryPY).
-            \item \href{https://github.com/kakwa/libemf2svg}{libemf2svg}, librairie/utilitaire pour convertir des fichiers Microsoft (MS) EMF en SVG (C).
-            \item \href{https://github.com/kakwa/libvisio2svg}{libvisio2svg}, librairie/utilitaires pour des fichiers Microsoft (MS) Visio (VSS et VSD) en SVG, (C/C++).
-            \item \href{https://github.com/kakwa/amkecpak}{amkecpak}, packaging framework et divers packages deb/rpm pour mes besoins (Makefile, shell).
-            \item \href{https://github.com/kakwa/uts-server}{uts-server}, serveur RFC 3161 (horodatage cryptographique) (C).
-            \item \href{https://github.com/kakwa/collectd-opentsdb}{collectd-opentsdb}, writer module CollectD pour OpenTSDB (C).
-            \item \href{https://github.com/kakwa/puppet-samba}{puppet-samba}, module Puppet pour gérer Samba (Puppet, Ruby, Python).
-            \item Autres projets secondaires sur GitHub: \url{https://github.com/kakwa?tab=repositories}
+            \item \href{https://github.com/wows-tools/wows-depack}{Wows-depack}, rétro-ingénierie et implémentation d'un outil de compression/décompression d'archive propriétaire (C).
+            \item \href{https://github.com/kakwa/ldapcherry}{Ldapcherry}, application web pour gérer des utilisateurs/groupes dans de multiples annuaires/bases (Python/CherryPy).
+            \item \href{https://github.com/kakwa/libemf2svg}{Libemf2svg}, librairie/utilitaire pour convertir des fichiers Microsoft (MS) EMF en SVG (C).
+            \item \href{https://github.com/kakwa/libvisio2svg}{Libvisio2svg}, librairie/utilitaires pour des fichiers Microsoft (MS) Visio (VSS et VSD) en SVG, (C/C++).
+            \item \href{https://github.com/kakwa/amkecpak}{Amkecpak}, packaging framework et divers packages deb/rpm pour mes besoins (Makefile, shell).
+            \item \href{https://github.com/kakwa/uts-server}{Uts-server}, serveur RFC 3161 (horodatage cryptographique) (C).
+            \item \href{https://github.com/kakwa/collectd-opentsdb}{Collectd-opentsdb}, writer module CollectD pour OpenTSDB (C).
+            \item \href{https://github.com/kakwa/puppet-samba}{Puppet-Samba}, module Puppet pour gérer Samba (Puppet, Ruby, Python).
+            \item Autres projets sur \href{https://github.com/kakwa?tab=repositories&q=&type=&language=&sort=stargazers}{GitHub}
             \end{itemize}
         }
 
@@ -192,13 +184,42 @@ Permis B
 
 \cventry{2009}{Stage, Modélisation biologique: création d'un modèle de tumeur}
         {Laboratoire IBISC}
-        {EVRY}
+        {Evry}
         {}
         {Stage de recherche en Bio-Informatique. Conception
           et réalisation d'un modèle de tumeur
           cancéreuse afin d'étudier l'action de la molécule PA-1.
           \newline Technologies utilisées: C, Doxygen.
         }
+
+\section{Compétences}
+
+\subsection{Système}
+\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualisation}{ESXi, VirtualBox, Docker, KVM, LXD, OpenVZ, Kubernetes/Argo}
+\cvcomputer{Packaging}{deb, rpm, ebuild}{Déploiement}{Puppet, SaltStack, Ansible, Kickstart, Preseed, Terraform, Boto, PXE}
+\cvcomputer{Réseau}{Keepalived, OpenVPN, DHCPd}{Fournisseur Cloud}{AWS, Azure}
+
+\subsection{Services}
+\cvcomputer{Serveurs Web}{Apache, Lighttpd, Nginx, Tomcat}{Annuaires}{389 Directory, OpenLDAP, Samba AD}
+\cvcomputer{Base de données}{MySQL, PosgreSQL, Redis, DynamoDB, RDS, Etcd}{Autres services}{Bind, Ntpd, Cups, Bacula, Postfix, Dovecot}
+\cvcomputer{Supervision}{Nagios, NRPE, NewRelic, Logstash, Snmpd, OpenTSDB, Grafana, CollectD}{Sécurité}{Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF, Stunnel}
+\cvcomputer{FS Partagé}{Samba, NFS}{Queueing}{Kafka, Redis}
+
+\subsection{Programmation}
+\cvcomputer{Langages}{Golang, Python, C, Shell/Bash, Javascript, Perl, Ocaml}{Gestionnaires de révisions}{Git, Subversion, Mercurial}
+\cvcomputer{Framework}{CherryPy, Flask, Twisted, Echo, Gorm, React, Bootstrap}{Spécification}{Swagger/OpenAPI}
+\cvcomputer{Build}{Make, CMake, GCC, Clang}{}{}
+
+\subsection{Autre}
+\cvcomputer{Théorie des Réseaux}{Sécurité, Routage, QoS, TCP/IP, ATM, MPLS}{Théorie Informatique}{Recherche Opérationnelle, Compilation, Théorie des graphes, Analyse de Données, UML}
+\cvcomputer{Documentation}{reStructuredText, Markdown, \LaTeX, LibreOffice}{Outils}{Jira, Confluence, Github/Github Action, Gitea, Vim, Travis-ci, Jenkins, Slack, Discord}
+\cvcomputer{Méthodologie}{Agile/Scrum, MIL-STD-498}{}{}
+
+\section{Langues}
+\cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
+\cvlanguage{Espagnol}{Notions}{Niveau Bac}
+
+
 
 \section{Formation}
 \cventry{2010--2011}{Master Recherche Réseau}
@@ -213,9 +234,9 @@ généraliste en informatique recrutant sur le concours Centrale-Supelec. Spéci
 {Lycée de Kerichen}{Brest}{}{Filière MP (Mathématiques-Physique) option Informatique.}
 
 \section{Centres d'intérêt}
-\cvline{Sport}{\small Pratique de la voile en compétition pendant neuf ans.}
 \cvline{Musique}{\small Apprentissage et pratique de la guitare et du piano depuis plusieurs années.}
 \cvline{Électronique}{\small Fabrication et réparation d'appareils divers et variés.}
+\cvline{Impression 3D}{\small Conception et impression de pièces pour mes projets.}
 \cvline{Informatique}{\small Plusieurs projets personnels (plusieurs librairies publiées sur GitHub), mis en place de services (Bind, OpenVPN, Lighttpd, NFS) pour mes propres besoins.
 }
 
