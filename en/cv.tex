@@ -67,140 +67,156 @@ Permis B
 \begin{document}
 \maketitle
 
-\section{Skills}
-
-\subsection{System}
-\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualization}{ESXi, VirtualBox, Vagrant, KVM, LXD, OpenVZ}
-\cvcomputer{Packaging}{deb, rpm, ebuild}{Deployment}{Puppet, Salt, Ansible, Kickstart, Preseed, Terraform, Boto}
-\cvcomputer{Network}{Keepalived, OpenVPN, DHCPd, VLANs}{Cloud Provider}{AWS, Azure}
-
-\subsection{Services}
-\cvcomputer{Web Server}{Apache, Lighttpd, Nginx, Tomcat}{Directory}{389 Directory, OpenLDAP, Samba4}
-\cvcomputer{Database}{MySQL, PosgreSQL, Redis}{Other}{Bind, Ntpd, Cups, Bacula}
-\cvcomputer{Monitoring}{Nagios, NRPE, Logstash, Snmpd, OpenTSDB, Grafana, CollectD}{Security}{Syslog-ng, Rsyslog, OpenSSH, sssd, IPTables, PF, stunnel}
-\cvcomputer{Network FS}{Samba, NFS}{}{}
-
-\subsection{Programming}
-\cvcomputer{Language}{Shell/Bash, Python, Perl, C, GoLang, Ocaml}{SCM}{Git, Subversion, Mercurial}
-\cvcomputer{Framework}{CherryPy, Flask, Twisted}{Specification}{Swagger/OpenAPI}
-\cvcomputer{Build}{Make, CMake, gcc, clang}{}{}
-
-\subsection{Other}
-\cvcomputer{Network theory}{Security, Routing, QoS, TCP/IP, ATM, MPLS}{Computer Sciences}{Operations research, Compilation, Graph Theory, Data analysis, UML}
-\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, OpenOffice}{Tools}{Jira, Confluence, Github, Vim, Travis-ci, Jenkins, Slack}
-
-\section{Language}
-\cvlanguage{French}{Native}{Native language}
-\cvlanguage{English}{Fluent}{TOEIC score of 940/990, daily practice}
-
-\section{Language}
-\cvlanguage{French}{Native}{Native language}
-\cvlanguage{English}{Fluent}{TOEIC score of 940/990, daily practice}
-
 \section{Experience}
 
 \subsection{Professional Experience}
-\cventry{2016--present}{DevOps}
-              {Adobe Inc.}
-              {Arcueil}
-              {France}
-              {Member of the Techops team oparating Adobe Campaign (marketing campaign platform):
-                 \begin{itemize}
-                 \item Maintenance and evolution of the automation (Ansible/Terraform/Cloudformation).
-                 \item Debian and RedHat Packaging.
-                 \item Deployment of the SaltStack infrastructure.
-                 \item DC to DC and DC to AWS migration of customer instance.
-                 \item Creation of various tools helping with the day to day administration.
-                 \item Redacting documentation and procedures (Confluence Wiki, reStructuredText).
-                 \item Continuous Integration, unit tests and code coverage (Jenkins/JenkinsFile/pytest/go test).
-                 \item Cost optimization on AWS.
-		 \item Setup domains to send mass email campaigns (SPF, DKIM, DMARC).
-		 \item Design and implementation of infrastructure services improving solution robustness and security.
-                 \item Communicate with R\&D teams to track new feature and improve solution robustness (DevOps).
-		 \item Handling of monitoring alerts and customer tickets (On-call).
-                 \item Troubleshooting of product issues and specific customer issues
-                 \item Analyzes and recommendations to optimize the SQL queries executed by the product.
-		 \item International context, with teams in the US, India, Ireland and France.
-                 \end{itemize}
-              }
+\cventry{2016--present}{SRE/Software Engineer/DevOps}
+        {Adobe Inc.}
+        {Arcueil/Paris}
+        {France}
+        {}
+
+\cventry{2020--present}{}
+        {}
+        {}
+        {}
+        {Design and implementation of internal infrastructure tools and services inside the Managed Service Engineering team:
+        \begin{itemize}
+            \item Specification, Design and Implementation of APIs and services (Golang/REST/Swagger/PostgreSQL/Redis).
+            \item Gathering and analysis of users needs. Specification of new features (de-facto PM).
+            \item Task scheduling and planification (Sprint Planning, Jira).
+            \item Organization of a three developer team (Scrum Master).
+            \item Synchronization with US and Indian teams.
+            \item Monitoring setup and Standard Operating Procedures creation (NewRelic/PagerDuty/Confluence).
+            \item CI/CD management (Jenkins/Docker/Argo)
+            \item Technical Documentation (Confluence).
+            \item Data import/migration and ETL scripting (Python).
+            \item Frontend/UI development (React/Javascript).
+        \end{itemize}
+        }
+
+\cventry{2016--2020}{}
+        {}
+        {}
+        {}
+        {Automation and Production tasks as member of the Adobe Campaign Techops team (SRE):
+        \begin{itemize}
+        \item Deployment, Maintenance and evolution of the automation (SaltStack/Ansible/Terraform/Cloudformation).
+        \item Legacy DC to AWS migration.
+        \item Redacting documentation and procedures (Confluence Wiki, reStructuredText).
+        \item Continuous Integration, unit tests and code coverage (Jenkins/JenkinsFile/pytest/go test).
+        \item AWS Cost optimization.
+		\item Email DNS setup campaigns (SPF, DKIM, DMARC, Route53).
+        \item Creation of tools improving product robustness and security and easing day to day operation (Python, Golang).
+        \item Synchronize with R\&D teams to track new feature and improve solution robustness (DevOps).
+		\item Handling of monitoring alerts and customer tickets (On-call).
+        \item Troubleshooting of product issues and specific customer issues.
+        \item SQL query analysis and optimization (PostgreSQL/RDS).
+		\item International context, with teams in the US, India, Ireland and France.
+        \end{itemize}
+        }
 
 \cventry{2011--2016}{System Engineer}
-              {Communication et Systèmes}
-              {Le Plessis Robinson}
-              {France}
-              {Construction of complex systems for public/semi-public clients:
-                \begin{itemize}
-                \item Automatic deployment (Puppet)
-                \item Debian and RedHat Packaging.
-                \item Creation and signing of packages repositories (reprepro/createrepo, GPG)
-                \item Build (Make, Ant)
-                \item Deliveries industrialization
-		\item Continuous Integration (Jenkins)
-                \item Continuous deployment
-                \item Automatic installation(Kickstart/Preseed)
-                \item DNS configuration (Bind)
-                \item Databases configuration (MySQL/PostgreSQL)
-                \item Directory configuration (389 Directory/OpenLDAP)
-                \item Web servers configuration (Apache, Nginx, Tomcat)
-                \item High Availability (SQL/LDAP multi-master replication, Apache/Nginx load balancing, VRRP/Keepalived)
-                \item Debian/CentOS Configuration
-                \item Monitoring (Nagios, NRPE, SNMP, Logstash)
-                \item Virtualization (VMware ESXi, VirtualBox/Vagrant, KVM)
-                \item Various scripting in Python/Shell/Perl/Ruby
-                \item Operating manual (reStructuredText)
-                \item Test procedures (Testlink)
-                \item Project management system deployment (Trac)
-                \end{itemize}
-              }
+        {Communication et Systèmes}
+        {Le Plessis Robinson}
+        {France}
+        {Building complex systems for governement/semi-public clients:
+        \begin{itemize}
+        \item Automatic deployment (Puppet).
+        \item Debian and RedHat Packaging and repo management (Deb, Rpm, Reprepro, Createrepo, GnuPG).
+        \item Deliverable industrialization and versioning.
+		\item Continuous Integration and Continuous Delivery (Jenkins, Scription)
+        \item Automatic installation(Kickstart/Preseed/PXE).
+        \item DNS configuration (Bind).
+        \item Mail Server configuration (Postfix/Dovecot/Roundcube).
+        \item Databases configuration (MySQL/PostgreSQL).
+        \item Directory configuration (389 Directory/OpenLDAP).
+        \item Web servers configuration (Apache, Nginx, Tomcat).
+        \item High Availability (SQL/LDAP multi-master replication, Apache/Nginx load balancing, VRRP/Keepalived).
+        \item Monitoring (Nagios, NRPE, SNMP, Logstash).
+        \item Virtualization (VMware ESXi, VirtualBox/Vagrant, KVM).
+        \item Various scripting in Python/Shell/Perl/Ruby.
+        \item Operating manual (reStructuredText).
+        \item Test procedures (Testlink).
+        \item Project management system deployment (Trac/Gitea).
+        \end{itemize}
+        }
 
-\subsection{Home Projects}
+\subsection{Personal Projects}
 \cventry{2012--present}{Various open sourced projects on GitHub}
-              {}
-              {}
-              {}
-              {
-              \begin{itemize}
-              \item \href{https://github.com/kakwa/puppet-samba}{puppet-samba}, a Puppet module to manage samba.
-              \item \href{https://github.com/kakwa/py-ascii-graph}{ascii-graph}, a Python library to print data as ascii histograms.
-              \item \href{https://github.com/kakwa/ldapcherry}{ldapcherry}, a Python/CherryPY webapp to manage users and groups in multiple directory services.
-              \item \href{https://github.com/kakwa/libemf2svg}{libemf2svg}, a Microsoft (MS) EMF to SVG conversion library written in C.
-              \item \href{https://github.com/kakwa/libvisio2svg}{libvisio2svg}, Library/Tools to convert Microsoft (MS) Visio documents (VSS and VSD) to SVG, written in C++.
-              \item \href{https://github.com/kakwa/packages}{packages}, various deb/rpm packages I build for my needs.
-              \item Many other projects on GitHub: \url{https://github.com/kakwa?tab=repositories}
-              \end{itemize}
-}
+        {}
+        {}
+        {}
+        {
+        \begin{itemize}
+        \item \href{https://github.com/kakwa/puppet-samba}{puppet-samba}, a Puppet module to manage samba.
+        \item \href{https://github.com/kakwa/py-ascii-graph}{ascii-graph}, a Python library to print data as ascii histograms.
+        \item \href{https://github.com/kakwa/ldapcherry}{ldapcherry}, a Python/CherryPY webapp to manage users and groups in multiple directory services.
+        \item \href{https://github.com/kakwa/libemf2svg}{libemf2svg}, a Microsoft (MS) EMF to SVG conversion library written in C.
+        \item \href{https://github.com/kakwa/libvisio2svg}{libvisio2svg}, Library/Tools to convert Microsoft (MS) Visio documents (VSS and VSD) to SVG, written in C++.
+        \item \href{https://github.com/kakwa/packages}{packages}, various deb/rpm packages I build for my needs.
+        \item Many other projects on GitHub: \url{https://github.com/kakwa?tab=repositories}
+        \end{itemize}
+        }
 
 \subsection{Internships}
 
 \cventry{2011}{System integration/Software development: secured mail infrastructure conception}
-              {Communication et Systèmes}
-              {Le Plessis Robinson}
-              {France}
-              {Conception and construction of a secured mail infrastructure, with end to end encryption
-              based on x509 certificates. Conception and construction of POC mailing list system with end to end encryption.
-              (cryptography with N receivers).
-              \newline Technologies: Linux, S/MIME, x509, Dovecot, Postfix, Thunderbird, ldap, tls, C, polarSSL library.
-              }
+        {Communication et Systèmes}
+        {Le Plessis Robinson}
+        {France}
+        {Conception and construction of a secured mail infrastructure, with end to end encryption
+         based on x509 certificates. Conception and construction of POC mailing list system with end to end encryption.
+         (cryptography with N receivers).
+         \newline Technologies: Linux, S/MIME, x509, Dovecot, Postfix, Thunderbird, ldap, tls, C, PolarSSL/MbedTLS.
+        }
 
 \cventry{2010}{Web development}
-              {INRIA}
-              {Roquencourt}
-              {France}
-              {Within the European project Ideas, Conception and construction of an
-               internet website specialized in viewing oriental manuscripts and their
-               translations.
-                 \newline Technologies: Python, Django, HTML, CSS, Apache, Linux.
-              }
+        {INRIA}
+        {Roquencourt}
+        {France}
+        {Within the European project Ideas, Conception and construction of an
+         internet website specialized in viewing oriental manuscripts and their
+         translations.
+           \newline Technologies: Python, Django, HTML, CSS, Apache, Linux.
+        }
 
 \cventry{2009}{Biological modelization: conception of a cancer tumor model}
-              {Laboratoire IBISC}
-              {Evry}
-              {France}
-              {Bioinformatics research. Conception
-               and development of a cancer tumor model in order to
-               study the PA-1 molecule impact.
-                \newline Technologies: C, Doxygen.
-              }
+        {Laboratoire IBISC}
+        {Evry}
+        {France}
+        {Bioinformatics research. Conception
+         and development of a cancer tumor model in order to
+         study the PA-1 molecule impact.
+          \newline Technologies: C, Doxygen.
+        }
+
+\section{Skills}
+
+\subsection{System}
+\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualization}{ESXi, VirtualBox, Docker, KVM, LXD, OpenVZ, Kubernetes/Argo}
+\cvcomputer{Packaging}{deb, rpm, ebuild}{Deployment}{Puppet, SaltStack, Ansible, Kickstart, Preseed, Terraform, Boto, PXE}
+\cvcomputer{Network}{Keepalived, OpenVPN, DHCPd}}{Cloud}{AWS, Azure}
+
+\subsection{Services}
+\cvcomputer{Web Server}{Apache, Lighttpd, Nginx, Tomcat}{Directory}{389 Directory, OpenLDAP, Samba AD}
+\cvcomputer{Database}{MySQL, PosgreSQL, Redis, DynamoDB, RDS, Etcd}{Other}{Bind, Ntpd, Cups, Bacula, Postfix, Dovecot}
+\cvcomputer{Monitoring}{Nagios, NRPE, NewRelic, Logstash, Snmpd, OpenTSDB, Grafana, CollectD}{Security}{Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF, Stunnel}
+\cvcomputer{Network FS}{Samba, NFS}{Queueing}{Kafka, Redis}
+
+\subsection{Programming}
+\cvcomputer{Language}{Golang, Python, C, Shell/Bash, Javascript, Perl, Ocaml}{SCM}{Git, Subversion, Mercurial}
+\cvcomputer{Framework}{CherryPy, Flask, Echo, Gorm, React, Bootstrap}{Specification}{Swagger/OpenAPI}
+\cvcomputer{Build}{Make, CMake, GCC, Clang}{}{}
+
+\subsection{Other}
+\cvcomputer{Network theory}{Security, Routing, QoS, TCP/IP, ATM, MPLS}{Computer Sciences}{Operations research, Compilation, Graph Theory, Data analysis, UML}
+\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, OpenOffice}{Tools}{Jira, Confluence, Github, Vim, Travis-ci, Jenkins, Slack}
+\cvcomputer{Methodology}{Agile/Scrum, MIL-STD-498}{}{}
+
+\section{Language}
+\cvlanguage{French}{Native}{Native language}
+\cvlanguage{English}{Fluent}{TOEIC score of 940/990, daily practice}
 
 \section{Education}
 \cventry{2010--2011}{Master degree in network theory}
@@ -213,11 +229,9 @@ Permis B
 {Lycée de Kerichen}{Brest}{France}{Mathematics, Physics, Computer Sciences}
 
 \section{Personal Interests}
-\cvline{Sport}{\small Competition sailing for 9 years.}
 \cvline{Music}{\small Guitar and piano practice.}
 \cvline{Electronic}{\small Building and fixing of various devices.}
-\cvline{Computer sciences}{\small Several personal projects (many of them published on GitHub), deployment of several services (Bind, openvpn, lighttpd, NFS) for personal needs.}
+\cvline{3D Printing}{\small Design and printing of custom parts for my projects.}
+\cvline{Computer sciences}{\small Open Source software development. Personal server administration.}
 
 \end{document}
-
-%% end of file `template_en.tex'.
