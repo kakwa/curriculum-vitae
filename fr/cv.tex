@@ -1,12 +1,4 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
-
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}
 \usepackage{ifxetex}
 
 \ifxetex
@@ -17,41 +9,26 @@
   \usepackage{lmodern}
 \fi
 
-% moderncv themes
-\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvstyle{classic}
+\moderncvcolor{blue}
 
-% character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
 \linespread{0.9}
 \usepackage[scale=0.9]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
-% personal data
+
 \name{Pierre-Francois}{Carpentier}
-%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\title{Ingénieur Logiciel et Infrastructure}
 \address{114 rue de la Glacière}{75013 Paris}
 \phone[mobile]{06 70 47 10 17}
 \email{carpentier.pf@gmail.com}
-\social[linkedin]{pfcarpentier}                     % optional, remove / comment the line if not wanted
-\social[github]{kakwa}                              % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\social[linkedin]{pfcarpentier}
+\social[github]{kakwa}
 \extrainfo{
 Permis B
 }
-% '64pt' is the height the picture must be resized to
-% and 'picture' is the name of the picture file;
-% optional, remove the line if not wanted
-\photo[64pt]{ID.jpg}
 
-% uncomment to suppress automatic page numbering for CVs longer than one page
-%\nopagenumbers{}
+
+\photo[64pt]{ID.jpg}
 
 
 %----------------------------------------------------------------------------------
@@ -66,7 +43,7 @@ Permis B
 
 \cventry{2016--présent}{SRE/Ingénieur Logiciel/DevOps}
         {Adobe Inc.}
-        {Arcueil/Paris}
+        {Paris}
         {}
         {}
 
@@ -74,18 +51,17 @@ Permis B
         {}
         {}
         {}
-        {Conception et développement d'outils et services d'infrastructure internes au sein de l'équipe "Managed Service Engineering":
+        {Conception et développement d'outils et services d'infrastructure:
             \begin{itemize}
+            \item Collecte/analyse des besoins utilisateurs et spécification de nouvelles fonctionnalités.
+            \item Planification et priorisation des tâches (Sprint Planning, Gestion de Projet, Scrum, Jira).
+            \item Coordination inter-équipes multi-géos (APAC, US, EU).
             \item Conception et réalisation de services et d'APIs (Golang/REST/Swagger/PostgreSQL/Redis).
-            \item Collecte et analyse des besoins utilisateurs et spécification de nouvelles fonctionnalités (de-facto PM).
-            \item Planification et priorisation des tâches (Sprint Planning, Jira).
-            \item Animation d'une équipe de 3 développeurs (Scrum Master).
-            \item Coordination avec les équipes Indienne et Américaine.
             \item Supervision et rédaction de fiches réflexes (NewRelic/PagerDuty/Confluence).
-            \item Déploiement de services en production (Docker/Kubernetes/Argo).
-            \item Mise en place et maintenance de l'infrastructure de CI (Jenkins/Docker).
-            \item Rédaction de documentation utilisateur (Confluence).
-            \item Création de scripts ETL pour la migration de données (Python).
+            \item Déploiement et maintenance en production (Docker/Kubernetes/Argo).
+            \item Mise en place et maintenance de l'infrastructure de CI/CD (Jenkins/Docker).
+            \item Structuration et rédaction de documentation utilisateur (Confluence/Markdown/reStructuredText).
+            \item Scripts d'ETL \& Migration de données (Python).
             \item Développement Frontend (React/JS).
             \end{itemize}
         }
@@ -99,10 +75,10 @@ Permis B
             \item Mise en place, maintenance et évolution de l'automatisation (SaltStack/Ansible/Terraform/Cloudformation).
             \item Migration de Datacenters historiques vers AWS.
             \item Rédaction de procédures et de documentations diverses (Wiki Confluence, reStructuredText).
-            \item Intégration Continue, tests unitaires et couverture de code (Jenkins/JenkinsFile/pytest/go test).
+            \item Intégration Continue, tests unitaires et couverture de code (Jenkins/JenkinsFile/pytest/go-test).
             \item Optimisation des coûts AWS.
             \item Configuration DNS pour l'envoi d'email (SPF, DKIM, DMARC, Route53).
-            \item Coordination avec les équipes R\&D sur la mise en production des nouvelles fonctionnalités/améliorations (DevOps).
+            \item Coordination avec les équipes R\&D sur la mise en production des nouvelles fonctionnalités (DevOps).
             \item Gestion des alertes de supervision et réponse aux tickets clients (On-Call et astreintes).
             \item Développement d'outils améliorant la robustesse et la sécurité du produit (Python, Golang).
             \item Investigation des problèmes produit et d'implémentation client.
@@ -125,7 +101,7 @@ Permis B
             \item Configuration service email (Postfix/Dovecot/Roundcube).
             \item Configuration annuaires (389 Directory/OpenLDAP).
             \item Configuration serveurs web (Apache, Nginx, Tomcat).
-            \item Mise en place de mécanismes de haute disponibilité (Réplication SQL/LDAP, répartition de charge Apache/Ngninx, VRRP/Keepalived).
+            \item Mise en place de mécanismes de haute disponibilité (Réplication SQL/LDAP, répartition de charge Apache/Nginx, VRRP/Keepalived).
             \item Mise en place de supervision (Nagios, NRPE, SNMP, Logstash).
             \item Virtualisation et P2V (VMware ESXi, VirtualBox/Vagrant, KVM).
             \item Rédaction de manuels et procédures d'exploitation (reStructuredText).
@@ -134,20 +110,19 @@ Permis B
         }
 
 \subsection{Projet personnels}
-\cventry{2012--présent}{Divers projets open source publiés sur GitHub}
+\cventry{2012--présent}{Open Source}
         {}
         {}
         {}
         {
             \begin{itemize}
-            \item \href{https://github.com/wows-tools/wows-depack}{Wows-depack}, rétro-ingénierie et implémentation d'un outil de compression/décompression d'archive propriétaire (C).
-            \item \href{https://github.com/kakwa/ldapcherry}{Ldapcherry}, application web pour gérer des utilisateurs/groupes dans de multiples annuaires/bases (Python/CherryPy).
-            \item \href{https://github.com/kakwa/libemf2svg}{Libemf2svg}, librairie/utilitaire pour convertir des fichiers Microsoft (MS) EMF en SVG (C).
-            \item \href{https://github.com/kakwa/libvisio2svg}{Libvisio2svg}, librairie/utilitaires pour des fichiers Microsoft (MS) Visio (VSS et VSD) en SVG, (C/C++).
-            \item \href{https://github.com/kakwa/amkecpak}{Amkecpak}, packaging framework et divers packages deb/rpm pour mes besoins (Makefile, shell).
-            \item \href{https://github.com/wows-tools/wows-whaling-simulator}{Wows-whaling-simulator}, Simulateur de drop box (Golang/React).
-            \item \href{https://github.com/kakwa/uts-server}{Uts-server}, serveur RFC 3161 (horodatage cryptographique) (C, OpenSSL).
-            \item \href{https://github.com/kakwa/collectd-opentsdb}{Collectd-opentsdb}, writer module CollectD pour OpenTSDB (C, Curl).
+            \item \href{https://github.com/wows-tools/wows-depack}{Wows-Depack}, rétro-ingénierie et implémentation d'un outil de compression/décompression d'archives propriétaires (C).
+            \item \href{https://github.com/kakwa/ldapcherry}{LdapCherry}, application web pour gérer des utilisateurs/groupes dans de multiples annuaires/bases (Python/CherryPy).
+            \item \href{https://github.com/kakwa/libemf2svg}{LibEMF2SVG}, librairie de conversion de fichiers du format Microsoft EMF vers le format SVG (C).
+            \item \href{https://github.com/kakwa/libvisio2svg}{LibVisio2SVG}, librairie de conversion de fichiers du format Microsoft Visio (VSS/VSD) vers le format SVG, (C/C++).
+            \item \href{https://github.com/kakwa/pakste}{Pakste}, framework de packaging pour deb \& rpm (Makefile, shell).
+            \item \href{https://github.com/wows-tools/wows-whaling-simulator}{Wows-Whaling-Simulator}, Simulateur de drop box (Golang/React).
+            \item \href{https://github.com/kakwa/uts-server}{UTS-Server}, serveur RFC 3161 (horodatage cryptographique) (C, OpenSSL).
             \item \href{https://github.com/kakwa/puppet-samba}{Puppet-Samba}, module Puppet pour gérer Samba (Puppet, Ruby, Python).
             \item Autres projets disponibles sur \href{https://github.com/kakwa?tab=repositories&q=&type=&language=&sort=stargazers}{GitHub}.
             \end{itemize}
@@ -170,9 +145,9 @@ Permis B
         {Roquencourt}
         {}
         {Stage dans le cadre du projet européen Ideas,
-           conception, réalisation et déploiement d'un site permettant de visionner
-           des manuscrits orientaux ainsi que leurs traductions.
-           \newline Technologies utilisées: Python, Django, HTML, CSS, Apache, Linux.
+         conception, réalisation et déploiement d'un site permettant de visionner
+         des manuscrits orientaux ainsi que leurs traductions.
+         \newline Technologies utilisées: Python, Django, HTML, CSS, Apache, Linux.
         }
 
 \cventry{2009}{Stage, Modélisation biologique: création d'un modèle de tumeur}
@@ -180,9 +155,9 @@ Permis B
         {Evry}
         {}
         {Stage de recherche en Bio-Informatique. Conception
-          et réalisation d'un modèle de tumeur
-          cancéreuse afin d'étudier l'action de la molécule PA-1.
-          \newline Technologies utilisées: C, Doxygen.
+         et réalisation d'un modèle de tumeur
+         cancéreuse afin d'étudier l'action de la molécule PA-1.
+         \newline Technologies utilisées: C, Doxygen.
         }
 
 \section{Compétences}
@@ -221,6 +196,7 @@ QoS, Réseaux, P2P. . .}
 {Études à l'École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE), grande école d'ingénieurs
 généraliste en informatique recrutant sur le concours Centrale-Supelec. Spécialisation Système et Réseaux.
 }
+
 \cventry{2005--2008}{Classe Préparatoire aux Grandes Écoles}
 {Lycée de Kerichen}{Brest}{}{Filière MP (Mathématiques-Physique) option Informatique.}
 
@@ -229,6 +205,5 @@ généraliste en informatique recrutant sur le concours Centrale-Supelec. Spéci
 \cvline{Électronique}{\small Fabrication et réparation d'appareils divers et variés.}
 \cvline{Impression 3D}{\small Conception et impression de pièces pour mes projets. Construction d'imprimante.}
 \cvline{Informatique}{\small Développement logiciel Open Source. Gestion de serveur personnel.}
-
 
 \end{document}
