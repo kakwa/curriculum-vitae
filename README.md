@@ -7,13 +7,9 @@ Debian dependancies
 -------------------
 
 ```bash
-# on debian Sid (2019-03) 
-sudo aptitude install texlive-full fonts-font-awesome
+# Could probably be minimized
+apt install texlive-full fonts-font-awesome
 ```
-Notes: 
-
-* package texlive-full is too much, but it's the quickest
-option for lazy people like me.
 
 Building the CVs
 ----------------
