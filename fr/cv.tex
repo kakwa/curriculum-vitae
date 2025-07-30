@@ -15,9 +15,11 @@
 \linespread{0.9}
 \usepackage[scale=0.9]{geometry}
 
+\renewcommand{\sectionfont}{\Large\mdseries\upshape\color{sectioncolor}}
+\renewcommand{\subsectionfont}{\large\mdseries\upshape\color{sectioncolor}}
 
-\name{Pierre-Francois}{Carpentier}
-\title{Ingénieur Logiciel et Infrastructure}
+\name{Pierre-François}{Carpentier}
+\title{Développeur \& Site Reliability Engineer Senior}
 \address{114 rue de la Glacière}{75013 Paris}
 \phone[mobile]{06 70 47 10 17}
 \email{carpentier.pf@gmail.com}
@@ -27,9 +29,7 @@
 Permis B
 }
 
-
 \photo[64pt]{ID.jpg}
-
 
 %----------------------------------------------------------------------------------
 %            content
@@ -37,127 +37,79 @@ Permis B
 \begin{document}
 \maketitle
 
+\section{Profil Professionnel}
+\cvline{}{Ingénieur Logiciel \& SRE senior polyvalent avec 12+ ans d'expérience dans la conception et l'exploitation d'infrastructures cloud à grande échelle.
+Expert en automatisation, observabilité et résilience des systèmes. Contributeur Open Source.}
 
-\section{Expérience}
-\subsection{Parcours Professionnel}
+\section{Expérience Professionnelle}
 
-\cventry{2016--présent}{SRE/Ingénieur Logiciel/DevOps}
+\subsection{Adobe Inc. - Site Reliability Engineer \& Développeur}
+\cventry{2020--présent}{SRE \& Développeur Senior}
         {Adobe Inc.}
         {Paris}
         {}
-        {}
-
-\cventry{2020--présent}{}
-        {}
-        {}
-        {}
-        {Conception et développement d'outils et services d'infrastructure:
+        {Lead technique de l'équipe "Managed Service Engineering" europe :
             \begin{itemize}
-            \item Collecte/analyse des besoins utilisateurs et spécification de nouvelles fonctionnalités.
-            \item Planification et priorisation des tâches (Sprint Planning, Gestion de Projet, Scrum, Jira).
-            \item Coordination inter-équipes multi-géos (APAC, US, EU).
-            \item Conception et réalisation de services et d'APIs (Golang/REST/Swagger/PostgreSQL/Redis).
-            \item Supervision et rédaction de fiches réflexes (NewRelic/PagerDuty/Confluence).
-            \item Déploiement et maintenance en production (Docker/Kubernetes/Argo).
-            \item Mise en place et maintenance de l'infrastructure de CI/CD (Jenkins/Docker).
-            \item Structuration et rédaction de documentation utilisateur (Confluence/Markdown/reStructuredText).
-            \item Scripts d'ETL \& Migration de données (Python).
-            \item Développement Frontend (React/JS).
+            \item \textbf{Leadership} : Coordination d'équipe et gestion de projet agile (Scrum, Jira), synchronization multi-géos (APAC, US, EU)
+            \item \textbf{Architecture} : Conception et développement de services d'audit et d'infrastructure (Golang/REST/PostgreSQL/Redis)
+            \item \textbf{Product Management} : Collecte de besoins utilisateurs, spécification de fonctionnalités, priorisation
+            \item \textbf{DevOps} : Mise en place de pipelines CI/CD (Jenkins/Docker/Argo), déploiement Kubernetes
+            \item \textbf{Observabilité} : Supervision NewRelic/PagerDuty, fiches réflexes, métriques de performance
+            \item \textbf{Data Engineering} : Scripts ETL Python, migration de données, intégration APIs, reporting métier
+            \item \textbf{Documentation} : Structuration et organization, documentation utilisateur, documentation interne
+            \item \textbf{Frontend} : Développement d'interfaces utilisateur (React/JavaScript)
             \end{itemize}
         }
 
-\cventry{2016--2020}{}
+\cventry{2016--2020}{SRE \& DevOps Engineer}
+        {Adobe Inc.}
+        {Paris}
         {}
-        {}
-        {}
-        {Automatisation et Gestion en production d'Adobe Campaign au sein de l'équipe "Techops" (SRE):
+        {Membre de l'équipe Opérationnelle Adobe Campaign (SRE) :
             \begin{itemize}
-            \item Mise en place, maintenance et évolution de l'automatisation (SaltStack/Ansible/Terraform/Cloudformation).
-            \item Migration de Datacenters historiques vers AWS.
-            \item Rédaction de procédures et de documentations diverses (Wiki Confluence, reStructuredText).
-            \item Intégration Continue, tests unitaires et couverture de code (Jenkins/JenkinsFile/pytest/go-test).
-            \item Optimisation des coûts AWS.
-            \item Configuration DNS pour l'envoi d'email (SPF, DKIM, DMARC, Route53).
-            \item Coordination avec les équipes R\&D sur la mise en production des nouvelles fonctionnalités (DevOps).
-            \item Gestion des alertes de supervision et réponse aux tickets clients (On-Call et astreintes).
-            \item Développement d'outils améliorant la robustesse et la sécurité du produit (Python, Golang).
-            \item Investigation des problèmes produit et d'implémentation client.
-            \item Analyses et optimisation SQL/Base de Données (PostgreSQL/RDS).
-            \item Contexte international, avec des équipes aux États-Unis, en Inde, en Irlande et en France.
+            \item \textbf{Infrastructure as Code} : Mise en place automatisation (SaltStack/Ansible/Terraform/CloudFormation)
+            \item \textbf{Cloud Migration} : Migration de datacenters legacy vers AWS
+            \item \textbf{Sécurité} : Configuration DNS email (SPF/DKIM/DMARC), outils de sécurité (Python/Golang)
+            \item \textbf{Monitoring} : Gestion des alertes, on-call, résolution d'incidents critiques
+            \item \textbf{Performance} : Optimisation SQL/PostgreSQL, analyse de problèmes produits
+            \item \textbf{CI/CD} : Intégration continue, tests unitaires, couverture de code (Jenkins/pytest/go-test)
+            \item \textbf{Documentation} : Procédures techniques, wiki, formations
             \end{itemize}
         }
 
-\cventry{2011--2016}{Ingénieur Intégrateur}
+\subsection{Communication et Systèmes - Ingénieur Intégrateur}
+\cventry{2011--2016}{Ingénieur Système}
         {Communication et Systèmes}
         {Le Plessis Robinson}
         {}
-        {Réalisation de systèmes complexes pour clients Étatiques/Parapubliques:
+        {Intégration de systèmes complexes pour clients gouvernementaux/parapublics (Administration, Energie, Aéronautique):
             \begin{itemize}
-            \item Packaging logiciel Debian et Redhat/CentOS et création de dépôts (rpm, dev reprepro, createrepo, gnupg).
-            \item Automatisation de génération et mise en gestion de configuration des livrables.
-            \item Déploiement CI/CD (Jenkins/Scripting).
-            \item Mise en place de mécanismes d'installation automatique (Kickstart/Preseed/Puppet/Scripting).
-            \item Configuration SGBD (MySQL/PostgreSQL).
-            \item Configuration service email (Postfix/Dovecot/Roundcube).
-            \item Configuration annuaires (389 Directory/OpenLDAP).
-            \item Configuration serveurs web (Apache, Nginx, Tomcat).
-            \item Mise en place de mécanismes de haute disponibilité (Réplication SQL/LDAP, répartition de charge Apache/Nginx, VRRP/Keepalived).
-            \item Mise en place de supervision (Nagios, NRPE, SNMP, Logstash).
-            \item Virtualisation et P2V (VMware ESXi, VirtualBox/Vagrant, KVM).
-            \item Rédaction de manuels et procédures d'exploitation (reStructuredText).
-            \item Rédaction de fiches de tests (Testlink).
+            \item \textbf{Packaging} : Création de dépôts Debian/RedHat (rpm, deb, reprepro, createrepo)
+            \item \textbf{Automatisation} : Déploiement CI/CD, installation automatique (Kickstart/PreSeed/Puppet)
+            \item \textbf{Services} : Configuration SGBD (MySQL/PostgreSQL), email (Postfix/Dovecot), annuaires (OpenLDAP)
+            \item \textbf{Web} : Serveurs Apache/Nginx/Tomcat, haute disponibilité (VRRP/Keepalived)
+            \item \textbf{Monitoring} : Supervision Nagios, SNMP, Logstash, procédures d'exploitation
+            \item \textbf{Virtualisation} : VMware ESXi, VirtualBox/Vagrant, KVM, migration P2V
             \end{itemize}
         }
 
-\subsection{Projet personnels}
-\cventry{2012--présent}{Open Source}
-        {}
+\section{Projets Open Source \& Contributions}
+\cventry{2012--présent}{Mainteneur de projets open source}
+        {GitHub}
         {}
         {}
         {
             \begin{itemize}
-            \item \href{https://github.com/wows-tools/wows-depack}{Wows-Depack}, rétro-ingénierie et implémentation d'un outil de compression/décompression d'archives propriétaires (C).
-            \item \href{https://github.com/kakwa/ldapcherry}{LdapCherry}, application web pour gérer des utilisateurs/groupes dans de multiples annuaires/bases (Python/CherryPy).
-            \item \href{https://github.com/kakwa/libemf2svg}{LibEMF2SVG}, librairie de conversion de fichiers du format Microsoft EMF vers le format SVG (C).
-            \item \href{https://github.com/kakwa/libvisio2svg}{LibVisio2SVG}, librairie de conversion de fichiers du format Microsoft Visio (VSS/VSD) vers le format SVG, (C/C++).
-            \item \href{https://github.com/kakwa/pakste}{Pakste}, framework de packaging pour deb \& rpm (Makefile, shell).
-            \item \href{https://github.com/wows-tools/wows-whaling-simulator}{Wows-Whaling-Simulator}, Simulateur de drop box (Golang/React).
-            \item \href{https://github.com/kakwa/uts-server}{UTS-Server}, serveur RFC 3161 (horodatage cryptographique) (C, OpenSSL).
-            \item \href{https://github.com/kakwa/puppet-samba}{Puppet-Samba}, module Puppet pour gérer Samba (Puppet, Ruby, Python).
-            \item Autres projets disponibles sur \href{https://github.com/kakwa?tab=repositories&q=&type=&language=&sort=stargazers}{GitHub}.
+            \item \textbf{\href{https://github.com/wows-tools/wows-depack}{Wows-Depack}} : Rétro-ingénierie format d'archive propriétaires (C)
+            \item \textbf{\href{https://github.com/kakwa/ldapcherry}{LdapCherry}} : Application web de gestion d'annuaires (Python/CherryPy)
+            \item \textbf{\href{https://github.com/kakwa/libemf2svg}{LibEMF2SVG}} : Conversion EMF vers SVG (C)
+            \item \textbf{\href{https://github.com/kakwa/libvisio2svg}{LibVisio2SVG}} : Conversion Visio vers SVG (C/C++)
+            \item \textbf{\href{https://github.com/kakwa/pakste}{Pakste}} : Framework de packaging deb/rpm (Makefile, shell)
+            \item \textbf{\href{https://github.com/wows-tools/wows-whaling-simulator}{Wows-Whaling-Simulator}} : Simulateur web (Golang/React)
+            \item \textbf{\href{https://github.com/kakwa/uts-server}{UTS-Server}} : Serveur d'horodatage cryptographique RFC-3161 (C, OpenSSL)
+            \item \textbf{\href{https://github.com/kakwa/puppet-samba}{Puppet-Samba}} : Module Puppet pour Samba
+            \item \textbf{Autres projets} : \href{https://github.com/kakwa?tab=repositories&q=&type=&language=&sort=stargazers}{GitHub}
             \end{itemize}
-        }
-
-\subsection{Stages}
-
-\cventry{2011}{Stage, Intégration/Développement: conception, d'une infrastructure de messagerie sécurisée}
-        {Communication et Systèmes}
-        {Le Plessis Robinson}
-        {}
-        {Conception et réalisation d'une infrastructure de messagerie chiffrée de bout en bout par
-         Certificat x509. Conception et réalisation d'un PoC de mailing list chiffrée de bout en bout
-         (cryptographie à N destinataires).
-         \newline Technologies utilisées: Linux, S/MIME, x509, Thunderbird, OpenLDAP, TLS, C, librairie PolarSSL/MbedTLS.
-        }
-
-\cventry{2010}{Stage, Développement web: conception, réalisation et déploiement d'un site web}
-        {INRIA}
-        {Roquencourt}
-        {}
-        {Stage dans le cadre du projet européen Ideas,
-         conception, réalisation et déploiement d'un site permettant de visionner
-         des manuscrits orientaux ainsi que leurs traductions.
-         \newline Technologies utilisées: Python, Django, HTML, CSS, Apache, Linux.
-        }
-
-\cventry{2009}{Stage, Modélisation biologique: création d'un modèle de tumeur}
-        {Laboratoire IBISC}
-        {Evry}
-        {}
-        {Stage de recherche en Bio-Informatique. Conception
-         et réalisation d'un modèle de tumeur
-         cancéreuse afin d'étudier l'action de la molécule PA-1.
-         \newline Technologies utilisées: C, Doxygen.
         }
 
 \section{Compétences}
@@ -183,27 +135,43 @@ Permis B
 \cvcomputer{Documentation}{reStructuredText, Markdown, \LaTeX, LibreOffice}{Outils}{Jira, Confluence, Github/Github Action, Gitea, Vim, Travis-ci, Jenkins, Slack, Discord}
 \cvcomputer{Méthodologie}{Agile/Scrum, MIL-STD-498}{}{}
 
-\section{Langues}
-\cvlanguage{Anglais}{Courant}{Score de 940/990 au TOEIC, Pratique quotidienne}
-\cvlanguage{Espagnol}{Notions}{Niveau Bac}
 
 \section{Formation}
 \cventry{2010--2011}{Master Recherche Réseau}
-{Université Pierre et Marie Curie Paris 6}{Paris}{}{Master effectué en parallèle avec la 3ème année d’école d’ingénieur. Sujets : Sécurité, Routage,
-QoS, Réseaux, P2P. . .}
+{Sorbonne Université - UPMC/Paris 6}{Paris}{}{Double diplôme avec l'école d'ingénieur. Spécialisation : Sécurité, Routage, QoS, Réseaux P2P}
 
-\cventry{2008--2011}{Études d'ingénieur en Informatique}{Ensiie}{Evry}{}
-{Études à l'École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE), grande école d'ingénieurs
-généraliste en informatique recrutant sur le concours Centrale-Supelec. Spécialisation Système et Réseaux.
-}
+\cventry{2008--2011}{Diplôme d'Ingénieur en Informatique}{ENSIIE}{Evry}{}{École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise. Spécialisation Système et Réseaux. Recrutement sur concours Centrale-Supélec.}
 
-\cventry{2005--2008}{Classe Préparatoire aux Grandes Écoles}
-{Lycée de Kerichen}{Brest}{}{Filière MP (Mathématiques-Physique) option Informatique.}
+\cventry{2005--2008}{Classe Préparatoire aux Grandes Écoles}{Lycée de Kerichen}{Brest}{}{Filière MP (Mathématiques-Physique) option Informatique}
+
+\section{Stages}
+\cventry{2011}{Stage - Infrastructure de messagerie sécurisée}
+        {Communication et Systèmes}
+        {Le Plessis Robinson}
+        {}
+        {Conception d'une infrastructure de messagerie chiffrée de bout en bout par certificats x509. PoC de mailing list chiffrée (cryptographie multi-destinataires). Technologies : Linux, S/MIME, x509, Thunderbird, OpenLDAP, TLS, C, PolarSSL/MbedTLS.}
+
+\cventry{2010}{Stage - Développement web}
+        {INRIA}
+        {Roquencourt}
+        {}
+        {Site web de visualisation de manuscrits orientaux dans le cadre du projet européen Ideas. Technologies : Python, Django, HTML, CSS, Apache, Linux.}
+
+\cventry{2009}{Stage - Modélisation biologique}
+        {Laboratoire IBISC}
+        {Evry}
+        {}
+        {Recherche en bio-informatique. Modélisation de tumeur cancéreuse pour étudier l'action de la molécule PA-1. Technologies : C, Doxygen.}
+
+\section{Langues}
+\cvlanguage{Français}{Langue maternelle}{}
+\cvlanguage{Anglais}{Courant}{TOEIC 940/990, pratique quotidienne professionnelle}
+\cvlanguage{Espagnol}{Notions}{Niveau Bac}
 
 \section{Centres d'intérêt}
-\cvline{Musique}{\small Apprentissage et pratique de la guitare et du piano depuis plusieurs années.}
-\cvline{Électronique}{\small Fabrication et réparation d'appareils divers et variés.}
-\cvline{Impression 3D}{\small Conception et impression de pièces pour mes projets. Construction d'imprimante.}
-\cvline{Informatique}{\small Développement logiciel Open Source. Gestion de serveur personnel.}
+\cvline{Musique}{Pratique de la guitare et du piano depuis plusieurs années}
+\cvline{Électronique}{Fabrication et réparation d'appareils électroniques}
+\cvline{Impression 3D}{Conception et impression de pièces, construction d'imprimante}
+\cvline{Informatique}{Développement open source, administration de serveurs personnels}
 
 \end{document}
