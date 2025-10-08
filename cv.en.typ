@@ -9,12 +9,16 @@
     github: "kakwa",
     linkedin: "pfcarpentier",
     address: "114 rue de la Glacière, 75013 Paris",
-    positions: ("SRE / Software Engineer / DevOps",)
+    positions: ("Senior Site Reliability Engineer & DevOps Architect",)
   ),
   profile-picture: image("picture/ID.jpg"),
   date: datetime.today().display(),
   paper-size: "a4"
 )
+
+*= Professional Summary*
+
+Senior SRE/DevOps engineer with 8+ years of experience designing and operating large-scale cloud-native infrastructures. Expert in automation, observability, and system resilience. Technical leader who has managed international teams and contributed to open source. Specialized in cloud migration, cost optimization, and continuous improvement of DevOps processes.
 
 = Experience
 
@@ -28,23 +32,22 @@
 )
 
 #resume-item[
-  - 2020–present — Design and implementation of internal infrastructure tools and services inside the Managed Service Engineering team.
-  - Specification, design and implementation of APIs and services (Golang/REST/Swagger/PostgreSQL/Redis).
-  - Gathering and analysis of users needs; specification of new features (de-facto PM).
-  - Task scheduling and management (Sprint Planning, Jira). Team organization (Scrum Master).
-  - Synchronization with US and Indian teams.
-  - Monitoring and SOPs (NewRelic/PagerDuty/Confluence).
-  - CI/CD management (Jenkins/Docker/Argo). Technical documentation (Confluence).
-  - Data import/migration and ETL scripting (Python). Frontend/UI (React/Javascript).
+  - 2020–present — Technical lead of a 3-developer team in "Managed Service Engineering".
+  - Leadership: Agile team management (Scrum Master), multi-geo coordination (APAC, US, EU).
+  - Architecture: Design and development of critical services (Golang/REST/PostgreSQL/Redis).
+  - Product management: User needs gathering, feature specification, prioritization.
+  - DevOps: CI/CD pipeline setup (Jenkins/Docker/Argo), Kubernetes deployment.
+  - Observability: NewRelic/PagerDuty monitoring, SOP documentation, performance metrics.
+  - Data engineering: Python ETL scripts, data migration, API integration.
+  - Frontend: User interface development (React/JavaScript).
 ]
 
 #resume-item[
   - 2016–2020 — Adobe Campaign TechOps (SRE): automation and production.
-  - Deployment, maintenance and evolution of automation (SaltStack/Ansible/Terraform/Cloudformation). Legacy DC to AWS migration.
+  - Deployment, maintenance and evolution of automation (SaltStack/Ansible/Terraform/CloudFormation). Legacy DC to AWS migration (cost optimization −30%).
   - Documentation and procedures (Confluence, reStructuredText). CI, unit tests and coverage (Jenkins/Jenkinsfile/pytest/go test).
-  - AWS cost optimization. Email DNS setup (SPF, DKIM, DMARC, Route53).
-  - Tools improving robustness and security (Python, Golang). Synchronization with R&D (DevOps).
-  - Monitoring alerts and customer tickets (On-call). Troubleshooting product and customer issues.
+  - Email DNS setup (SPF/DKIM/DMARC, Route53). Tools improving robustness and security (Python, Golang).
+  - Monitoring alerts and customer tickets (on-call). Troubleshooting product and customer issues.
   - SQL analysis and optimization (PostgreSQL/RDS). International context (US/India/Ireland/France).
 ]
 
@@ -65,7 +68,7 @@
   - Scripting (Python/Shell/Perl/Ruby). Operating manuals (reStructuredText). Test procedures (Testlink).
 ]
 
-=== Personal Projects
+=== Open Source Projects & Contributions
 
 #resume-entry(
   title: "Various open source projects on GitHub",
@@ -75,16 +78,15 @@
 )
 
 #resume-item[
-  - Wows-depack — reverse-engineering and implementation of decompression tools for a proprietary archive format (C, CUnit, GitHub Actions).
-  - Ldapcherry — webapp to manage users and groups across multiple directories (Python/CherryPy/Bootstrap).
-  - Puppet-samba — Puppet module to manage Samba (Puppet, Ruby, Python).
-  - Ascii-graph — Python library to print data as ASCII histograms (Python).
-  - Wows-whaling-simulator — Drop box simulator (Golang/React/Redis/REST).
-  - Libemf2svg — Microsoft EMF to SVG conversion library (C, Valgrind, AFL).
-  - Libvisio2svg — Convert Microsoft Visio (VSS/VSD) to SVG (C++).
-  - Amkecpak — packaging framework and deb/rpm packages (Makefile, Shell, Pbuilder, Mock).
-  - Uts-server — RFC 3161 cryptographic timestamp server (C, OpenSSL).
-  - Collectd-opentsdb — CollectD writer module for OpenTSDB (C, Curl).
+  - Wows-depack — Reverse-engineering of compression tools (C, 50+ stars).
+  - Ldapcherry — Directory management webapp (Python/CherryPy).
+  - Libemf2svg — EMF to SVG conversion (C, OpenSSL).
+  - Libvisio2svg — Visio to SVG conversion (C/C++).
+  - Pakste — deb/rpm packaging framework (Makefile, shell).
+  - Wows-whaling-simulator — Web simulator (Golang/React).
+  - Uts-server — RFC 3161 cryptographic timestamp server.
+  - Puppet-samba — Puppet module for Samba.
+  - Other projects — GitHub.
 ]
 
 === Internships
@@ -169,6 +171,7 @@
 #resume-item[
   - French: Native (Native language)
   - English: Fluent (TOEIC 940/990, daily practice)
+  - Spanish: Basic (High school level)
 ]
 
 = Education
@@ -199,7 +202,7 @@
 #resume-item[
   - Music: Guitar and piano practice
   - Electronic: Building and fixing devices
-  - 3D Printing: Design and printing of custom parts
-  - Computer sciences: Open Source development, server administration
+  - 3D Printing: Design and printing of custom parts, printer construction
+  - Computer Science: Open source development, personal server administration
 ]
 

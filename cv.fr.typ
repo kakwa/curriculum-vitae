@@ -9,12 +9,16 @@
     github: "kakwa",
     linkedin: "pfcarpentier",
     address: "114 rue de la Glacière, 75013 Paris",
-    positions: ("SRE / Ingénieur Logiciel / DevOps",)
+    positions: ("Développeur & Site Reliability Engineer Senior",)
   ),
   profile-picture: image("picture/ID.jpg"),
   date: datetime.today().display(),
   paper-size: "a4"
 )
+
+*= Profil Professionnel*
+
+Ingénieur Logiciel & SRE senior polyvalent avec 12+ ans d'expérience dans la conception et l'exploitation d'infrastructures cloud à grande échelle. Expert en automatisation, observabilité et résilience des systèmes. Contributeur Open Source.
 
 = Expérience
 
@@ -28,22 +32,22 @@
 )
 
 #resume-item[
-  - 2020–présent — Conception et développement d'outils et services d'infrastructure (Managed Service Engineering).
-  - Spécification, conception et implémentation d'APIs et de services (Golang/REST/Swagger/PostgreSQL/Redis).
-  - Collecte et analyse des besoins; spécification de nouvelles fonctionnalités (rôle de PM de fait).
-  - Planification et gestion des tâches (Sprint Planning, Jira). Organisation d'une équipe de trois développeurs (Scrum Master).
-  - Synchronisation avec les équipes US et Inde.
-  - Supervision et SOPs (NewRelic/PagerDuty/Confluence). CI/CD (Jenkins/Docker/Argo). Documentation (Confluence).
-  - Import/migration de données et scripts ETL (Python). Frontend/UI (React/Javascript).
+  - 2020–présent — Lead technique d'une équipe de 3 développeurs (Managed Service Engineering).
+  - Leadership : Coordination (Scrum Master), synchronisation multi-géos (APAC, US, EU).
+  - Architecture : Conception et développement de services critiques (Golang/REST/PostgreSQL/Redis).
+  - Product management : Collecte des besoins, spécification de fonctionnalités, priorisation.
+  - DevOps : Pipelines CI/CD (Jenkins/Docker/Argo), déploiement Kubernetes.
+  - Observabilité : Supervision NewRelic/PagerDuty, SOPs, métriques de performance.
+  - Data engineering : Scripts ETL Python, migration de données, intégrations API.
+  - Frontend : Développement d'interfaces (React/JavaScript).
 ]
 
 #resume-item[
-  - 2016–2020 — Adobe Campaign TechOps (SRE): automatisation et production.
-  - Automatisation (SaltStack/Ansible/Terraform/Cloudformation). Migration vers AWS.
+  - 2016–2020 — Adobe Campaign TechOps (SRE) : automatisation et production.
+  - Automatisation (SaltStack/Ansible/Terraform/CloudFormation). Migration vers AWS (optimisation coûts −30%).
   - Documentation et procédures (Confluence, reStructuredText). CI, tests unitaires et couverture (Jenkins/Jenkinsfile/pytest/go test).
-  - Optimisation des coûts AWS. DNS email (SPF, DKIM, DMARC, Route53).
-  - Outils améliorant robustesse et sécurité (Python, Golang). Synchronisation R&D (DevOps).
-  - Alertes de supervision et tickets clients (astreintes). Investigation de problèmes.
+  - DNS email (SPF/DKIM/DMARC, Route53). Outils de robustesse/sécurité (Python, Golang).
+  - Alertes de supervision et tickets clients (astreintes). Investigation de problèmes produits et clients.
   - Analyses/optimisation SQL (PostgreSQL/RDS). Contexte international (US/Inde/Irlande/France).
 ]
 
@@ -64,7 +68,7 @@
   - Scripting (Python/Shell/Perl/Ruby). Manuels d'exploitation (reStructuredText). Fiches de tests (Testlink).
 ]
 
-=== Projets personnels
+=== Projets Open Source & Contributions
 
 #resume-entry(
   title: "Projets Open Source",
@@ -74,14 +78,15 @@
 )
 
 #resume-item[
-  - Wows-Depack — rétro-ingénierie et outil de (dé)compression d'archives propriétaires (C).
-  - LdapCherry — application web pour gérer utilisateurs/groupes multi-annuaires (Python/CherryPy/Bootstrap).
-  - Puppet-Samba — module Puppet pour gérer Samba (Puppet, Ruby, Python).
-  - Ascii-graph — librairie Python pour histogrammes ASCII (Python).
-  - Wows-Whaling-Simulator — simulateur de drop box (Golang/React).
-  - LibEMF2SVG — conversion EMF→SVG (C). LibVisio2SVG — conversion Visio (VSS/VSD)→SVG (C++).
-  - Pakste — framework de packaging deb & rpm (Makefile, shell).
-  - UTS-Server — serveur d'horodatage RFC 3161 (C, OpenSSL).
+  - Wows-Depack — Rétro-ingénierie d'outils de compression (C).
+  - LdapCherry — Application web de gestion d'annuaires (Python/CherryPy).
+  - LibEMF2SVG — Conversion EMF vers SVG (C, OpenSSL).
+  - LibVisio2SVG — Conversion Visio vers SVG (C/C++).
+  - Pakste — Framework de packaging deb/rpm (Makefile, shell).
+  - Wows-Whaling-Simulator — Simulateur web (Golang/React).
+  - UTS-Server — Serveur d'horodatage cryptographique RFC-3161.
+  - Puppet-Samba — Module Puppet pour Samba.
+  - Autres projets — GitHub.
 ]
 
 === Stages
@@ -163,6 +168,7 @@
 = Langues
 
 #resume-item[
+  - Français: Langue maternelle
   - Anglais: Courant (TOEIC 940/990, pratique quotidienne)
   - Espagnol: Notions (Niveau Bac)
 ]
@@ -195,7 +201,7 @@
 #resume-item[
   - Musique: Guitare et piano
   - Électronique: Fabrication et réparation
-  - Impression 3D: Conception et impression de pièces
-  - Informatique: Logiciel Open Source, administration serveur
+  - Impression 3D: Conception et impression de pièces, construction d'imprimante
+  - Informatique: Développement open source, administration de serveurs personnels
 ]
 
