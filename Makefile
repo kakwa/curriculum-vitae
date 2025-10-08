@@ -1,6 +1,7 @@
 # Some variables
 NAME=CARPENTIER
 TYPST?=typst
+PDF_VIEWER?=evince
 
 # recover language from CV_LANG or infer from cv.<lang>.typ files
 ifeq ("$(CV_LANG)", "")
@@ -17,11 +18,20 @@ all: typst
 typst: $(TYP_PDFS)
 
 $(TYP_PDFS): picture/ID.jpg
-	$(TYPST) compile cv.$(subst CV_$(NAME)_,,$(subst .pdf,,$@)).typ $@
+	$(TYPST) compile --font-path fonts/ cv.$(subst CV_$(NAME)_,,$(subst .pdf,,$@)).typ $@
 
 # cleaning
 clean:
 	rm -f *.pdf
 	rm -f cv.*
 
-.PHONY: typst clean all
+# watch for changes and rebuild automatically
+watch:
+	@echo "Watching for changes in .typ files..."
+	@if [ -z "$(CV_LANG)" ]; then \
+		echo "Please specify CV_LANG (e.g., make watch CV_LANG=en)"; \
+		exit 1; \
+	fi
+	$(TYPST) watch --font-path fonts/ --open $(PDF_VIEWER) cv.$(CV_LANG).typ CV_$(NAME)_$(CV_LANG).pdf
+
+.PHONY: typst clean all watch
