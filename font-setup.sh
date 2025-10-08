@@ -8,13 +8,27 @@ mkdir -p fonts/Buenard
 curl -fsSL -o fonts/Buenard/Buenard-Regular.ttf \
   "https://raw.githubusercontent.com/google/fonts/main/ofl/buenard/Buenard%5Bwght%5D.ttf"
 
-# Source Sans Pro (using Lato as alternative - has static versions)
+# Source Sans Pro (using actual Source Sans Pro static fonts)
 mkdir -p fonts/SourceSansPro
-curl -fsSL -o fonts/SourceSansPro/SourceSansPro-Regular.ttf \
+# Download the Source Sans Pro zip file and extract the fonts we need
+cd fonts/SourceSansPro
+curl -fsSL -o source-sans-pro.zip "https://www.1001fonts.com/download/source-sans-pro.zip"
+unzip -q source-sans-pro.zip
+# Copy the static TTF files we need
+cp "SourceSansPro-Regular.ttf" "SourceSansPro-Regular.ttf" 2>/dev/null || cp "sourcesanspro-regular.ttf" "SourceSansPro-Regular.ttf" 2>/dev/null || true
+cp "SourceSansPro-Bold.ttf" "SourceSansPro-Bold.ttf" 2>/dev/null || cp "sourcesanspro-bold.ttf" "SourceSansPro-Bold.ttf" 2>/dev/null || true
+cp "SourceSansPro-Italic.ttf" "SourceSansPro-Italic.ttf" 2>/dev/null || cp "sourcesanspro-italic.ttf" "SourceSansPro-Italic.ttf" 2>/dev/null || true
+# Clean up
+rm -rf source-sans-pro.zip *.txt *.otf 2>/dev/null || true
+cd ../..
+
+# Source Sans 3 (using Lato as alternative - static fonts for better rendering)
+mkdir -p fonts/SourceSans3
+curl -fsSL -o fonts/SourceSans3/SourceSans3-Regular.ttf \
   "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Regular.ttf"
-curl -fsSL -o fonts/SourceSansPro/SourceSansPro-Bold.ttf \
+curl -fsSL -o fonts/SourceSans3/SourceSans3-Bold.ttf \
   "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Bold.ttf"
-curl -fsSL -o fonts/SourceSansPro/SourceSansPro-Italic.ttf \
+curl -fsSL -o fonts/SourceSans3/SourceSans3-Italic.ttf \
   "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Italic.ttf"
 
 # Font Awesome 7 Free + Brands (using desktop version with OTF files)
