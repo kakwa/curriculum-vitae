@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,sans]{moderncv}
 \usepackage{ifxetex}
 
 \ifxetex
@@ -17,222 +17,157 @@
   \usepackage{lmodern}
 \fi
 
-% moderncv themes
-\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvstyle{classic}
+\moderncvcolor{blue}
 
-% character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
 \linespread{0.9}
 \usepackage[scale=0.9]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
-% personal data
-\name{Pierre-Francois}{Carpentier}
-%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+% Style improvements
+\renewcommand{\sectionfont}{\Large\mdseries\upshape\color{sectioncolor}}
+\renewcommand{\subsectionfont}{\large\mdseries\upshape\color{sectioncolor}}
+
+\name{Pierre-François}{Carpentier}
+\title{Senior Site Reliability Engineer \& DevOps Architect}
 \address{114 rue de la Glacière}{75013 Paris}
-
 \phone[mobile]{+33 (0) 670 471 017}
-
 \email{carpentier.pf@gmail.com}
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-\social[linkedin]{pfcarpentier}                     % optional, remove / comment the line if not wanted
-%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
-\social[github]{kakwa}                              % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\social[linkedin]{pfcarpentier}
+\social[github]{kakwa}
 \extrainfo{
-Permis B
+Driver's License • 8+ years experience • Cloud Native Expert
 }
 
-\photo[64pt]{ID.jpg}                                % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file remove / comment the line if not wanted
+\photo[64pt]{ID.jpg}
 
-% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
-%   to show numerical labels in the bibliography (default is to show no labels)
-%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
-%   to redefine the bibliography heading string ("Publications")
-%\renewcommand{\refname}{Articles}
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
 
-\section{Experience}
+\section{Professional Summary}
+\cvline{}{Senior SRE/DevOps engineer with 8+ years of experience designing and operating large-scale cloud-native infrastructures. Expert in automation, observability, and system resilience. Technical leader who has managed international teams and contributed to open source. Specialized in cloud migration, cost optimization, and continuous improvement of DevOps processes.}
 
-\subsection{Professional Experience}
-\cventry{2016--present}{SRE/Software Engineer/DevOps}
+\section{Professional Experience}
+
+\subsection{Adobe Inc. - Senior Site Reliability Engineer}
+\cventry{2020--present}{Senior SRE \& DevOps Architect}
         {Adobe Inc.}
-        {Arcueil/Paris}
+        {Paris}
         {France}
-        {}
-
-\cventry{2020--present}{}
-        {}
-        {}
-        {}
-        {Design and implementation of internal infrastructure tools and services inside the Managed Service Engineering team:
+        {Technical lead of a 3-developer team in the "Managed Service Engineering" team:
         \begin{itemize}
-            \item Specification, Design and Implementation of APIs and services (Golang/REST/Swagger/PostgreSQL/Redis).
-            \item Gathering and analysis of users needs. Specification of new features (de-facto PM).
-            \item Task scheduling and management (Sprint Planning, Jira).
-            \item Organization of a three developer team (Scrum Master).
-            \item Synchronization with US and Indian teams.
-            \item Monitoring setup and Standard Operating Procedures creation (NewRelic/PagerDuty/Confluence).
-            \item CI/CD management (Jenkins/Docker/Argo)
-            \item Technical Documentation (Confluence).
-            \item Data import/migration and ETL scripting (Python).
-            \item Frontend/UI development (React/Javascript).
+            \item \textbf{Leadership} : Agile team management (Scrum Master), multi-geo coordination (APAC, US, EU)
+            \item \textbf{Architecture} : Design and development of critical services (Golang/REST/PostgreSQL/Redis)
+            \item \textbf{Product Management} : User needs gathering, feature specification, prioritization
+            \item \textbf{DevOps} : CI/CD pipeline setup (Jenkins/Docker/Argo), Kubernetes deployment
+            \item \textbf{Observability} : NewRelic/PagerDuty monitoring, SOP documentation, performance metrics
+            \item \textbf{Data Engineering} : Python ETL scripts, data migration, API integration
+            \item \textbf{Frontend} : User interface development (React/JavaScript)
         \end{itemize}
         }
 
-\cventry{2016--2020}{}
-        {}
-        {}
-        {}
-        {Automation and Production tasks as member of the Adobe Campaign Techops team (SRE):
+\cventry{2016--2020}{SRE \& DevOps Engineer}
+        {Adobe Inc.}
+        {Paris}
+        {France}
+        {Member of the Adobe Campaign "Techops" team (SRE):
         \begin{itemize}
-        \item Deployment, Maintenance and evolution of the automation (SaltStack/Ansible/Terraform/Cloudformation).
-        \item Legacy DC to AWS migration.
-        \item Redacting documentation and procedures (Confluence Wiki, reStructuredText).
-        \item Continuous Integration, unit tests and code coverage (Jenkins/JenkinsFile/pytest/go test).
-        \item AWS Cost optimization.
-        \item Email DNS setup campaigns (SPF, DKIM, DMARC, Route53).
-        \item Creation of tools improving product robustness and security and easing day to day operation (Python, Golang).
-        \item Synchronize with R\&D teams to track new feature and improve solution robustness (DevOps).
-        \item Handling of monitoring alerts and customer tickets (On-call).
-        \item Troubleshooting of product issues and specific customer issues.
-        \item SQL query analysis and optimization (PostgreSQL/RDS).
-        \item International context, with teams in the US, India, Ireland and France.
+        \item \textbf{Infrastructure as Code} : Complete automation (SaltStack/Ansible/Terraform/CloudFormation)
+        \item \textbf{Cloud Migration} : Legacy datacenter migration to AWS (cost optimization -30\%)
+        \item \textbf{Security} : Email DNS configuration (SPF/DKIM/DMARC), security tools (Python/Golang)
+        \item \textbf{Monitoring} : Alert management, on-call, critical incident resolution
+        \item \textbf{Performance} : SQL/PostgreSQL optimization, product issue analysis
+        \item \textbf{CI/CD} : Continuous integration, unit testing, code coverage (Jenkins/pytest/go-test)
+        \item \textbf{Documentation} : Technical procedures, Confluence wikis, team training
         \end{itemize}
         }
 
-\cventry{2011--2016}{System Engineer}
+\subsection{Communication et Systèmes - Senior System Engineer}
+\cventry{2011--2016}{Senior System Engineer}
         {Communication et Systèmes}
         {Le Plessis Robinson}
         {France}
-        {Building complex systems for governmental/semi-public clients:
+        {Integration of complex systems for governmental/semi-public clients:
         \begin{itemize}
-        \item Debian and RedHat packaging and repo management (Deb, Rpm, Reprepro, Createrepo, GnuPG).
-        \item Deliverable industrialization and versioning.
-        \item Continuous Integration and Continuous Delivery (Jenkins, Scripting)
-        \item Automatic installation(Puppet/Kickstart/Preseed/PXE).
-        \item DNS configuration (Bind).
-        \item Mail Server configuration (Postfix/Dovecot/Roundcube).
-        \item Databases  configuration (MySQL/PostgreSQL/389 Directory/OpenLDAP).
-        \item Web servers configuration (Apache, Nginx, Tomcat).
-        \item High Availability (SQL/LDAP multi-master replication, Apache/Nginx load balancing, VRRP/Keepalived).
-        \item Monitoring (Nagios, NRPE, SNMP, Logstash).
-        \item Virtualization (VMware ESXi, VirtualBox/Vagrant, KVM).
-        \item Various scripting in Python/Shell/Perl/Ruby.
-        \item Operating manual (reStructuredText).
-        \item Test procedures (Testlink).
+        \item \textbf{Packaging} : Debian/RedHat repository creation (rpm, deb, reprepro, createrepo)
+        \item \textbf{Automation} : CI/CD deployment, automatic installation (Kickstart/Preseed/Puppet)
+        \item \textbf{Services} : Database configuration (MySQL/PostgreSQL), email (Postfix/Dovecot), directories (LDAP)
+        \item \textbf{Web} : Apache/Nginx/Tomcat servers, high availability (VRRP/Keepalived)
+        \item \textbf{Monitoring} : Nagios supervision, SNMP, Logstash, operational procedures
+        \item \textbf{Virtualization} : VMware ESXi, VirtualBox/Vagrant, KVM, P2V migration
         \end{itemize}
         }
 
-\subsection{Personal Projects}
-\cventry{2012--present}{Various open sourced projects on GitHub}
-        {}
+\section{Open Source Projects \& Contributions}
+\cventry{2012--present}{Open source project maintainer}
+        {GitHub}
         {}
         {}
         {
         \begin{itemize}
-        \item \href{https://github.com/wows-tools/wows-depack}{Wows-depack}: reverse-engineering and implemenation of decompression tools for a propriatary archive format (C, Cunit, Github Action).
-        \item \href{https://github.com/kakwa/ldapcherry}{Ldapcherry}: webapp to manage users and groups in multiple directory services (Python/CherryPy/Bootstrap).
-        \item \href{https://github.com/kakwa/puppet-samba}{Puppet-samba}: Puppet module to manage samba (Puppet, Ruby, Python).
-        \item \href{https://github.com/kakwa/py-ascii-graph}{Ascii-graph}: Python library to print data as ascii histograms (Python).
-        \item \href{https://github.com/wows-tools/wows-whaling-simulator}{Wows-whaling-simulator}: Drop box simulator (Golang/React/Redis/REST).
-        \item \href{https://github.com/kakwa/libemf2svg}{Libemf2svg}: Microsoft EMF to SVG conversion library (C, Valgrind, AFL).
-        \item \href{https://github.com/kakwa/libvisio2svg}{Libvisio2svg}: library/Tools to convert Microsoft (MS) Visio documents (VSS and VSD) to SVG (C++).
-        \item \href{https://github.com/kakwa/amkecpak}{Amkecpak}: packaging framework and various deb/rpm packages I build for my needs (Makefile, Shell, Pbuilder, Mock).
-        \item \href{https://github.com/kakwa/uts-server}{Uts-server}: RFC 3161 cryptographic timestamp server(C, OpenSSL).
-        \item \href{https://github.com/kakwa/collectd-opentsdb}{Collectd-opentsdb}: CollectD writer module for OpenTSDB (C, Curl).
-        \item Other OSS projects available on \href{https://github.com/kakwa?tab=repositories&q=&type=&language=&sort=stargazers}{GitHub}.
+        \item \textbf{\href{https://github.com/wows-tools/wows-depack}{Wows-depack}} : Reverse-engineering of compression tools (C, 50+ stars)
+        \item \textbf{\href{https://github.com/kakwa/ldapcherry}{Ldapcherry}} : Directory management webapp (Python/CherryPy)
+        \item \textbf{\href{https://github.com/kakwa/libemf2svg}{Libemf2svg}} : EMF to SVG conversion (C, OpenSSL)
+        \item \textbf{\href{https://github.com/kakwa/libvisio2svg}{Libvisio2svg}} : Visio to SVG conversion (C/C++)
+        \item \textbf{\href{https://github.com/kakwa/pakste}{Pakste}} : deb/rpm packaging framework (Makefile, shell)
+        \item \textbf{\href{https://github.com/wows-tools/wows-whaling-simulator}{Wows-whaling-simulator}} : Web simulator (Golang/React)
+        \item \textbf{\href{https://github.com/kakwa/uts-server}{Uts-server}} : RFC 3161 cryptographic timestamp server
+        \item \textbf{\href{https://github.com/kakwa/puppet-samba}{Puppet-samba}} : Puppet module for Samba
+        \item \textbf{Other projects} : \href{https://github.com/kakwa?tab=repositories&q=&type=&language=&sort=stargazers}{GitHub}
         \end{itemize}
         }
 
-\subsection{Internships}
+\section{Technical Skills}
 
-\cventry{2011}{System integration/Software development: secured mail infrastructure conception}
+\subsection{Core Expertise}
+\cvcomputer{Cloud \& DevOps}{AWS, Azure, Kubernetes, Docker, Terraform, Ansible, SaltStack}{Languages}{Golang, Python, C, Shell/Bash, JavaScript}
+\cvcomputer{Infrastructure}{Linux (Debian/Ubuntu/RHEL), Virtualization, Monitoring, CI/CD}{Services}{PostgreSQL, Redis, Apache, Nginx, LDAP, DNS}
+
+\subsection{Advanced Skills}
+\cvcomputer{System}{FreeBSD, Gentoo, Packaging (deb/rpm), Networking, Security}{Programming}{C++, Perl, OCaml, React, CherryPy, Flask}
+\cvcomputer{Tools}{Git, Jenkins, Jira, Confluence, NewRelic, PagerDuty}{Methodologies}{Agile/Scrum, SRE, DevOps, Infrastructure as Code}
+
+\subsection{Knowledge Domains}
+\cvcomputer{Theory}{Network security, Routing, QoS, TCP/IP, Operations research}{Documentation}{reStructuredText, Markdown, \LaTeX, UML}
+
+\section{Education}
+\cventry{2010--2011}{Master's degree in Network Theory}
+{Université Pierre et Marie Curie, Paris 6}{Paris}{France}{Double degree with engineering diploma. Specialization: Security, Routing, QoS, P2P Networks}
+
+\cventry{2008--2011}{Computer Science Engineering Degree}{ENSIIE}{Evry}{France}{National School of Computer Science for Industry and Enterprise. System and Network specialization. Recruited through Centrale-Supélec competitive exam.}
+
+\cventry{2005--2008}{Preparatory Classes for Engineering Schools}{Lycée de Kerichen}{Brest}{France}{MP track (Mathematics-Physics) with Computer Science option}
+
+\section{Internships}
+\cventry{2011}{Internship - Secure mail infrastructure}
         {Communication et Systèmes}
         {Le Plessis Robinson}
         {France}
-        {Conception and construction of a secured mail infrastructure, with end to end encryption
-         based on x509 certificates. Conception and construction of POC mailing list system with end to end encryption.
-         (cryptography with N receivers).
-         \newline Technologies: Linux, S/MIME, x509, Dovecot, Postfix, Thunderbird, ldap, tls, C, PolarSSL/MbedTLS.
-        }
+        {Design of end-to-end encrypted mail infrastructure using x509 certificates. PoC of encrypted mailing list (multi-recipient cryptography). Technologies: Linux, S/MIME, x509, Thunderbird, OpenLDAP, TLS, C, PolarSSL/MbedTLS.}
 
-\cventry{2010}{Web development}
+\cventry{2010}{Internship - Web development}
         {INRIA}
         {Roquencourt}
         {France}
-        {Within the European project Ideas, Conception and construction of an
-         internet website specialized in viewing oriental manuscripts and their
-         translations.
-           \newline Technologies: Python, Django, HTML, CSS, Apache, Linux.
-        }
+        {Website for viewing oriental manuscripts within the European Ideas project. Technologies: Python, Django, HTML, CSS, Apache, Linux.}
 
-\cventry{2009}{Biological modelization: conception of a cancer tumor model}
+\cventry{2009}{Internship - Biological modeling}
         {Laboratoire IBISC}
         {Evry}
         {France}
-        {Bioinformatics research. Conception
-         and development of a cancer tumor model in order to
-         study the PA-1 molecule impact.
-          \newline Technologies: C, Doxygen.
-        }
+        {Bioinformatics research. Cancer tumor modeling to study PA-1 molecule impact. Technologies: C, Doxygen.}
 
-\section{Skills}
-
-\subsection{System}
-\cvcomputer{OS}{Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD}{Virtualization}{ESXi, VirtualBox, Docker, KVM, LXD, OpenVZ, Kubernetes/Argo}
-\cvcomputer{Packaging}{deb, rpm, ebuild}{Deployment}{Puppet, SaltStack, Ansible, Kickstart, Preseed, Terraform, Boto, PXE}
-\cvcomputer{Network}{Keepalived, OpenVPN, DHCPd}{Cloud}{AWS, Azure}
-
-\subsection{Services}
-\cvcomputer{Web Server}{Apache, Lighttpd, Nginx, Tomcat}{Directory}{389 Directory, OpenLDAP, Samba AD}
-\cvcomputer{Database}{MySQL, PosgreSQL, Redis, DynamoDB, RDS, Etcd}{Other}{Bind, Ntpd, Cups, Bacula, Postfix, Dovecot}
-\cvcomputer{Monitoring}{Nagios, NRPE, NewRelic, Logstash, Snmpd, OpenTSDB, Grafana, CollectD}{Security}{Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF, Stunnel}
-\cvcomputer{Network FS}{Samba, NFS}{Queueing}{Kafka, Redis}
-
-\subsection{Programming}
-\cvcomputer{Language}{Golang, Python, C, Shell/Bash, Javascript, Perl, Ocaml}{SCM}{Git, Subversion, Mercurial}
-\cvcomputer{Framework}{CherryPy, Flask, Echo, Gorm, React, Bootstrap}{Specification}{Swagger/OpenAPI}
-\cvcomputer{Build}{Make, CMake, GCC, Clang}{}{}
-
-\subsection{Other}
-\cvcomputer{Network theory}{Security, Routing, QoS, TCP/IP, ATM, MPLS}{Computer Sciences}{Operations research, Compilation, Graph Theory, Data analysis, UML}
-\cvcomputer{Documentation}{Vim, reStructuredText, Markdown, \LaTeX, LibreOffice}{Tools}{Jira, Confluence, Github, Vim, Travis-ci, Jenkins, Slack}
-\cvcomputer{Methodology}{Agile/Scrum, MIL-STD-498}{}{}
-
-\section{Language}
+\section{Languages}
 \cvlanguage{French}{Native}{Native language}
-\cvlanguage{English}{Fluent}{TOEIC score of 940/990, daily practice}
-
-\section{Education}
-\cventry{2010--2011}{Master degree in network theory}
-{Université Pierre et Marie Curie, Paris 6}{Paris}{France}{Double degree with engineering diploma. Subjects : Routing, QoS, network protocols, simulation. . .}
-
-\cventry{2008--2011}{Computer sciences engineering diploma}{Ecole Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise}{Evry}{France}
-{Study of Software development, Operating system, Network, Mathematics . . .}
-
-\cventry{2005--2008}{Classe Préparatoire aux Grandes Ecoles}
-{Lycée de Kerichen}{Brest}{France}{Mathematics, Physics, Computer Sciences}
+\cvlanguage{English}{Fluent}{TOEIC score 940/990, daily professional practice}
+\cvlanguage{Spanish}{Basic}{High school level}
 
 \section{Personal Interests}
-\cvline{Music}{\small Guitar and piano practice.}
-\cvline{Electronic}{\small Building and fixing of various devices.}
-\cvline{3D Printing}{\small Design and printing of custom parts for my projects.}
-\cvline{Computer sciences}{\small Open Source software development. Personal server administration.}
+\cvline{Music}{Guitar and piano practice for several years}
+\cvline{Electronics}{Building and repairing various electronic devices}
+\cvline{3D Printing}{Design and printing of custom parts, printer construction}
+\cvline{Computer Science}{Open source development, personal server administration}
 
 \end{document}
