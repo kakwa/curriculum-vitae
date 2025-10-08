@@ -3,48 +3,27 @@ curriculum-vitae
 
 My curriculum vitae
 
-Debian dependancies
+Debian dependencies
 -------------------
 
 ```bash
 # Could probably be minimized
-apt install texlive-full fonts-font-awesome
+apt install typst
+apt install fonts-roboto fonts-source-sans-pro fonts-font-awesome
 ```
 
-Building the CVs
-----------------
+Building the CVs (Typst)
+------------------------
 
 ```bash
-# build a specific language
 $ make CV_LANG=fr
 
-# build all the language in // 
+# build all the languages in // (Typst)
 $ make -j
 
-# the CVs are located in the out directory
+# the CVs are located in the repo root
 $ ls *.pdf
 CV_CARPENTIER_en.pdf  CV_CARPENTIER_fr.pdf
 ```
 
-In case of issue for one of the CV, the logs are located in directory of the CV:
-
-```bash
-cat en/cv.log
-```
-
-Adding a language
------------------
-
-Just create a new directory, put `cv.tex` inside it and symlink the picture if needed:
-
-```bash
-CV_LANG=ger
-mkdir $CV_LANG
-touch $CV_LANG/cv.tex
-ln -s ../picture/ID.jpg $CV_LANG/
-```
-
-Changing the ID picture
------------------------
-
-Just replace `picture/ID.jpg`.
+Template reference: [modern-cv 0.9.0 on Typst Universe](https://typst.app/universe/package/modern-cv/)

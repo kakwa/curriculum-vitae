@@ -1,26 +1,27 @@
 # Some variables
 NAME=CARPENTIER
+TYPST?=typst
 
-# recover all the languages
+# recover language from CV_LANG or infer from cv.<lang>.typ files
 ifeq ("$(CV_LANG)", "")
-ALL_LANG=$(shell find ./* -maxdepth 0 -type d -exec basename {} \; |grep -v 'out\|picture')
+ALL_LANG=$(shell ls cv.*.typ 2>/dev/null | sed -E 's/cv\.([^.]+)\.typ/\1/')
 else
 ALL_LANG=$(CV_LANG)
 endif
 
-PDF_LANG=$(addsuffix .pdf,$(addprefix CV_CARPENTIER_,$(ALL_LANG)))
-SRC_LANG=$(addsuffix /cv.tex,$,$(ALL_LANG))
+# Typst build from root cv.<lang>.typ files
+TYP_PDFS=$(addsuffix .pdf,$(addprefix CV_$(NAME)_,$(ALL_LANG)))
 
-all: $(PDF_LANG)
+all: typst
 
-$(PDF_LANG): $(SRC_LANG) picture/ID.jpg
-	cd $(subst CV_CARPENTIER_,,$(subst .pdf,,$@)) && \
-	xelatex -interaction=batchmode cv.tex && \
-	mv cv.pdf ../$@
+typst: $(TYP_PDFS)
+
+$(TYP_PDFS): picture/ID.jpg
+	$(TYPST) compile cv.$(subst CV_$(NAME)_,,$(subst .pdf,,$@)).typ $@
 
 # cleaning
 clean:
 	rm -f *.pdf
 	rm -f cv.*
 
-.PHONY: clean all
+.PHONY: typst clean all
