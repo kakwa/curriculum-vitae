@@ -7,9 +7,8 @@ Debian dependencies
 -------------------
 
 ```bash
-# Could probably be minimized
 apt install typst
-apt install fonts-roboto fonts-source-sans-pro fonts-font-awesome
+apt install fonts-roboto fonts-adobe-sourcesans3 fonts-font-awesome
 ```
 
 Building the CVs (Typst)
@@ -17,6 +16,15 @@ Building the CVs (Typst)
 
 ```bash
 $ make CV_LANG=fr
+
+# Watch English version with evince
+make watch CV_LANG=en
+
+# Watch French version with evince  
+make watch CV_LANG=fr
+
+# Use a different PDF viewer
+make watch CV_LANG=en PDF_VIEWER=okular
 
 # build all the languages in // (Typst)
 $ make -j
