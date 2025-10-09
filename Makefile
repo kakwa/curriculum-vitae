@@ -23,7 +23,6 @@ $(TYP_PDFS): picture/ID.jpg
 # cleaning
 clean:
 	rm -f *.pdf
-	rm -f cv.*
 
 # watch for changes and rebuild automatically
 watch:
