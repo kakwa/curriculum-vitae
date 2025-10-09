@@ -9,7 +9,7 @@
     github: "kakwa",
     linkedin: "pfcarpentier",
     address: "114 rue de la Glacière, 75013 Paris",
-    positions: ("Senior Site Reliability Engineer & DevOps Architect",),
+    positions: ("Senior Software Engineer, SRE & Architect",),
     custom: (
       (
         text: "Blog",
@@ -38,36 +38,42 @@
 
 #resume-entry(
   title: "Senior Software Engineer / Technical Lead",
-  location: "Arcueil/Paris, France",
+  location: "Paris, France",
   date: "2020–present",
   description: "Adobe Inc."
 )
 
+Technical lead of a small team focused on internal tooling & core infrastructure services:
+
 #resume-item[
-  - Technical lead of a 3-developer team in "Managed Service Engineering".
   - Leadership: Agile team management (Scrum Master), multi-geo coordination (APAC, US, EU).
   - Architecture: Design and development of critical services (Golang/REST/PostgreSQL/Redis).
   - Product management: User needs gathering, feature specification, prioritization.
   - DevOps: CI/CD pipeline setup (Jenkins/Docker/Argo), Kubernetes deployment.
   - Observability: NewRelic/PagerDuty monitoring, SOP documentation, performance metrics.
   - Data engineering: Python ETL scripts, data migration, API integration.
-  - Frontend: User interface development (React/JavaScript).
+  - Frontend: Inventory and admin panel (React/JavaScript).
 ]
 
 #resume-entry(
   title: "SRE/DevOps Engineer",
-  location: "Arcueil/Paris, France",
+  location: "Arcueil, France",
   date: "2016–2020",
-  description: "Adobe Inc."
+  description: "Neolane/Adobe Inc."
 )
 
+Adobe Campaign SRE in a large & international (US/India/Ireland/France) operation team, with a focus on automation & complex troubleshooting.
+
 #resume-item[
-  - Adobe Campaign TechOps (SRE): automation and production.
-  - Deployment, maintenance and evolution of automation (SaltStack/Ansible/Terraform/CloudFormation). Legacy DC to AWS migration (cost optimization −30%).
-  - Documentation and procedures (Confluence, reStructuredText). CI, unit tests and coverage (Jenkins/Jenkinsfile/pytest/go test).
-  - Email DNS setup (SPF/DKIM/DMARC, Route53). Tools improving robustness and security (Python, Golang).
-  - Monitoring alerts and customer tickets (on-call). Troubleshooting product and customer issues.
-  - SQL analysis and optimization (PostgreSQL/RDS). International context (US/India/Ireland/France).
+  - Automation stack/tooling roll-out & maintenance (SaltStack/Ansible/Terraform/CloudFormation).
+  - Legacy DC to Cloud (AWS) migration of large marketing & data analytics customer platforms (tooling creation, procedure redaction, execution).
+  - Documentation and procedures (Confluence, reStructuredText).
+  - Mass Email deliverability setup (SPF/DKIM/DMARC, FBLs).
+  - Internal tooling design and development (Python, Golang).
+  - CI, unit tests and code coverage (Jenkins/Jenkinsfile/pytest/go test).
+  - Cloud/AWS cost optimization
+  - Troubleshooting complex product and customer issues.
+  - SQL analysis and database optimization (PostgreSQL/RDS).
 ]
 
 #resume-entry(
@@ -90,52 +96,59 @@
 = Projects
 
 #resume-entry(
-  title: "Wows-depack",
-  location: [#github-link("kakwa/wows-depack")],
-  description: "Reverse-engineering of compression tools (C, 50+ stars)."
-)
-
-#resume-entry(
-  title: "Ldapcherry",
+  title: "LdapCherry",
   location: [#github-link("kakwa/ldapcherry")],
   description: "Directory management webapp (Python/CherryPy)."
 )
 
 #resume-entry(
-  title: "Libemf2svg",
-  location: [#github-link("kakwa/libemf2svg")],
-  description: "EMF to SVG conversion (C, OpenSSL)."
+  title: "wows-depack",
+  location: [#github-link("wows-tools/wows-depack")],
+  description: "Reverse-engineering & Parsing of proprietary file format (C)."
 )
 
 #resume-entry(
-  title: "Libvisio2svg",
-  location: [#github-link("kakwa/libvisio2svg")],
-  description: "Visio to SVG conversion (C/C++)."
+  title: "libemf2svg",
+  location: [#github-link("kakwa/libemf2svg")],
+  description: "MS EMF to SVG conversion (C)."
 )
 
 #resume-entry(
   title: "Pakste",
   location: [#github-link("kakwa/pakste")],
-  description: "deb/rpm packaging framework (Makefile, shell)."
+  description: "deb/rpm packaging framework (Makefile + shell)."
 )
 
 #resume-entry(
-  title: "Wows-whaling-simulator",
+  title: "wows-whaling-simulator",
   location: [#github-link("kakwa/wows-whaling-simulator")],
-  description: "Web simulator (Golang/React)."
+  description: "lootbox simulator (Golang + React)."
 )
 
 #resume-entry(
-  title: "Uts-server",
+  title: "uts-server",
   location: [#github-link("kakwa/uts-server")],
-  description: "RFC 3161 cryptographic timestamp server."
+  description: "RFC-3161 cryptographic timestamp server. (C + OpenSSL)"
 )
 
 #resume-entry(
-  title: "Puppet-samba",
+  title: "puppet-samba",
   location: [#github-link("kakwa/puppet-samba")],
   description: "Puppet module for Samba."
 )
+
+#resume-entry(
+  title: "silly-sun-server",
+  location: [#github-link("kakwa/silly-sun-server")],
+  description: "SunFire V100 rebuild (FreeCAD, Golang, Ansible, C, NetBSD)"
+)
+
+#resume-entry(
+  title: "Misc Projects",
+  location: [#github-link("kakwa?language=&page=1&q=&sort=name&tab=repositories&type=source")],
+  description: "Many other smaller projects"
+)
+
 
 === Internships
 
