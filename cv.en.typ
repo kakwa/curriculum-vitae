@@ -9,22 +9,22 @@
     github: "kakwa",
     linkedin: "pfcarpentier",
     address: "114 rue de la Glacière, 75013 Paris",
-    positions: ("Senior Software Engineer, SRE & Architect",),
+    positions: ("Senior Software Engineer, SRE & System Architect",),
     custom: (
       (
-        text: "Blog",
-        icon: "globe",
+        text: "blog",
+        icon: "blog",
         link: "https://technically.kakwalab.ovh/",
       ),
       (
-        text: "3D Models",
+        text: "CAD/3DP",
         icon: "cube",
         link: "https://www.printables.com/@kakwa_3337391/models",
       ),
     ),
   ),
   keywords: ("SRE", "DevOps", "Cloud", "Automation", "Kubernetes", "AWS"),
-  description: "Senior SRE/DevOps engineer with 8+ years of experience designing and operating large-scale cloud-native infrastructures",
+  description: "Senior SRE/DevOps engineer with 15 years of experience designing, deploying and operating large-scale cloud-native & on-premise infrastructures",
   profile-picture: image("picture/ID.jpg"),
   date: datetime.today().display(),
   language: "en",
@@ -37,120 +37,110 @@
 = Experience
 
 #resume-entry(
-  title: "Senior Software Engineer / Technical Lead",
+  title: "Adobe Inc. - Senior Software Engineer & SRE / Technical Lead",
   location: "Paris, France",
   date: "2020–present",
-  description: "Adobe Inc."
+  description: "Technical lead of a small team focused on internal tooling & core infrastructure services."
 )
 
-Technical lead of a small team focused on internal tooling & core infrastructure services:
-
 #resume-item[
-  - Leadership: Agile team management (Scrum Master), multi-geo coordination (APAC, US, EU).
-  - Architecture: Design and development of critical services (Golang/REST/PostgreSQL/Redis).
-  - Product management: User needs gathering, feature specification, prioritization.
-  - DevOps: CI/CD pipeline setup (Jenkins/Docker/Argo), Kubernetes deployment.
-  - Observability: NewRelic/PagerDuty monitoring, SOP documentation, performance metrics.
-  - Data engineering: Python ETL scripts, data migration, API integration.
-  - Frontend: Inventory and admin panel (React/JavaScript).
+  - Agile team management (Scrum Master) & task scheduling,
+  - cross team & cross geo coordination (APAC, US, EU).
+  - Architecture, Design and Development of core services (Golang/REST/PostgreSQL/Redis).
+  - Internal PM-like role, gathering other team needs, specifying features, and prioritizing implementation.
+  - CI/CD pipeline setup & maintenance (Jenkins/Docker/Argo/Kubernetes)
+  - Monitoring & Paging setup, alerts definition, handbook, on-call rotation (NewRelic, PagerDuty, Riemann).
+  - Data engineering & ETL scripting for data migration and reconsiliation (python).
+  - Control Panel, Reporting visualization & Inventory UI development (React/JavaScript/TypeScript).
 ]
 
 #resume-entry(
-  title: "SRE/DevOps Engineer",
+  title: "Adobe Inc. - SRE/DevOps Engineer",
   location: "Arcueil, France",
   date: "2016–2020",
-  description: "Neolane/Adobe Inc."
+  description: "SRE in an international operation team, with a focus on automation & complex troubleshooting."
 )
-
-Adobe Campaign SRE in a large & international (US/India/Ireland/France) operation team, with a focus on automation & complex troubleshooting.
 
 #resume-item[
   - Automation stack/tooling roll-out & maintenance (SaltStack/Ansible/Terraform/CloudFormation).
-  - Legacy DC to Cloud (AWS) migration of large marketing & data analytics customer platforms (tooling creation, procedure redaction, execution).
-  - Documentation and procedures (Confluence, reStructuredText).
-  - Mass Email deliverability setup (SPF/DKIM/DMARC, FBLs).
-  - Internal tooling design and development (Python, Golang).
+  - DC to Cloud migration of large marketing & data analytics platforms (tooling, procedure, execution).
+  - Documentation and procedures (Confluence, Markdown, reStructuredText).
+  - Mass email deliverability setup (SPF/DKIM/DMARC, FBLs).
+  - Internal tooling design, development & distribution (Python, Golang, Artifactory).
   - CI, unit tests and code coverage (Jenkins/Jenkinsfile/pytest/go test).
   - Cloud/AWS cost optimization
+  - Cross-geo On-Call & handover procedures (US/India/Ireland/France)
   - Troubleshooting complex product and customer issues.
   - SQL analysis and database optimization (PostgreSQL/RDS).
 ]
 
 #resume-entry(
-  title: "Communication et Systèmes",
+  title: "CS Group - System & Integration Engineer",
   location: "Le Plessis Robinson, France",
   date: "2011–2016",
-  description: "System Engineer"
+  description: "COTS and custom development integration for complex systems serving public & enterprise clients.",
 )
 
 #resume-item[
-  - Building complex systems for governmental/semi-public clients.
-  - Debian/RedHat packaging and repo management (Deb, Rpm, Reprepro, Createrepo, GnuPG). Deliverable industrialization and versioning.
-  - CI/CD (Jenkins, scripting). Automatic installation (Puppet/Kickstart/Preseed/PXE).
-  - DNS (Bind). Mail (Postfix/Dovecot/Roundcube). Directories/DB (389 Directory/OpenLDAP/MySQL/PostgreSQL).
-  - Web servers (Apache, Nginx, Tomcat). HA (SQL/LDAP replication, Apache/Nginx LB, VRRP/Keepalived).
-  - Monitoring (Nagios, NRPE, SNMP, Logstash). Virtualization (VMware ESXi, VirtualBox/Vagrant, KVM).
-  - Scripting (Python/Shell/Perl/Ruby). Operating manuals (reStructuredText). Test procedures (Testlink).
+  - Design and automat bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
+  - Streamlined build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
+  - Deploy & ntegrate IT services: DNS, mail, directories, and web services (Bind, Postfix, Roundcube, Trac, IRC).
+  - Implemented high-availability architectures and replication strategies across SQL DBs, LDAP, and at the web layer (nginx, VRRP/Keepalived, OpenLDAP, MySQL).
+  - Developed and maintained automation scripts and operational tooling (Python, Shell, Ruby, Perl).
+  - Implement monitoring and log centralization  (Nagios, SNMP, Logstash, RSyslog).
+  - Authored installation documention, reference handbook, and QA procedures (reStructuredText, Testlink).
 ]
 
-= Projects
+= OSS Projects
 
-#resume-entry(
-  title: "LdapCherry",
+#resume-item[
+- #resume-entry(
   location: [#github-link("kakwa/ldapcherry")],
-  description: "Directory management webapp (Python/CherryPy)."
+  title: "Directory management webapp (Python/CherryPy)."
 )
 
-#resume-entry(
-  title: "wows-depack",
+- #resume-entry(
   location: [#github-link("wows-tools/wows-depack")],
-  description: "Reverse-engineering & Parsing of proprietary file format (C)."
+  title: "Reverse-engineering & Parsing of proprietary format (C, Doxygen)."
 )
 
-#resume-entry(
-  title: "libemf2svg",
+- #resume-entry(
   location: [#github-link("kakwa/libemf2svg")],
-  description: "MS EMF to SVG conversion (C)."
+  title: "MS EMF to SVG conversion (C)."
 )
 
-#resume-entry(
-  title: "Pakste",
+- #resume-entry(
   location: [#github-link("kakwa/pakste")],
-  description: "deb/rpm packaging framework (Makefile + shell)."
+  title: "deb/rpm packaging framework (Makefile + shell)."
 )
 
-#resume-entry(
-  title: "wows-whaling-simulator",
+- #resume-entry(
   location: [#github-link("kakwa/wows-whaling-simulator")],
-  description: "lootbox simulator (Golang + React)."
+  title: "lootbox simulator (Golang + React)."
 )
 
-#resume-entry(
-  title: "uts-server",
+- #resume-entry(
   location: [#github-link("kakwa/uts-server")],
-  description: "RFC-3161 cryptographic timestamp server. (C + OpenSSL)"
+  title: "RFC-3161 cryptographic timestamp server. (C + OpenSSL)"
 )
 
-#resume-entry(
-  title: "puppet-samba",
+- #resume-entry(
   location: [#github-link("kakwa/puppet-samba")],
-  description: "Puppet module for Samba."
+  title: "Puppet module for Samba."
 )
 
-#resume-entry(
-  title: "silly-sun-server",
+- #resume-entry(
   location: [#github-link("kakwa/silly-sun-server")],
-  description: "SunFire V100 rebuild (FreeCAD, Golang, Ansible, C, NetBSD)"
+  title: "SunFire V100 rebuild (FreeCAD, Golang, Ansible, C, NetBSD)"
 )
 
-#resume-entry(
-  title: "Misc Projects",
-  location: [#github-link("kakwa?language=&page=1&q=&sort=name&tab=repositories&type=source")],
-  description: "Many other smaller projects"
+- #resume-entry(
+  title: "Other",
+  location: [#github-link("kakwa")],
 )
+]
 
-
-=== Internships
+= Internships
 
 #resume-entry(
   title: "Communication et Systèmes",
@@ -249,7 +239,7 @@ Adobe Campaign SRE in a large & international (US/India/Ireland/France) operatio
 = Education
 
 #resume-entry(
-  title: "Université Pierre et Marie Curie, Paris 6",
+  title: "Sorbonne Université - UPMC"
   location: "Paris, France",
   date: "2010–2011",
   description: "Master degree in network theory (double degree). Subjects: Routing, QoS, protocols, simulation."
@@ -275,6 +265,6 @@ Adobe Campaign SRE in a large & international (US/India/Ireland/France) operatio
   - Music: Guitar and piano practice
   - Electronic: Building and fixing devices
   - 3D Printing: Design and printing of custom parts, printer construction
-  - Computer Science: Open source development, personal server administration
+  - Computer Science: Open source development, personal servers administration
 ]
 
