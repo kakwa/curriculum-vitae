@@ -56,7 +56,7 @@
   - Internal PM-like role, gathering other team needs, specifying features, and prioritizing implementation.
   - CI/CD pipeline setup & maintenance (Jenkins/Docker/Argo/Kubernetes)
   - Monitoring & Paging setup, alerts definition, handbook, on-call rotation (NewRelic, PagerDuty, Riemann).
-  - Data engineering & ETL scripting for data migration and reconsiliation (python).
+  - Data engineering & ETL scripting for data migration and reconciliation (Python).
   - Control Panel, Reporting visualization & Inventory UI development (React/JavaScript/TypeScript).
 ]
 
@@ -88,13 +88,13 @@
 )
 
 #resume-item[
-  - Design and automat bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
+  - Design and automate bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
   - Streamlined build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
   - Deploy & integrate IT services: DNS, mail, directories, and web services (Bind, Postfix, Roundcube, Trac, IRC).
   - Implemented high-availability architectures and replication strategies across SQL DBs, LDAP, and at the web layer (nginx, VRRP/Keepalived, OpenLDAP, MySQL).
   - Developed and maintained automation scripts and operational tooling (Python, Shell, Ruby, Perl).
   - Implement monitoring and log centralization  (Nagios, SNMP, Logstash, RSyslog).
-  - Authored installation documention, reference handbook, and QA procedures (reStructuredText, Testlink).
+  - Authored installation documentation, reference handbook, and QA procedures (reStructuredText, Testlink).
 ]
 
 = Projects
