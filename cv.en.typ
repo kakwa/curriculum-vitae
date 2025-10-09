@@ -90,7 +90,7 @@
 #resume-item[
   - Design and automat bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
   - Streamlined build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
-  - Deploy & ntegrate IT services: DNS, mail, directories, and web services (Bind, Postfix, Roundcube, Trac, IRC).
+  - Deploy & integrate IT services: DNS, mail, directories, and web services (Bind, Postfix, Roundcube, Trac, IRC).
   - Implemented high-availability architectures and replication strategies across SQL DBs, LDAP, and at the web layer (nginx, VRRP/Keepalived, OpenLDAP, MySQL).
   - Developed and maintained automation scripts and operational tooling (Python, Shell, Ruby, Perl).
   - Implement monitoring and log centralization  (Nagios, SNMP, Logstash, RSyslog).
