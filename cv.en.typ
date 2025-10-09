@@ -1,5 +1,10 @@
 #import "@preview/modern-cv:0.9.0": *
 
+#let github-icon = box(fa-icon("github", fill: color-darknight))
+#let cube-icon = box(fa-icon("cube", fill: color-darknight))
+#let blog-icon = box(fa-icon("blog", fill: color-darknight))
+
+
 #show: resume.with(
   author: (
     firstname: "Pierre-Francois",
@@ -29,6 +34,7 @@
   date: datetime.today().display(),
   language: "en",
   colored-headers: true,
+  accent-color: rgb("#239dad"),
   show-footer: false,
   show-address-icon: true,
   paper-size: "a4"
@@ -91,53 +97,20 @@
   - Authored installation documention, reference handbook, and QA procedures (reStructuredText, Testlink).
 ]
 
-= OSS Projects
+= Projects
 
 #resume-item[
-- #resume-entry(
-  location: [#github-link("kakwa/ldapcherry")],
-  title: "Directory management webapp (Python/CherryPy)."
-)
-
-- #resume-entry(
-  location: [#github-link("wows-tools/wows-depack")],
-  title: "Reverse-engineering & Parsing of proprietary format (C, Doxygen)."
-)
-
-- #resume-entry(
-  location: [#github-link("kakwa/libemf2svg")],
-  title: "MS EMF to SVG conversion (C)."
-)
-
-- #resume-entry(
-  location: [#github-link("kakwa/pakste")],
-  title: "deb/rpm packaging framework (Makefile + shell)."
-)
-
-- #resume-entry(
-  location: [#github-link("kakwa/wows-whaling-simulator")],
-  title: "lootbox simulator (Golang + React)."
-)
-
-- #resume-entry(
-  location: [#github-link("kakwa/uts-server")],
-  title: "RFC-3161 cryptographic timestamp server. (C + OpenSSL)"
-)
-
-- #resume-entry(
-  location: [#github-link("kakwa/puppet-samba")],
-  title: "Puppet module for Samba."
-)
-
-- #resume-entry(
-  location: [#github-link("kakwa/silly-sun-server")],
-  title: "SunFire V100 rebuild (FreeCAD, Golang, Ansible, C, NetBSD)"
-)
-
-- #resume-entry(
-  title: "Other",
-  location: [#github-link("kakwa")],
-)
+- #github-icon #link("https://github.com/kakwa/ldapcherry")[*kakwa/ldapcherry*]: Directory management webapp (Python/CherryPy).
+- #github-icon #link("https://github.com/wows-tools/wows-depack")[*wows-tools/wows-depack*]: Reverse-engineering & parsing of proprietary format (C, Doxygen).
+- #github-icon #link("https://github.com/kakwa/libemf2svg")[*kakwa/libemf2svg*]: MS EMF to SVG conversion (C).
+- #github-icon #link("https://github.com/kakwa/pakste")[*kakwa/pakste*]: deb/rpm packaging framework (Makefile + shell).
+- #github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]: Lootbox simulator (Golang + React).
+- #github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]: RFC-3161 cryptographic timestamp server. (C + OpenSSL)
+- #github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]: Puppet module for Samba.
+- #github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]: SunFire V100 rebuild (FreeCAD, Golang, Ansible, C, NetBSD)
+- #github-icon #link("https://github.com/kakwa?tab=repositories")[*Profile on Github.com*]: Various other software projects.
+- #cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profile on Printables.com*]: Various 3D CAD models.
+- #blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]: My technical blog.
 ]
 
 = Internships
