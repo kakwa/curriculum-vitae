@@ -239,7 +239,7 @@
 = Education
 
 #resume-entry(
-  title: "Sorbonne Université - UPMC"
+  title: "Sorbonne Université - UPMC",
   location: "Paris, France",
   date: "2010–2011",
   description: "Master degree in network theory (double degree). Subjects: Routing, QoS, protocols, simulation."
