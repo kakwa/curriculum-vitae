@@ -9,30 +9,42 @@
     github: "kakwa",
     linkedin: "pfcarpentier",
     address: "114 rue de la Glacière, 75013 Paris",
-    positions: ("Senior Site Reliability Engineer & DevOps Architect",)
+    positions: ("Senior Site Reliability Engineer & DevOps Architect",),
+    custom: (
+      (
+        text: "Blog",
+        icon: "globe",
+        link: "https://technically.kakwalab.ovh/",
+      ),
+      (
+        text: "3D Models",
+        icon: "cube",
+        link: "https://www.printables.com/@kakwa_3337391/models",
+      ),
+    ),
   ),
+  keywords: ("SRE", "DevOps", "Cloud", "Automation", "Kubernetes", "AWS"),
+  description: "Senior SRE/DevOps engineer with 8+ years of experience designing and operating large-scale cloud-native infrastructures",
   profile-picture: image("picture/ID.jpg"),
   date: datetime.today().display(),
+  language: "en",
+  colored-headers: true,
+  show-footer: false,
+  show-address-icon: true,
   paper-size: "a4"
 )
 
-*= Professional Summary*
-
-Senior SRE/DevOps engineer with 8+ years of experience designing and operating large-scale cloud-native infrastructures. Expert in automation, observability, and system resilience. Technical leader who has managed international teams and contributed to open source. Specialized in cloud migration, cost optimization, and continuous improvement of DevOps processes.
-
 = Experience
 
-=== Professional Experience
-
 #resume-entry(
-  title: "Adobe Inc.",
+  title: "Senior Software Engineer / Technical Lead",
   location: "Arcueil/Paris, France",
-  date: "2016–present",
-  description: "SRE/Software Engineer/DevOps"
+  date: "2020–present",
+  description: "Adobe Inc."
 )
 
 #resume-item[
-  - 2020–present — Technical lead of a 3-developer team in "Managed Service Engineering".
+  - Technical lead of a 3-developer team in "Managed Service Engineering".
   - Leadership: Agile team management (Scrum Master), multi-geo coordination (APAC, US, EU).
   - Architecture: Design and development of critical services (Golang/REST/PostgreSQL/Redis).
   - Product management: User needs gathering, feature specification, prioritization.
@@ -42,8 +54,15 @@ Senior SRE/DevOps engineer with 8+ years of experience designing and operating l
   - Frontend: User interface development (React/JavaScript).
 ]
 
+#resume-entry(
+  title: "SRE/DevOps Engineer",
+  location: "Arcueil/Paris, France",
+  date: "2016–2020",
+  description: "Adobe Inc."
+)
+
 #resume-item[
-  - 2016–2020 — Adobe Campaign TechOps (SRE): automation and production.
+  - Adobe Campaign TechOps (SRE): automation and production.
   - Deployment, maintenance and evolution of automation (SaltStack/Ansible/Terraform/CloudFormation). Legacy DC to AWS migration (cost optimization −30%).
   - Documentation and procedures (Confluence, reStructuredText). CI, unit tests and coverage (Jenkins/Jenkinsfile/pytest/go test).
   - Email DNS setup (SPF/DKIM/DMARC, Route53). Tools improving robustness and security (Python, Golang).
@@ -68,26 +87,55 @@ Senior SRE/DevOps engineer with 8+ years of experience designing and operating l
   - Scripting (Python/Shell/Perl/Ruby). Operating manuals (reStructuredText). Test procedures (Testlink).
 ]
 
-=== Open Source Projects & Contributions
+= Projects
 
 #resume-entry(
-  title: "Various open source projects on GitHub",
-  location: "",
-  date: "2012–present",
-  description: ""
+  title: "Wows-depack",
+  location: [#github-link("kakwa/wows-depack")],
+  description: "Reverse-engineering of compression tools (C, 50+ stars)."
 )
 
-#resume-item[
-  - Wows-depack — Reverse-engineering of compression tools (C, 50+ stars).
-  - Ldapcherry — Directory management webapp (Python/CherryPy).
-  - Libemf2svg — EMF to SVG conversion (C, OpenSSL).
-  - Libvisio2svg — Visio to SVG conversion (C/C++).
-  - Pakste — deb/rpm packaging framework (Makefile, shell).
-  - Wows-whaling-simulator — Web simulator (Golang/React).
-  - Uts-server — RFC 3161 cryptographic timestamp server.
-  - Puppet-samba — Puppet module for Samba.
-  - Other projects — GitHub.
-]
+#resume-entry(
+  title: "Ldapcherry",
+  location: [#github-link("kakwa/ldapcherry")],
+  description: "Directory management webapp (Python/CherryPy)."
+)
+
+#resume-entry(
+  title: "Libemf2svg",
+  location: [#github-link("kakwa/libemf2svg")],
+  description: "EMF to SVG conversion (C, OpenSSL)."
+)
+
+#resume-entry(
+  title: "Libvisio2svg",
+  location: [#github-link("kakwa/libvisio2svg")],
+  description: "Visio to SVG conversion (C/C++)."
+)
+
+#resume-entry(
+  title: "Pakste",
+  location: [#github-link("kakwa/pakste")],
+  description: "deb/rpm packaging framework (Makefile, shell)."
+)
+
+#resume-entry(
+  title: "Wows-whaling-simulator",
+  location: [#github-link("kakwa/wows-whaling-simulator")],
+  description: "Web simulator (Golang/React)."
+)
+
+#resume-entry(
+  title: "Uts-server",
+  location: [#github-link("kakwa/uts-server")],
+  description: "RFC 3161 cryptographic timestamp server."
+)
+
+#resume-entry(
+  title: "Puppet-samba",
+  location: [#github-link("kakwa/puppet-samba")],
+  description: "Puppet module for Samba."
+)
 
 === Internships
 
@@ -129,48 +177,59 @@ Senior SRE/DevOps engineer with 8+ years of experience designing and operating l
 
 = Skills
 
-=== System
+#resume-skill-item(
+  "System",
+  (
+    "OS: Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD",
+    "Virtualization: ESXi, VirtualBox, Docker, KVM, LXD, OpenVZ, Kubernetes/Argo",
+    "Packaging: deb, rpm, ebuild",
+    "Deployment: Puppet, SaltStack, Ansible, Kickstart, Preseed, Terraform, Boto, PXE",
+    "Network: Keepalived, OpenVPN, DHCPd",
+    "Cloud: AWS, Azure"
+  ),
+)
 
-#resume-item[
-  - OS: Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD
-  - Virtualization: ESXi, VirtualBox, Docker, KVM, LXD, OpenVZ, Kubernetes/Argo
-  - Packaging: deb, rpm, ebuild
-  - Deployment: Puppet, SaltStack, Ansible, Kickstart, Preseed, Terraform, Boto, PXE
-  - Network: Keepalived, OpenVPN, DHCPd
-  - Cloud: AWS, Azure
-]
+#resume-skill-item(
+  "Services",
+  (
+    "Web Server: Apache, Lighttpd, Nginx, Tomcat",
+    "Directory: 389 Directory, OpenLDAP, Samba AD",
+    "Database: MySQL, PostgreSQL, Redis, DynamoDB, RDS, Etcd",
+    "Other: Bind, Ntpd, Cups, Bacula, Postfix, Dovecot",
+    "Monitoring: Nagios, NRPE, NewRelic, Logstash, Snmpd, OpenTSDB, Grafana, CollectD",
+    "Security: Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF, Stunnel",
+    "Network FS: Samba, NFS",
+    "Queueing: Kafka, Redis"
+  ),
+)
 
-=== Services
+#resume-skill-item(
+  "Programming",
+  (
+    "Language: Golang, Python, C, Shell/Bash, Javascript, Perl, Ocaml",
+    "SCM: Git, Subversion, Mercurial",
+    "Framework: CherryPy, Flask, Echo, Gorm, React, Bootstrap",
+    "Specification: Swagger/OpenAPI",
+    "Build: Make, CMake, GCC, Clang"
+  ),
+)
 
-#resume-item[
-  - Web: Apache, Lighttpd, Nginx, Tomcat — Directory: 389 Directory, OpenLDAP, Samba AD
-  - DB: MySQL, PosgreSQL, Redis, DynamoDB, RDS, Etcd — Other: Bind, Ntpd, Cups, Bacula, Postfix, Dovecot
-  - Monitoring: Nagios, NRPE, NewRelic, Logstash, Snmpd, OpenTSDB, Grafana, CollectD
-  - Security: Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF, Stunnel
-  - Network FS: Samba, NFS — Queueing: Kafka, Redis
-]
-
-=== Programming
-
-#resume-item[
-  - Languages: Golang, Python, C, Shell/Bash, Javascript, Perl, Ocaml — SCM: Git, Subversion, Mercurial
-  - Frameworks: CherryPy, Flask, Echo, Gorm, React, Bootstrap — Specification: Swagger/OpenAPI
-  - Build: Make, CMake, GCC, Clang
-]
-
-=== Other
-
-#resume-item[
-  - Network theory: Security, Routing, QoS, TCP/IP, ATM, MPLS — Computer Sciences: OR, Compilation, Graph Theory, Data analysis, UML
-  - Documentation: Vim, reStructuredText, Markdown, LaTeX, LibreOffice
-  - Tools: Jira, Confluence, Github, Vim, Travis-ci, Jenkins, Slack — Methodology: Agile/Scrum, MIL-STD-498
-]
+#resume-skill-item(
+  "Other",
+  (
+    "Network theory: Security, Routing, QoS, TCP/IP, ATM, MPLS",
+    "Computer Sciences: Operations research, Compilation, Graph Theory, Data analysis, UML",
+    "Documentation: Vim, reStructuredText, Markdown, LaTeX, LibreOffice",
+    "Tools: Jira, Confluence, Github, Vim, Travis-ci, Jenkins, Slack",
+    "Methodology: Agile/Scrum, MIL-STD-498"
+  ),
+)
 
 = Language
 
 #resume-item[
   - French: Native (Native language)
-  - English: Fluent (TOEIC 940/990, daily practice)
+  - English: Fluent (TOEIC score of 940/990, daily practice)
   - Spanish: Basic (High school level)
 ]
 
