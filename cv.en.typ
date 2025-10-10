@@ -153,53 +153,49 @@
 
 = Skills
 
-#resume-skill-item(
-  "System",
-  (
-    "OS: Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD",
-    "Virtualization: ESXi, VirtualBox, Docker, KVM, LXD, OpenVZ, Kubernetes/Argo",
-    "Packaging: deb, rpm, ebuild",
-    "Deployment: Puppet, SaltStack, Ansible, Kickstart, Preseed, Terraform, Boto, PXE",
-    "Network: Keepalived, OpenVPN, DHCPd",
-    "Cloud: AWS, Azure"
-  ),
-)
+== System
 
-#resume-skill-item(
-  "Services",
-  (
-    "Web Server: Apache, Lighttpd, Nginx, Tomcat",
-    "Directory: 389 Directory, OpenLDAP, Samba AD",
-    "Database: MySQL, PostgreSQL, Redis, DynamoDB, RDS, Etcd",
-    "Other: Bind, Ntpd, Cups, Bacula, Postfix, Dovecot",
-    "Monitoring: Nagios, NRPE, NewRelic, Logstash, Snmpd, OpenTSDB, Grafana, CollectD",
-    "Security: Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF, Stunnel",
-    "Network FS: Samba, NFS",
-    "Queueing: Kafka, Redis"
-  ),
-)
+#resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD"))
+#resume-skill-item("Virtualization", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo"))
+#resume-skill-item("Packaging", ("deb", "rpm", "ebuild"))
+#resume-skill-item("Deployment", ("Puppet", "SaltStack", "Ansible", "Kickstart", "Preseed", "Terraform", "Boto", "PXE"))
+#resume-skill-item("Network", ("Keepalived", "OpenVPN", "DHCPd"))
+#resume-skill-item("Cloud", ("AWS", "Azure"))
 
-#resume-skill-item(
-  "Programming",
-  (
-    "Language: Golang, Python, C, Shell/Bash, Javascript, Perl, Ocaml",
-    "SCM: Git, Subversion, Mercurial",
-    "Framework: CherryPy, Flask, Echo, Gorm, React, Bootstrap",
-    "Specification: Swagger/OpenAPI",
-    "Build: Make, CMake, GCC, Clang"
-  ),
-)
+--
 
-#resume-skill-item(
-  "Other",
-  (
-    "Network theory: Security, Routing, QoS, TCP/IP, ATM, MPLS",
-    "Computer Sciences: Operations research, Compilation, Graph Theory, Data analysis, UML",
-    "Documentation: Vim, reStructuredText, Markdown, LaTeX, LibreOffice",
-    "Tools: Jira, Confluence, Github, Vim, Travis-ci, Jenkins, Slack",
-    "Methodology: Agile/Scrum, MIL-STD-498"
-  ),
-)
+== Service
+
+#resume-skill-item("Web Server", ("Apache", "Lighttpd", "Nginx", "Tomcat"))
+#resume-skill-item("Directory", ("389 Directory", "OpenLDAP", "Samba AD"))
+#resume-skill-item("Database", ("MySQL", "PostgreSQL", "Redis", "DynamoDB", "RDS", "Etcd"))
+#resume-skill-item("Other", ("Bind", "Ntpd", "Cups", "Bacula", "Postfix", "Dovecot"))
+#resume-skill-item("Monitoring", ("Nagios", "NRPE", "NewRelic", "Logstash", "Snmpd", "OpenTSDB", "Grafana", "CollectD"))
+#resume-skill-item("Security", ("Syslog-ng", "Rsyslog", "OpenSSH", "Sssd", "IPTables", "PF", "Stunnel"))
+#resume-skill-item("Network FS", ("Samba", "NFS"))
+#resume-skill-item("Queueing", ("Kafka", "Redis"))
+
+--
+
+== Programming
+
+#resume-skill-item("Language", ("Golang", "Python", "C", "Shell/Bash", "Javascript", "Perl", "Ocaml"))
+#resume-skill-item("SCM", ("Git", "Subversion", "Mercurial"))
+#resume-skill-item("Framework", ("CherryPy", "Flask", "Echo", "Gorm", "React", "Bootstrap"))
+#resume-skill-item("Specification", ("Swagger/OpenAPI", "UML"))
+#resume-skill-item("Build", ("Make", "CMake", "GCC", "Clang"))
+
+--
+
+== Other
+
+#resume-skill-item("Network theory", ("Security", "Routing", "QoS", "TCP/IP", "ATM", "MPLS"))
+#resume-skill-item("Computer Sciences", ("Operations research", "Compilation", "Graph Theory", "Data analysis", "UML"))
+#resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", "LaTeX", "LibreOffice"))
+#resume-skill-item("Tools", ("Jira", "Confluence", "Github", "Vim", "Travis-ci", "Jenkins", "Slack"))
+#resume-skill-item("Methodology", ("Agile/Scrum", "MIL-STD-498"))
+
+--
 
 = Language
 
