@@ -4,6 +4,18 @@
 #let cube-icon = box(fa-icon("cube", fill: color-darknight))
 #let blog-icon = box(fa-icon("blog", fill: color-darknight))
 
+#let cust-resume-skill-item(category, items) = {
+  set block(below: 0.65em)
+  set pad(top: 2pt)
+
+  pad[
+    #grid(
+      columns: (3fr, 8fr),
+      gutter: 10pt,
+      category, resume-skill-values(items),
+    )
+  ]
+}
 
 #show: resume.with(
   author: (
@@ -110,7 +122,7 @@
 - #github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]: SunFire V100 rebuild (FreeCAD, Golang, Ansible, C, NetBSD)
 - #github-icon #link("https://github.com/kakwa?tab=repositories")[*Profile on Github.com*]: Various other software projects.
 - #cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profile on Printables.com*]: Various 3D CAD models.
-- #blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]: My technical blog.
+- #blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]: Technical blog.
 ]
 
 = Internships
@@ -119,83 +131,64 @@
   title: "Communication et Systèmes",
   location: "Le Plessis Robinson, France",
   date: "2011",
-  description: "System integration / Software development: secured mail infrastructure conception"
+  description: "Implementation end-to-end encrypted mailing list leveraging X509, S/MIME, RSA proxy re-encryption & key trees."
 )
-
-#resume-item[
-  - End-to-end encrypted mail infrastructure based on x509. POC mailing list with E2E encryption (N recipients).
-  - Technologies: Linux, S/MIME, x509, Dovecot, Postfix, Thunderbird, LDAP, TLS, C, PolarSSL/MbedTLS.
-]
 
 #resume-entry(
   title: "INRIA",
   location: "Roquencourt, France",
   date: "2010",
-  description: "Web development"
+  description: "Within European project IDEAS: implement website for viewing oriental manuscripts alongside their translations."
 )
-
-#resume-item[
-  - Within the European project Ideas: website for viewing oriental manuscripts and translations.
-  - Technologies: Python, Django, HTML, CSS, Apache, Linux.
-]
 
 #resume-entry(
   title: "Laboratoire IBISC",
   location: "Evry, France",
   date: "2009",
-  description: "Biological modelization: conception of a cancer tumor model"
+  description: "Biological modeling: conception of a cancer tumor propagation model to study PA-1 molecule impact."
 )
-
-#resume-item[
-  - Bioinformatics research. Model to study PA-1 molecule impact.
-  - Technologies: C, Doxygen.
-]
 
 = Skills
 
-== System
-
-#resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD"))
-#resume-skill-item("Virtualization", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo"))
-#resume-skill-item("Packaging", ("deb", "rpm", "ebuild"))
-#resume-skill-item("Deployment", ("Puppet", "SaltStack", "Ansible", "Kickstart", "Preseed", "Terraform", "Boto", "PXE"))
-#resume-skill-item("Network", ("Keepalived", "OpenVPN", "DHCPd"))
-#resume-skill-item("Cloud", ("AWS", "Azure"))
-
---
-
-== Service
-
-#resume-skill-item("Web Server", ("Apache", "Lighttpd", "Nginx", "Tomcat"))
-#resume-skill-item("Directory", ("389 Directory", "OpenLDAP", "Samba AD"))
-#resume-skill-item("Database", ("MySQL", "PostgreSQL", "Redis", "DynamoDB", "RDS", "Etcd"))
-#resume-skill-item("Other", ("Bind", "Ntpd", "Cups", "Bacula", "Postfix", "Dovecot"))
-#resume-skill-item("Monitoring", ("Nagios", "NRPE", "NewRelic", "Logstash", "Snmpd", "OpenTSDB", "Grafana", "CollectD"))
-#resume-skill-item("Security", ("Syslog-ng", "Rsyslog", "OpenSSH", "Sssd", "IPTables", "PF", "Stunnel"))
-#resume-skill-item("Network FS", ("Samba", "NFS"))
-#resume-skill-item("Queueing", ("Kafka", "Redis"))
-
---
-
-== Programming
-
-#resume-skill-item("Language", ("Golang", "Python", "C", "Shell/Bash", "Javascript", "Perl", "Ocaml"))
-#resume-skill-item("SCM", ("Git", "Subversion", "Mercurial"))
-#resume-skill-item("Framework", ("CherryPy", "Flask", "Echo", "Gorm", "React", "Bootstrap"))
-#resume-skill-item("Specification", ("Swagger/OpenAPI", "UML"))
-#resume-skill-item("Build", ("Make", "CMake", "GCC", "Clang"))
-
---
-
-== Other
-
-#resume-skill-item("Network theory", ("Security", "Routing", "QoS", "TCP/IP", "ATM", "MPLS"))
-#resume-skill-item("Computer Sciences", ("Operations research", "Compilation", "Graph Theory", "Data analysis", "UML"))
-#resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", "LaTeX", "LibreOffice"))
-#resume-skill-item("Tools", ("Jira", "Confluence", "Github", "Vim", "Travis-ci", "Jenkins", "Slack"))
-#resume-skill-item("Methodology", ("Agile/Scrum", "MIL-STD-498"))
-
---
+#grid(
+  columns: 2,
+  gutter: 15pt,
+  grid.cell[
+    == System
+    #cust-resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD"))
+    #cust-resume-skill-item("Virtualization", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo"))
+    #cust-resume-skill-item("Packaging", ("deb", "rpm", "ebuild"))
+    #cust-resume-skill-item("Deployment", ("Puppet", "SaltStack", "Ansible", "Kickstart", "Preseed", "Terraform", "Boto", "PXE"))
+    #cust-resume-skill-item("Network", ("Keepalived", "OpenVPN", "DHCPd"))
+    #cust-resume-skill-item("Cloud", ("AWS", "Azure"))
+  ],
+  grid.cell[
+    == Service
+    #cust-resume-skill-item("Web Server", ("Apache", "Lighttpd", "Nginx", "Tomcat"))
+    #cust-resume-skill-item("Directory", ("389 Directory", "OpenLDAP", "Samba AD"))
+    #cust-resume-skill-item("Misc", ("Bind", "Ntpd", "Cups", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
+    #cust-resume-skill-item("Monitoring", ("Nagios", "NRPE", "NewRelic", "Logstash", "Snmpd", "OpenTSDB", "Grafana", "CollectD"))
+    #cust-resume-skill-item("Database", ("MySQL", "PostgreSQL", "Redis", "DynamoDB", "RDS", "Etcd"))
+    #cust-resume-skill-item("Security", ("Syslog-ng", "Rsyslog", "OpenSSH", "Sssd", "IPTables", "PF", "Stunnel"))
+    #cust-resume-skill-item("Queueing", ("Kafka", "Redis"))
+  ],
+  grid.cell[
+    == Programming
+    #cust-resume-skill-item("Language", ("Golang", "Python", "C", "Shell/Bash", "Javascript", "Perl", "Ocaml"))
+    #cust-resume-skill-item("SCM", ("Git", "Subversion", "Mercurial"))
+    #cust-resume-skill-item("Framework", ("CherryPy", "Flask", "Echo", "Gorm", "React", "Bootstrap"))
+    #cust-resume-skill-item("Specification", ("Swagger/OpenAPI", "UML"))
+    #cust-resume-skill-item("Build", ("Make", "CMake", "GCC", "Clang"))
+  ],
+  grid.cell[
+    == Other
+    #cust-resume-skill-item("Network Theory", ("Security", "Routing", "QoS", "TCP/IP", "ATM", "MPLS"))
+    #cust-resume-skill-item("Computer Sciences", ("Operations research", "Compilation", "Graph Theory", "Data analysis", "UML"))
+    #cust-resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", "LaTeX", "LibreOffice"))
+    #cust-resume-skill-item("Tools", ("Jira", "Confluence", "Github", "Vim", "Travis-ci", "Jenkins", "Slack"))
+    #cust-resume-skill-item("Methodology", ("Agile/Scrum", "MIL-STD-498"))
+  ]
+)
 
 = Language
 
