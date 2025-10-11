@@ -78,7 +78,7 @@
 
 #resume-item[
   - Agile team management (Scrum Master) & task scheduling,
-  - cross team & cross geo coordination (APAC, US, EU).
+  - Cross team & cross geo coordination (APAC, US, EU).
   - Architecture, Design and Development of core services (Golang/REST/PostgreSQL/Redis).
   - Internal PM-like role, gathering other team needs, specifying features, and prioritizing implementation.
   - CI/CD pipeline setup & maintenance (Jenkins/Docker/Argo/Kubernetes)
@@ -101,8 +101,8 @@
   - Mass email deliverability setup (SPF/DKIM/DMARC, FBLs).
   - Internal tooling design, development & distribution (Python, Golang, Artifactory).
   - CI, unit tests and code coverage (Jenkins/Jenkinsfile/pytest/go test).
-  - Cloud/AWS cost optimization
-  - Cross-geo On-Call & handover procedures (US/India/Ireland/France)
+  - Cloud/AWS cost optimization.
+  - Cross-geo On-Call & handover procedures (US/India/Ireland/France).
   - Troubleshooting complex product and customer issues.
   - SQL analysis and database optimization (PostgreSQL/RDS).
 ]
@@ -115,12 +115,12 @@
 )
 
 #resume-item[
-  - Design and automate bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
+  - Designed and automated bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
   - Streamlined build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
-  - Deploy & integrate IT services: DNS, mail, directories, and web services (Bind, Postfix, Roundcube, Trac, IRC).
+  - Deployed & integrated IT services: DNS, mail, directories, and web services (Bind, Postfix, Roundcube, Trac, IRC).
   - Implemented high-availability architectures and replication strategies across SQL DBs, LDAP, and at the web layer (nginx, VRRP/Keepalived, OpenLDAP, MySQL).
   - Developed and maintained automation scripts and operational tooling (Python, Shell, Ruby, Perl).
-  - Implement monitoring and log centralization  (Nagios, SNMP, Logstash, RSyslog).
+  - Implemented monitoring and log centralization (Nagios, SNMP, Logstash, RSyslog).
   - Authored installation documentation, reference handbook, and QA procedures (reStructuredText, Testlink).
 ]
 
@@ -134,7 +134,7 @@
   #cust-project-item([#github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]], "Monte Carlo simulator modeling in-game loot box economics (Golang + React)")
   #cust-project-item([#github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]], "RFC-3161 cryptographic timestamp server. (C + OpenSSL)")
   #cust-project-item([#github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]], "Puppet module managing Samba shares & AD DC setups")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]], "SunFire V100 rebuild into an home server (FreeCAD, Golang, Ansible, C, NetBSD)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]], "SunFire V100 rebuild into a home server (FreeCAD, Golang, Ansible, C, NetBSD)")
   #cust-project-item([#github-icon #link("https://github.com/kakwa?tab=repositories")[*Profile on Github.com*]], "Various other software projects")
   #cust-project-item([#cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profile on Printables.com*]], "Various 3D CAD models")
   #cust-project-item([#blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]], "Technical Blog")
@@ -146,14 +146,14 @@
   title: "Communication et Systèmes",
   location: "Le Plessis Robinson, France",
   date: "2011",
-  description: "Implementation end-to-end encrypted mailing list leveraging X509, S/MIME, RSA proxy re-encryption & key trees."
+  description: "Implementation of end-to-end encrypted mailing list leveraging X509, S/MIME, RSA proxy re-encryption & key trees."
 )
 
 #resume-entry(
   title: "INRIA",
   location: "Roquencourt, France",
   date: "2010",
-  description: "Within European project IDEAS: implement website for viewing oriental manuscripts alongside their translations."
+  description: "Within European project IDEAS: implemented website for viewing oriental manuscripts alongside their translations."
 )
 
 #resume-entry(
@@ -208,7 +208,7 @@
 = Language
 
 #resume-item[
-  - French: Native (Native language)
+  - French: Native
   - English: Fluent (TOEIC score of 940/990, daily practice)
 ]
 
