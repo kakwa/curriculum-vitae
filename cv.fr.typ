@@ -1,5 +1,37 @@
 #import "@preview/modern-cv:0.9.0": *
 
+#let github-icon = box(fa-icon("github", fill: color-darknight))
+#let cube-icon = box(fa-icon("cube", fill: color-darknight))
+#let blog-icon = box(fa-icon("blog", fill: color-darknight))
+
+#let cust-resume-skill-item(category, items) = {
+  set block(below: 0.65em)
+  set pad(top: 2pt)
+
+  pad[
+    #grid(
+      columns: (47fr, 80fr),
+      gutter: 10pt,
+      category, resume-skill-values(items),
+    )
+  ]
+}
+
+#let cust-project-item(url, description) = {
+  set block(below: 0.65em)
+  set pad(top: 0pt)
+
+  pad[
+    #grid(
+      columns: (30fr, 50fr),
+      gutter: 0pt,
+      url,
+      description,
+    )
+  ]
+}
+
+
 #show: resume.with(
   author: (
     firstname: "Pierre-Francois",
@@ -9,199 +41,204 @@
     github: "kakwa",
     linkedin: "pfcarpentier",
     address: "114 rue de la Glacière, 75013 Paris",
-    positions: ("Développeur & Site Reliability Engineer Senior",)
+    positions: ("Ingénieur Logiciel Senior, SRE & Architecte Système",),
+    custom: (
+      (
+        text: "blog",
+        icon: "blog",
+        link: "https://technically.kakwalab.ovh/",
+      ),
+      (
+        text: "CAO/Impression 3D",
+        icon: "cube",
+        link: "https://www.printables.com/@kakwa_3337391/models",
+      ),
+    ),
   ),
-  profile-picture: image("picture/ID.jpg"),
+  keywords: ("SRE", "DevOps", "Cloud", "Automatisation", "Kubernetes", "AWS"),
+  description: "Ingénieur SRE/DevOps senior avec 15 ans d'expérience dans la conception, le déploiement et l'exploitation d'infrastructures cloud-native et on‑premise à grande échelle",
+  profile-picture: image("img/ID.jpg"),
   date: datetime.today().display(),
+  language: "fr",
+  colored-headers: true,
+  accent-color: rgb("#239dad"),
+  show-footer: false,
+  show-address-icon: true,
   paper-size: "a4"
 )
 
-*= Profil Professionnel*
-
-Ingénieur Logiciel & SRE senior polyvalent avec 12+ ans d'expérience dans la conception et l'exploitation d'infrastructures cloud à grande échelle. Expert en automatisation, observabilité et résilience des systèmes. Contributeur Open Source.
-
 = Expérience
 
-=== Parcours Professionnel
-
 #resume-entry(
-  title: "Adobe Inc.",
-  location: "Arcueil/Paris, France",
-  date: "2016–présent",
-  description: "SRE/Ingénieur Logiciel/DevOps"
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Adobe Inc. - Ingénieur Logiciel Senior & SRE / Lead Technique],
+  location: "Paris, France",
+  date: "2020–présent",
+  description: "Lead technique d'une petite équipe dédiée aux outils internes et aux services d'infrastructure cœur."
 )
 
 #resume-item[
-  - 2020–présent — Lead technique d'une équipe de 3 développeurs (Managed Service Engineering).
-  - Leadership : Coordination (Scrum Master), synchronisation multi-géos (APAC, US, EU).
-  - Architecture : Conception et développement de services critiques (Golang/REST/PostgreSQL/Redis).
-  - Product management : Collecte des besoins, spécification de fonctionnalités, priorisation.
-  - DevOps : Pipelines CI/CD (Jenkins/Docker/Argo), déploiement Kubernetes.
-  - Observabilité : Supervision NewRelic/PagerDuty, SOPs, métriques de performance.
-  - Data engineering : Scripts ETL Python, migration de données, intégrations API.
-  - Frontend : Développement d'interfaces (React/JavaScript).
-]
-
-#resume-item[
-  - 2016–2020 — Adobe Campaign TechOps (SRE) : automatisation et production.
-  - Automatisation (SaltStack/Ansible/Terraform/CloudFormation). Migration vers AWS (optimisation coûts −30%).
-  - Documentation et procédures (Confluence, reStructuredText). CI, tests unitaires et couverture (Jenkins/Jenkinsfile/pytest/go test).
-  - DNS email (SPF/DKIM/DMARC, Route53). Outils de robustesse/sécurité (Python, Golang).
-  - Alertes de supervision et tickets clients (astreintes). Investigation de problèmes produits et clients.
-  - Analyses/optimisation SQL (PostgreSQL/RDS). Contexte international (US/Inde/Irlande/France).
+  - Gestion agile d'équipe (Scrum Master) et planification des tâches,
+  - Coordination inter‑équipes et inter‑régions (APAC, US, EU).
+  - Architecture, conception et développement de services cœur (Golang/REST/PostgreSQL/Redis).
+  - Rôle interne de type PM: recueil des besoins, spécification des fonctionnalités et priorisation.
+  - Mise en place et maintenance des pipelines CI/CD (Jenkins/Docker/Argo/Kubernetes)
+  - Supervision et astreinte: définition des alertes, runbook, rotation d'astreinte (NewRelic, PagerDuty, Riemann).
+  - Ingénierie des données et scripts ETL pour migration et rapprochement (Python).
+  - Développement d'UI de contrôle, reporting et inventaire (React/JavaScript/TypeScript).
 ]
 
 #resume-entry(
-  title: "Communication et Systèmes",
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Adobe Inc. - Ingénieur SRE/DevOps],
+  location: "Arcueil, France",
+  date: "2016–2020",
+  description: "SRE dans une équipe internationale d'exploitation, avec un focus sur l'automatisation et le troubleshooting complexe."
+)
+
+#resume-item[
+  - Déploiement et maintenance de la stack/outillage d'automatisation (SaltStack/Ansible/Terraform/CloudFormation).
+  - Migration datacenter → Cloud de plateformes marketing et d'analytics (outils, procédures, exécution).
+  - Documentation et procédures (Confluence, Markdown, reStructuredText).
+  - Conception et distribution d'outils internes (Python, Golang, Artifactory).
+  - CI, tests unitaires et couverture (Jenkins/Jenkinsfile/pytest/go test).
+  - Optimisation des coûts Cloud/AWS.
+  - Astreintes multi‑régions et procédures de handover (US/Inde/Irlande/France).
+  - Troubleshooting de problèmes produit et clients complexes.
+  - Analyses SQL et optimisation de bases (PostgreSQL/RDS).
+]
+
+#resume-entry(
+  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - CS Group - Ingénieur Système & Intégration],
   location: "Le Plessis Robinson, France",
   date: "2011–2016",
-  description: "Ingénieur Intégrateur"
+  description: "Intégration de COTS et développements spécifiques pour systèmes complexes, secteur public et entreprises."
 )
 
 #resume-item[
-  - Systèmes complexes pour clients étatiques/parapublics.
-  - Packaging Debian/RedHat et gestion de dépôts (Deb, Rpm, Reprepro, Createrepo, GnuPG). Industrialisation et versioning.
-  - CI/CD (Jenkins, scripting). Installation automatique (Puppet/Kickstart/Preseed/PXE).
-  - DNS (Bind). Messagerie (Postfix/Dovecot/Roundcube). Annuaire/BDD (389 Directory/OpenLDAP/MySQL/PostgreSQL).
-  - Serveurs Web (Apache, Nginx, Tomcat). HA (réplication SQL/LDAP, LB Apache/Nginx, VRRP/Keepalived).
-  - Supervision (Nagios, NRPE, SNMP, Logstash). Virtualisation (VMware ESXi, VirtualBox/Vagrant, KVM).
-  - Scripting (Python/Shell/Perl/Ruby). Manuels d'exploitation (reStructuredText). Fiches de tests (Testlink).
+  - Conception et automatisation de déploiements bare‑metal et virtualisés (Puppet, Kickstart, PXE).
+  - Industrialisation du build, packaging et versioning de logiciels tiers/maison (.deb/.rpm, Jenkins).
+  - Déploiement et intégration de services IT: DNS, mail, annuaires et web (Bind, Postfix, Roundcube, Trac, IRC).
+  - Haute disponibilité et réplication pour stacks SQL, LDAP et web (nginx, Keepalived, OpenLDAP, MySQL).
+  - Développement et maintenance de scripts d'automatisation et d'outils opérationnels (Python, Shell, Ruby, Perl).
+  - Mise en place de supervision et centralisation de logs (Nagios, SNMP, Logstash, RSyslog).
+  - Rédaction de documentation d'installation, runbook et procédures QA (reStructuredText, Testlink).
 ]
 
-=== Projets Open Source & Contributions
-
-#resume-entry(
-  title: "Projets Open Source",
-  location: "",
-  date: "2012–présent",
-  description: ""
-)
+= Projets
 
 #resume-item[
-  - Wows-Depack — Rétro-ingénierie d'outils de compression (C).
-  - LdapCherry — Application web de gestion d'annuaires (Python/CherryPy).
-  - LibEMF2SVG — Conversion EMF vers SVG (C, OpenSSL).
-  - LibVisio2SVG — Conversion Visio vers SVG (C/C++).
-  - Pakste — Framework de packaging deb/rpm (Makefile, shell).
-  - Wows-Whaling-Simulator — Simulateur web (Golang/React).
-  - UTS-Server — Serveur d'horodatage cryptographique RFC-3161.
-  - Puppet-Samba — Module Puppet pour Samba.
-  - Autres projets — GitHub.
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/ldapcherry")[*kakwa/ldapcherry*]], "Application web de gestion d'annuaires et IAM (Python/CherryPy)")
+  #cust-project-item([#github-icon #link("https://github.com/wows-tools/wows-depack")[*wows-tools/wows-depack*]], "Rétro‑ingénierie et parsing d'un format propriétaire (C, Doxygen)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/libemf2svg")[*kakwa/libemf2svg*]], "Conversion de graphiques vectoriels MS EMF vers SVG (C)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/pakste")[*kakwa/pakste*]], "Framework d'automatisation de packaging pour construire/publier des DEB/RPM (Makefile + shell)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]], "Simulateur Monte‑Carlo modélisant l'économie de loot boxes (Golang + React)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]], "Serveur d'horodatage cryptographique RFC‑3161 (C + OpenSSL)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]], "Module Puppet pour gérer les partages Samba et un AD DC")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]], "Reconstruction d'un SunFire V100 en serveur perso (FreeCAD, Golang, Ansible, C, NetBSD)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa?tab=repositories")[*Profil sur Github.com*]], "Divers autres projets logiciels")
+  #cust-project-item([#cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profil sur Printables.com*]], "Divers modèles 3D")
+  #cust-project-item([#blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]], "Blog technique")
 ]
 
-=== Stages
+= Stages
 
 #resume-entry(
-  title: "Communication et Systèmes",
+  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - Communication & Systèmes],
   location: "Le Plessis Robinson, France",
   date: "2011",
-  description: "Intégration/Développement: infrastructure de messagerie sécurisée"
+  description: "Mise en œuvre d'une mailing list chiffrée de bout en bout basée sur X509, S/MIME, re‑chiffrement par proxy RSA et arbres de clés."
 )
 
-#resume-item[
-  - Messagerie chiffrée de bout en bout (x509). POC de mailing list chiffrée (N destinataires).
-  - Technologies: Linux, S/MIME, x509, Dovecot, Postfix, Thunderbird, LDAP, TLS, C, PolarSSL/MbedTLS.
-]
-
 #resume-entry(
-  title: "INRIA",
+  title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", height: 12pt))] #h(1pt) - INRIA],
   location: "Roquencourt, France",
   date: "2010",
-  description: "Développement web"
+  description: "Dans le cadre du projet européen IDEAS: développement d'un site de visualisation de manuscrits orientaux avec leurs traductions."
 )
-
-#resume-item[
-  - Projet européen Ideas: site pour manuscrits orientaux et traductions.
-  - Technologies: Python, Django, HTML, CSS, Apache, Linux.
-]
 
 #resume-entry(
-  title: "Laboratoire IBISC",
+  title: [#link("https://www.ibisc.univ-evry.fr/")[#box(image("img/ibisc.svg", height: 12pt))] #h(1pt) - IBISC],
   location: "Evry, France",
   date: "2009",
-  description: "Modélisation biologique: modèle de tumeur"
+  description: "Modélisation biologique: conception d'un modèle de propagation de tumeur pour étudier l'impact de la molécule PA‑1."
 )
-
-#resume-item[
-  - Recherche en bio-informatique. Modèle pour étude de la molécule PA-1.
-  - Technologies: C, Doxygen.
-]
 
 = Compétences
 
-=== Système
-
-#resume-item[
-  - OS: Debian/Ubuntu, RedHat EL/CentOS, Gentoo, FreeBSD
-  - Virtualisation: ESXi, VirtualBox, Docker, KVM, LXD, OpenVZ, Kubernetes/Argo
-  - Packaging: deb, rpm, ebuild
-  - Déploiement: Puppet, SaltStack, Ansible, Kickstart, Preseed, Terraform, Boto, PXE
-  - Réseau: Keepalived, OpenVPN, DHCPd — Cloud: AWS, Azure
-]
-
-=== Services
-
-#resume-item[
-  - Web: Apache, Lighttpd, Nginx, Tomcat — Annuaires: 389 Directory, OpenLDAP, Samba AD
-  - BDD: MySQL, PosgreSQL, Redis, DynamoDB, RDS, Etcd — Autres: Bind, Ntpd, Cups, Bacula, Postfix, Dovecot
-  - Supervision: Nagios, NRPE, NewRelic, Logstash, Snmpd, OpenTSDB, Grafana, CollectD
-  - Sécurité: Syslog-ng, Rsyslog, OpenSSH, Sssd, IPTables, PF, Stunnel
-  - FS partagé: Samba, NFS — Queueing: Kafka, Redis
-]
-
-=== Programmation
-
-#resume-item[
-  - Langages: Golang, Python, C, Shell/Bash, Javascript, Perl, Ocaml — SCM: Git, Subversion, Mercurial
-  - Framework: CherryPy, Flask, Echo, Gorm, React, Bootstrap — Spécification: Swagger/OpenAPI
-  - Build: Make, CMake, GCC, Clang
-]
-
-=== Autre
-
-#resume-item[
-  - Théorie des Réseaux: Sécurité, Routage, QoS, TCP/IP, ATM, MPLS — Théorie Info: RO, Compilation, Graphes, Analyse de Données, UML
-  - Documentation: reStructuredText, Markdown, LaTeX, LibreOffice — Outils: Jira, Confluence, Github, Gitea, Vim, Travis-ci, Jenkins, Slack, Discord
-  - Méthodologie: Agile/Scrum, MIL-STD-498
-]
+#grid(
+  columns: 2,
+  gutter: 15pt,
+  grid.cell[
+    == Système
+    #cust-resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD"))
+    #cust-resume-skill-item("Virtualisation", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo"))
+    #cust-resume-skill-item("Packaging", ("deb", "rpm", "ebuild"))
+    #cust-resume-skill-item("Déploiement", ("Puppet", "SaltStack", "Ansible", "Kickstart", "Preseed", "Terraform", "Boto", "PXE"))
+    #cust-resume-skill-item("Réseau", ("Keepalived", "OpenVPN", "DHCPd"))
+    #cust-resume-skill-item("Cloud", ("AWS", "Azure"))
+  ],
+  grid.cell[
+    == Services
+    #cust-resume-skill-item("Serveur Web", ("Apache", "Lighttpd", "Nginx", "Tomcat"))
+    #cust-resume-skill-item("Annuaire", ("389 Directory", "OpenLDAP", "Samba AD"))
+    #cust-resume-skill-item("Divers", ("Bind", "Ntpd", "Cups", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
+    #cust-resume-skill-item("Supervision", ("Nagios", "NRPE", "NewRelic", "Logstash", "Snmpd", "OpenTSDB", "Grafana", "CollectD"))
+    #cust-resume-skill-item("Bases de données", ("MySQL/MariaDB", "PostgreSQL", "Redis", "DynamoDB", "RDS", "Etcd"))
+    #cust-resume-skill-item("Sécurité", ("Syslog-ng", "Rsyslog", "OpenSSH", "Sssd", "IPTables", "PF", "Stunnel"))
+    #cust-resume-skill-item("File d'attente", ("Kafka", "Redis"))
+  ],
+  grid.cell[
+    == Programmation
+    #cust-resume-skill-item("Langage", ("Golang", "Python", "C", "Shell/Bash", "Javascript", "Perl", "Ocaml"))
+    #cust-resume-skill-item("SCM", ("Git", "Subversion", "Mercurial"))
+    #cust-resume-skill-item("Framework", ("CherryPy", "Flask", "Echo", "Gorm", "React", "Bootstrap"))
+    #cust-resume-skill-item("Spécification", ("Swagger/OpenAPI", "UML"))
+    #cust-resume-skill-item("Build", ("Make", "CMake", "GCC", "Clang"))
+  ],
+  grid.cell[
+    == Autre
+    #cust-resume-skill-item("Théorie des Réseaux", ("Sécurité", "Routage", "QoS", "TCP/IP", "ATM", "MPLS"))
+    #cust-resume-skill-item("Informatique", ("Recherche opérationnelle", "Compilation", "Théorie des graphes", "Analyse de données", "UML"))
+    #cust-resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", "LaTeX", "LibreOffice"))
+    #cust-resume-skill-item("Outils", ("Jira", "Confluence", "Github", "Vim", "Travis-ci", "Jenkins", "Slack"))
+    #cust-resume-skill-item("Méthodologie", ("Agile/Scrum", "MIL-STD-498"))
+  ]
+)
 
 = Langues
 
 #resume-item[
   - Français: Langue maternelle
   - Anglais: Courant (TOEIC 940/990, pratique quotidienne)
-  - Espagnol: Notions (Niveau Bac)
 ]
 
 = Formation
 
 #resume-entry(
-  title: "Université Pierre et Marie Curie Paris 6",
+  title: [#link("https://www.sorbonne-universite.fr/")[#box(image("img/sorbonne-university.svg", height: 14pt))] #h(1pt) - Sorbonne Université/UPMC],
   location: "Paris, France",
   date: "2010–2011",
-  description: "Master Recherche Réseau (double diplôme). Sécurité, Routage, QoS, protocoles, simulation."
+  description: "Master en théorie des réseaux (double diplôme). Sujets: Routage, QoS, protocoles, simulation."
 )
 
 #resume-entry(
-  title: "ENSIIE",
+  title: [#link("https://www.ensiie.fr/")[#box(image("img/ensiie.svg", height: 15pt))] #h(1pt) - École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise],
   location: "Evry, France",
   date: "2008–2011",
-  description: "Études d'ingénieur en Informatique. Développement, Système, Réseaux, Mathématiques."
+  description: "Diplôme d'ingénieur en informatique. Logiciel, Systèmes, Réseaux, Mathématiques."
 )
 
 #resume-entry(
   title: "Lycée de Kerichen",
   location: "Brest, France",
   date: "2005–2008",
-  description: "Classe Préparatoire aux Grandes Écoles — Filière MP."
+  description: "Classe Préparatoire aux Grandes Écoles — Mathématiques, Physique, Informatique."
 )
 
 = Centres d'intérêt
 
 #resume-item[
-  - Musique: Guitare et piano
-  - Électronique: Fabrication et réparation
-  - Impression 3D: Conception et impression de pièces, construction d'imprimante
+  - Musique: Pratique de la guitare et du piano
+  - Bricolage: Impression 3D et modélisation, Électronique 
   - Informatique: Développement open source, administration de serveurs personnels
 ]
 
