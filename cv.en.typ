@@ -57,7 +57,7 @@
   ),
   keywords: ("SRE", "DevOps", "Cloud", "Automation", "Kubernetes", "AWS"),
   description: "Senior SRE/DevOps engineer with 15 years of experience designing, deploying and operating large-scale cloud-native & on-premise infrastructures",
-  profile-picture: image("picture/ID.jpg"),
+  profile-picture: image("img/ID.jpg"),
   date: datetime.today().display(),
   language: "en",
   colored-headers: true,
