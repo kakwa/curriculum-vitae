@@ -10,12 +10,27 @@
 
   pad[
     #grid(
-      columns: (3fr, 8fr),
+      columns: (47fr, 80fr),
       gutter: 10pt,
       category, resume-skill-values(items),
     )
   ]
 }
+
+#let cust-project-item(url, description) = {
+  set block(below: 0.65em)
+  set pad(top: 0pt)
+
+  pad[
+    #grid(
+      columns: (30fr, 50fr),
+      gutter: 0pt,
+      url,
+      description,
+    )
+  ]
+}
+
 
 #show: resume.with(
   author: (
@@ -112,17 +127,17 @@
 = Projects
 
 #resume-item[
-- #github-icon #link("https://github.com/kakwa/ldapcherry")[*kakwa/ldapcherry*]: Directory management webapp (Python/CherryPy).
-- #github-icon #link("https://github.com/wows-tools/wows-depack")[*wows-tools/wows-depack*]: Reverse-engineering & parsing of proprietary format (C, Doxygen).
-- #github-icon #link("https://github.com/kakwa/libemf2svg")[*kakwa/libemf2svg*]: MS EMF to SVG conversion (C).
-- #github-icon #link("https://github.com/kakwa/pakste")[*kakwa/pakste*]: deb/rpm packaging framework (Makefile + shell).
-- #github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]: Lootbox simulator (Golang + React).
-- #github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]: RFC-3161 cryptographic timestamp server. (C + OpenSSL)
-- #github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]: Puppet module for Samba.
-- #github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]: SunFire V100 rebuild (FreeCAD, Golang, Ansible, C, NetBSD)
-- #github-icon #link("https://github.com/kakwa?tab=repositories")[*Profile on Github.com*]: Various other software projects.
-- #cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profile on Printables.com*]: Various 3D CAD models.
-- #blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]: Technical blog.
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/ldapcherry")[*kakwa/ldapcherry*]], "Directory & IAM management webapp (Python/CherryPy)")
+  #cust-project-item([#github-icon #link("https://github.com/wows-tools/wows-depack")[*wows-tools/wows-depack*]], "Reverse-engineering & parsing of proprietary format (C, Doxygen)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/libemf2svg")[*kakwa/libemf2svg*]], "MS EMF vector graphics to SVG format conversion (C)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/pakste")[*kakwa/pakste*]], "Packaging automation framework to build & publish DEB/RPMs (Makefile + shell)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]], "Monte Carlo simulator modeling in-game loot box economics (Golang + React)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]], "RFC-3161 cryptographic timestamp server. (C + OpenSSL)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]], "Puppet module managing Samba shares & AD DC setups")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]], "SunFire V100 rebuild into an home server (FreeCAD, Golang, Ansible, C, NetBSD)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa?tab=repositories")[*Profile on Github.com*]], "Various other software projects")
+  #cust-project-item([#cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profile on Printables.com*]], "Various 3D CAD models")
+  #cust-project-item([#blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]], "Technical Blog")
 ]
 
 = Internships
@@ -168,7 +183,7 @@
     #cust-resume-skill-item("Directory", ("389 Directory", "OpenLDAP", "Samba AD"))
     #cust-resume-skill-item("Misc", ("Bind", "Ntpd", "Cups", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
     #cust-resume-skill-item("Monitoring", ("Nagios", "NRPE", "NewRelic", "Logstash", "Snmpd", "OpenTSDB", "Grafana", "CollectD"))
-    #cust-resume-skill-item("Database", ("MySQL", "PostgreSQL", "Redis", "DynamoDB", "RDS", "Etcd"))
+    #cust-resume-skill-item("Database", ("MySQL/MariaDB", "PostgreSQL", "Redis", "DynamoDB", "RDS", "Etcd"))
     #cust-resume-skill-item("Security", ("Syslog-ng", "Rsyslog", "OpenSSH", "Sssd", "IPTables", "PF", "Stunnel"))
     #cust-resume-skill-item("Queueing", ("Kafka", "Redis"))
   ],
@@ -195,7 +210,6 @@
 #resume-item[
   - French: Native (Native language)
   - English: Fluent (TOEIC score of 940/990, daily practice)
-  - Spanish: Basic (High school level)
 ]
 
 = Education
@@ -229,4 +243,3 @@
   - 3D Printing: Design and printing of custom parts, printer construction
   - Computer Science: Open source development, personal servers administration
 ]
-
