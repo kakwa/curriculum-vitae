@@ -70,7 +70,7 @@
 = Experience
 
 #resume-entry(
-  title: "Adobe Inc. - Senior Software Engineer & SRE / Technical Lead",
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", width: 12pt))] #h(6pt) Adobe Inc. - Senior Software Engineer & SRE / Technical Lead],
   location: "Paris, France",
   date: "2020–present",
   description: "Technical lead of a small team focused on internal tooling & core infrastructure services."
@@ -88,7 +88,7 @@
 ]
 
 #resume-entry(
-  title: "Adobe Inc. - SRE/DevOps Engineer",
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", width: 12pt))] #h(6pt) Adobe Inc. - SRE/DevOps Engineer],
   location: "Arcueil, France",
   date: "2016–2020",
   description: "SRE in an international operation team, with a focus on automation & complex troubleshooting."
@@ -108,7 +108,7 @@
 ]
 
 #resume-entry(
-  title: "CS Group - System & Integration Engineer",
+  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", width: 12pt))] #h(6pt) CS Group - System & Integration Engineer],
   location: "Le Plessis Robinson, France",
   date: "2011–2016",
   description: "COTS and custom development integration for complex systems serving public & enterprise clients.",
@@ -118,7 +118,7 @@
   - Designed and automated bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
   - Streamlined build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
   - Deployed & integrated IT services: DNS, mail, directories, and web services (Bind, Postfix, Roundcube, Trac, IRC).
-  - Implemented high-availability architectures and replication strategies across SQL DBs, LDAP, and at the web layer (nginx, VRRP/Keepalived, OpenLDAP, MySQL).
+  - Designed HA and replication for SQL, LDAP, and web stacks (nginx, Keepalived, OpenLDAP, MySQL).
   - Developed and maintained automation scripts and operational tooling (Python, Shell, Ruby, Perl).
   - Implemented monitoring and log centralization (Nagios, SNMP, Logstash, RSyslog).
   - Authored installation documentation, reference handbook, and QA procedures (reStructuredText, Testlink).
@@ -143,21 +143,21 @@
 = Internships
 
 #resume-entry(
-  title: "Communication et Systèmes",
+  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", width: 12pt))] #h(6pt) Communication et Systèmes],
   location: "Le Plessis Robinson, France",
   date: "2011",
   description: "Implementation of end-to-end encrypted mailing list leveraging X509, S/MIME, RSA proxy re-encryption & key trees."
 )
 
 #resume-entry(
-  title: "INRIA",
+  title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", width: 12pt))] #h(6pt) INRIA],
   location: "Roquencourt, France",
   date: "2010",
   description: "Within European project IDEAS: implemented website for viewing oriental manuscripts alongside their translations."
 )
 
 #resume-entry(
-  title: "Laboratoire IBISC",
+  title: [#link("https://www.ibisc.univ-evry.fr/")[#box(image("img/ibisc.svg", width: 12pt))] #h(6pt) Laboratoire IBISC],
   location: "Evry, France",
   date: "2009",
   description: "Biological modeling: conception of a cancer tumor propagation model to study PA-1 molecule impact."
@@ -215,14 +215,14 @@
 = Education
 
 #resume-entry(
-  title: "Sorbonne Université - UPMC",
+  title: [#link("https://www.sorbonne-universite.fr/")[#box(image("img/sorbonne-university.svg", width: 12pt))] #h(6pt) Sorbonne Université - UPMC],
   location: "Paris, France",
   date: "2010–2011",
   description: "Master degree in network theory (double degree). Subjects: Routing, QoS, protocols, simulation."
 )
 
 #resume-entry(
-  title: "Ecole Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise",
+  title: [#link("https://www.ensiie.fr/")[#box(image("img/ensiie.svg", width: 12pt))] #h(6pt) Ecole Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise],
   location: "Evry, France",
   date: "2008–2011",
   description: "Computer sciences engineering diploma. Software, OS, Network, Mathematics."
