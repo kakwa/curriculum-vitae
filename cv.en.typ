@@ -31,7 +31,6 @@
   ]
 }
 
-
 #show: resume.with(
   author: (
     firstname: "Pierre-Francois",
@@ -238,6 +237,7 @@
 = Personal Interests
 
 #resume-item[
+  - Tickering & Sharing: 3D printing & modeling, Electronic, Open Source development
   - Music: Guitar and piano practice
-  - Tickering: 3D printing & modeling, ElectronicÔRF24X3T6Y7J<F5>K89O0P-=`1123<F5><F6><F7><F8>0=<F10 N4RBE3V2WRFTGYBH`1234567890- - Computer Science: Open source development, personal servers administrationUJIKOML.;/'GYHBN TGYHBGFHDFGVRFGDGDCGØÃVBØ V     .¯7<F5>890=0<F8><F9><F12>
+  - Learning: Curious on a wide range of topics, from Science to Design, Economics or History
 ]
