@@ -17,7 +17,7 @@ all: typst
 
 typst: $(TYP_PDFS)
 
-$(TYP_PDFS): picture/ID.jpg
+$(TYP_PDFS): img/*
 	$(TYPST) compile --font-path fonts/ cv.$(subst CV_$(NAME)_,,$(subst .pdf,,$@)).typ $@
 
 # cleaning

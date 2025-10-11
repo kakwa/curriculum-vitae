@@ -169,9 +169,9 @@
   gutter: 15pt,
   grid.cell[
     == System
-    #cust-resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD"))
+    #cust-resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD", "NetBSD"))
     #cust-resume-skill-item("Virtualization", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo"))
-    #cust-resume-skill-item("Packaging", ("deb", "rpm", "ebuild"))
+    #cust-resume-skill-item("Packaging", ("deb", "rpm", "ebuild", "pkgsrc"))
     #cust-resume-skill-item("Deployment", ("Puppet", "SaltStack", "Ansible", "Kickstart", "Preseed", "Terraform", "Boto", "PXE"))
     #cust-resume-skill-item("Network", ("Keepalived", "OpenVPN", "DHCPd"))
     #cust-resume-skill-item("Cloud", ("AWS", "Azure"))
@@ -179,7 +179,7 @@
   grid.cell[
     == Service
     #cust-resume-skill-item("Web Server", ("Apache", "Lighttpd", "Nginx", "Tomcat"))
-    #cust-resume-skill-item("Directory", ("389 Directory", "OpenLDAP", "Samba AD"))
+    #cust-resume-skill-item("Directory", ("OpenLDAP", "Samba AD"))
     #cust-resume-skill-item("Misc", ("Bind", "Ntpd", "Cups", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
     #cust-resume-skill-item("Monitoring", ("Nagios", "NRPE", "NewRelic", "Logstash", "Snmpd", "OpenTSDB", "Grafana", "CollectD"))
     #cust-resume-skill-item("Database", ("MySQL/MariaDB", "PostgreSQL", "Redis", "DynamoDB", "RDS", "Etcd"))
@@ -237,7 +237,7 @@
 = Personal Interests
 
 #resume-item[
-  - Tickering & Sharing: 3D printing & modeling, Electronic, Open Source development
-  - Music: Guitar and piano practice
-  - Learning: Curious on a wide range of topics, from Science to Design, Economics or History
+  - Tickering & Sharing: 3D printing & modeling, Electronic, Open Source development.
+  - Music: Guitar and piano practice.
+  - Learning: Curious on a wide range of topics, from Science to Design, Economics or History.
 ]
