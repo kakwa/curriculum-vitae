@@ -76,7 +76,7 @@
 )
 
 #resume-item[
-  - Gestion Scrum/Agile d'équipe et planification des tâches.
+  - Gestion Scrum/Agile d'équipe, organisation et planification des tâches.
   - Coordination inter‑équipes et inter‑régions (APAC, US, EU).
   - Architecture, conception et développement de core services (Golang/REST/PostgreSQL/Redis).
   - Tâches de PM interne : recueil des besoins, spécification des fonctionnalités et priorisation.
@@ -98,12 +98,12 @@
   - Migration de datacenter vers Cloud de plateformes marketing et d'analytics (outils, procédures, exécution).
   - Documentation et procédures (Confluence, Markdown, reStructuredText).
   - Conception et distribution d'outils d'exploitation (Python, Golang, Artifactory).
-  - Configuration de déliverabilité pour l'envoie email de masse (SPF/DKIM/DMARC, FBLs)
+  - Configuration de la délivrabilité pour l'emailing de masse (SPF/DKIM/DMARC, FBLs).
   - CI, tests unitaires et couverture (Jenkins/Jenkinsfile/pytest/go test).
   - Optimisation des coûts Cloud/AWS.
   - Astreintes multi‑régions et procédures de handover (US/Inde/Irlande/France).
-  - Troubleshooting de problèmes d'implémentation client et produit complexes.
-  - Analyses SQL et optimisation de Base de Données (PostgreSQL/RDS).
+  - Troubleshooting de problèmes complexes d'implémentation clients et bugs produit.
+  - Analyse et optimisation de requêtes SQL d'analytiques et tuning des bases de données (PostgreSQL/RDS).
 ]
 
 #resume-entry(
@@ -170,27 +170,27 @@
   grid.cell[
     == Système
     #cust-resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD", "NetBSD"))
-    #cust-resume-skill-item("Virtualisation", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo"))
+    #cust-resume-skill-item("Virtualisation", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo CD"))
     #cust-resume-skill-item("Packaging", ("deb", "rpm", "ebuild", "pkgsrc"))
     #cust-resume-skill-item("Déploiement", ("Puppet", "SaltStack", "Ansible", "Kickstart", "Preseed", "Terraform", "Boto", "PXE"))
-    #cust-resume-skill-item("Réseau", ("Keepalived", "OpenVPN", "DHCPd", "Bind"))
+    #cust-resume-skill-item("Réseau", ("Keepalived", "OpenVPN", "DHCPd"))
     #cust-resume-skill-item("Cloud", ("AWS", "Azure"))
   ],
   grid.cell[
     == Services
     #cust-resume-skill-item("Serveur web", ("Apache", "Lighttpd", "Nginx", "Tomcat"))
     #cust-resume-skill-item("Annuaire", ("OpenLDAP", "Samba AD"))
-    #cust-resume-skill-item("Bases de données", ("MySQL/MariaDB", "PostgreSQL", "DynamoDB", "RDS", "Etcd"))
-    #cust-resume-skill-item("Services IT", ("Ntpd", "Cups", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
-    #cust-resume-skill-item("Supervision", ("Nagios", "NRPE", "New Relic", "Logstash", "Snmpd", "OpenTSDB", "Grafana", "collectd"))
-    #cust-resume-skill-item("Sécurité", ("Syslog-ng", "Rsyslog", "OpenSSH", "SSSD", "iptables", "PF", "Stunnel"))
+    #cust-resume-skill-item("Bases de données", ("MySQL/MariaDB", "PostgreSQL", "DynamoDB", "Amazon RDS", "etcd"))
+    #cust-resume-skill-item("Services IT", ("BIND", "ntpd", "CUPS", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
+    #cust-resume-skill-item("Supervision", ("Nagios", "NRPE", "New Relic", "Logstash", "snmpd", "OpenTSDB", "Grafana", "collectd"))
+    #cust-resume-skill-item("Sécurité", ("syslog-ng", "rsyslog", "OpenSSH", "SSSD", "iptables", "PF", "stunnel"))
     #cust-resume-skill-item("Queues", ("Kafka", "Redis"))
   ],
   grid.cell[
     == Programmation
-    #cust-resume-skill-item("Langages", ("Golang", "Python", "C", "Shell/Bash", "JavaScript", "Perl", "OCaml"))
+    #cust-resume-skill-item("Langages", ("Golang", "Python", "C", "Shell/Bash", "Javascript", "Perl", "Ocaml"))
     #cust-resume-skill-item("SCM", ("Git", "Subversion", "Mercurial"))
-    #cust-resume-skill-item("Frameworks", ("CherryPy", "Flask", "Echo", "Gorm", "React", "Bootstrap"))
+    #cust-resume-skill-item("Frameworks", ("CherryPy", "Flask", "Echo", "GORM", "React", "Bootstrap"))
     #cust-resume-skill-item("Spécifications", ("Swagger/OpenAPI", "UML"))
     #cust-resume-skill-item("Build", ("Make", "CMake", "GCC", "Clang"))
   ],
