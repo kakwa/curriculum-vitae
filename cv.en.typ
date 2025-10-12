@@ -182,7 +182,7 @@
     #cust-resume-skill-item("Directory", ("OpenLDAP", "Samba AD"))
     #cust-resume-skill-item("Misc", ("BIND", "ntpd", "CUPS", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
     #cust-resume-skill-item("Monitoring", ("Nagios", "NRPE", "New Relic", "Logstash", "snmpd", "OpenTSDB", "Grafana", "collectd"))
-    #cust-resume-skill-item("Database", ("MySQL/MariaDB", "PostgreSQL", "Redis", "DynamoDB", "Amazon RDS", "etcd"))
+    #cust-resume-skill-item("Database", ("MySQL/MariaDB", "PostgreSQL", "DynamoDB", "Amazon RDS", "etcd"))
     #cust-resume-skill-item("Security", ("syslog-ng", "rsyslog", "OpenSSH", "SSSD", "iptables", "PF", "stunnel"))
     #cust-resume-skill-item("Queueing", ("Kafka", "Redis"))
   ],
