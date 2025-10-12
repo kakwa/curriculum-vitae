@@ -69,10 +69,10 @@
 = Expérience
 
 #resume-entry(
-  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Adobe Inc. - Ingénieur Logiciel Senior & SRE / Lead Technique],
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Ingénieur Logiciel Senior & SRE / Lead Technique],
   location: "Paris, France",
   date: "2020–présent",
-  description: "Lead technique d'une petite équipe dédiée aux outils internes et aux core services d'infrastructure."
+  description: [#emph[Adobe Inc.] — Lead technique d'une équipe dédiée aux outils internes et aux core services d'infrastructure.]
 )
 
 #resume-item[
@@ -87,10 +87,10 @@
 ]
 
 #resume-entry(
-  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Adobe Inc. - Ingénieur SRE/DevOps],
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Ingénieur SRE/DevOps],
   location: "Arcueil, France",
   date: "2016–2020",
-  description: "SRE dans une équipe opérationnelle, avec un focus sur l'automatisation et les investigations complexes."
+  description: [#emph[Adobe Inc.] — SRE & DevOps production, avec un focus sur automatisation et investigations complexes.]
 )
 
 #resume-item[
@@ -98,18 +98,19 @@
   - Migration de datacenter vers Cloud de plateformes marketing et d'analytics (outils, procédures, exécution).
   - Documentation et procédures (Confluence, Markdown, reStructuredText).
   - Conception et distribution d'outils d'exploitation (Python, Golang, Artifactory).
+  - Configuration de déliverabilité pour l'envoie email de masse (SPF/DKIM/DMARC, FBLs)
   - CI, tests unitaires et couverture (Jenkins/Jenkinsfile/pytest/go test).
   - Optimisation des coûts Cloud/AWS.
   - Astreintes multi‑régions et procédures de handover (US/Inde/Irlande/France).
   - Troubleshooting de problèmes d'implémentation client et produit complexes.
-  - Analyses SQL et optimisation de bases (PostgreSQL/RDS).
+  - Analyses SQL et optimisation de Base de Données (PostgreSQL/RDS).
 ]
 
 #resume-entry(
-  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - CS Group - Ingénieur Système & Intégration],
+  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - Ingénieur Système & Intégration],
   location: "Le Plessis Robinson, France",
   date: "2011–2016",
-  description: "Intégration de COTS et développements spécifiques pour systèmes complexes, secteur public et entreprises."
+  description: [#emph[CS Group] — Intégration COTS & développement métier pour systèmes complexes, secteur public et entreprises.]
 )
 
 #resume-item[
@@ -141,24 +142,24 @@
 = Stages
 
 #resume-entry(
-  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - Communication & Systèmes],
+  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[Communication & Systèmes]],
   location: "Le Plessis Robinson, France",
   date: "2011",
-  description: "Conception de mailing list chiffrée de bout en bout basée sur X509, S/MIME, re‑chiffrement par proxy RSA et arbres de clés."
+  description: [Conception de mailing list chiffrée de bout en bout basée sur X509, S/MIME, trans‑chiffrement RSA et arbres de clés.]
 )
 
 #resume-entry(
-  title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", height: 12pt))] #h(1pt) - INRIA],
+  title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[INRIA]],
   location: "Roquencourt, France",
   date: "2010",
-  description: "Développement d'un site de visualisation couplée de manuscrits orientaux et leur traduction."
+  description: [Développement d'un site de visualisation couplée de manuscrits orientaux et leur traduction.]
 )
 
 #resume-entry(
-  title: [#link("https://www.ibisc.univ-evry.fr/")[#box(image("img/ibisc.svg", height: 12pt))] #h(1pt) - IBISC],
+  title: [#link("https://www.ibisc.univ-evry.fr/")[#box(image("img/ibisc.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[IBISC]],
   location: "Évry, France",
   date: "2009",
-  description: "Modélisation biologique de propagation de tumeur pour étudier l'impact de la molécule PA‑1."
+  description: [Modélisation biologique de propagation de tumeur pour étudier l'impact de la molécule PA‑1.]
 )
 
 = Compétences
