@@ -55,7 +55,7 @@
     ),
   ),
   keywords: ("SRE", "DevOps", "Cloud", "Automation", "Kubernetes", "AWS"),
-  description: "Senior SRE/DevOps engineer with 15 years of experience designing, deploying and operating large-scale cloud-native & on-premise infrastructures",
+  description: "Senior SRE/DevOps engineer with 15 years of experience designing, deploying, and operating large-scale cloud-native and on-premises infrastructures",
   profile-picture: image("img/ID.jpg"),
   date: datetime.today().display(),
   language: "en",
@@ -76,14 +76,14 @@
 )
 
 #resume-item[
-  - Agile team management (Scrum Master) & task scheduling,
-  - Cross team & cross geo coordination (APAC, US, EU).
-  - Architecture, Design and Development of core services (Golang/REST/PostgreSQL/Redis).
-  - Internal PM-like role, gathering other team needs, specifying features, and prioritizing implementation.
-  - CI/CD pipeline setup & maintenance (Jenkins/Docker/Argo/Kubernetes)
-  - Monitoring & Paging setup, alerts definition, handbook, on-call rotation (NewRelic, PagerDuty, Riemann).
-  - Data engineering & ETL scripting for data migration and reconciliation (Python).
-  - Control Panel, Reporting visualization & Inventory UI development (React/JavaScript/TypeScript).
+  - Agile team management (Scrum Master) and tasks organization & scheduling.
+  - Coordinate cross-team and cross-geo initiatives (APAC, US, EU).
+  - Architect, design, and develop core services (Go/REST/PostgreSQL/Redis).
+  - Act as internal PM to gather requirements, define features, and prioritize delivery.
+  - Build and maintain CI/CD pipelines (Jenkins, Docker, Argo CD, Kubernetes).
+  - Define monitoring and paging: alerts, runbooks, on-call rotations (New Relic, PagerDuty, Riemann).
+  - Develop data engineering and ETL scripts for migration and reconciliation (Python).
+  - Build control panels, reporting, and inventory UIs (React, JavaScript, TypeScript).
 ]
 
 #resume-entry(
@@ -94,16 +94,16 @@
 )
 
 #resume-item[
-  - Automation stack/tooling roll-out & maintenance (SaltStack/Ansible/Terraform/CloudFormation).
-  - DC to Cloud migration of large marketing & data analytics platforms (tooling, procedure, execution).
-  - Documentation and procedures (Confluence, Markdown, reStructuredText).
-  - Mass email deliverability setup (SPF/DKIM/DMARC, FBLs).
-  - Internal tooling design, development & distribution (Python, Golang, Artifactory).
-  - CI, unit tests and code coverage (Jenkins/Jenkinsfile/pytest/go test).
-  - Cloud/AWS cost optimization.
-  - Cross-geo On-Call & handover procedures (US/India/Ireland/France).
-  - Troubleshooting complex product and customer issues.
-  - SQL analysis and database optimization (PostgreSQL/RDS).
+  - Rolled out and maintained automation tooling (SaltStack, Ansible, Terraform, AWS CloudFormation).
+  - DC-to-cloud migration of large marketing and analytics platforms (tooling, procedures, execution).
+  - Wrote documentation and operational procedures (Confluence, Markdown, reStructuredText).
+  - Configured mass emailling deliverability (SPF, DKIM, DMARC; feedback loops).
+  - Designed, developed, and distributed internal tooling (Python, Go, Artifactory).
+  - Implemented CI, unit testing, and coverage (Jenkins pipelines, pytest, go test).
+  - Optimized AWS costs.
+  - Established cross-geo on-call handover procedures (US, India, Ireland, France).
+  - Troubleshot complex product and customer's implementation issues.
+  - Analyzed and optimized analytics SQL queries and tuned databases (PostgreSQL, Amazon RDS).
 ]
 
 #resume-entry(
@@ -116,25 +116,25 @@
 #resume-item[
   - Designed and automated bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
   - Streamlined build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
-  - Deployed & integrated IT services: DNS, mail, directories, and web services (Bind, Postfix, Roundcube, Trac, IRC).
-  - Designed HA and replication for SQL, LDAP, and web stacks (nginx, Keepalived, OpenLDAP, MySQL).
+  - Deployed & integrated IT services: DNS, mail, directories, and web services (BIND, Postfix, Roundcube, Trac, IRC).
+  - Designed HA and replication for SQL, LDAP, and web stacks (Nginx, Keepalived, OpenLDAP, MySQL).
   - Developed and maintained automation scripts and operational tooling (Python, Shell, Ruby, Perl).
-  - Implemented monitoring and log centralization (Nagios, SNMP, Logstash, RSyslog).
-  - Authored installation documentation, reference handbook, and QA procedures (reStructuredText, Testlink).
+  - Implemented monitoring and log centralization (Nagios, SNMP, Logstash, rsyslog).
+  - Authored installation documentation, reference handbook, and QA procedures (reStructuredText, TestLink).
 ]
 
 = Projects
 
 #resume-item[
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/ldapcherry")[*kakwa/ldapcherry*]], "Directory & IAM management webapp (Python/CherryPy)")
-  #cust-project-item([#github-icon #link("https://github.com/wows-tools/wows-depack")[*wows-tools/wows-depack*]], "Reverse-engineering & parsing of proprietary format (C, Doxygen)")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/libemf2svg")[*kakwa/libemf2svg*]], "MS EMF vector graphics to SVG format conversion (C)")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/pakste")[*kakwa/pakste*]], "Packaging automation framework to build & publish DEB/RPMs (Makefile + shell)")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]], "Monte Carlo simulator modeling in-game loot box economics (Golang + React)")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]], "RFC-3161 cryptographic timestamp server. (C + OpenSSL)")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]], "Puppet module managing Samba shares & AD DC setups")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]], "SunFire V100 rebuild into a home server (FreeCAD, Golang, Ansible, C, NetBSD)")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa?tab=repositories")[*Profile on Github.com*]], "Various other software projects")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/ldapcherry")[*kakwa/ldapcherry*]], "Directory and IAM management web app (Python, CherryPy)")
+  #cust-project-item([#github-icon #link("https://github.com/wows-tools/wows-depack")[*wows-tools/wows-depack*]], "Reverse-engineering and parsing of a proprietary format (C, Doxygen)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/libemf2svg")[*kakwa/libemf2svg*]], "Microsoft EMF vector graphics to SVG conversion (C)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/pakste")[*kakwa/pakste*]], "Packaging framework to build and publish DEB/RPMs (Makefile + Shell)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]], "Monte Carlo simulator modeling in-game loot box economics (Go + React)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]], "RFC-3161 cryptographic timestamp server (C, OpenSSL)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]], "Puppet module managing Samba shares and AD DC setups")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]], "Sun Fire V100 rebuild into a home server (FreeCAD, Go, Ansible, C, NetBSD)")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa?tab=repositories")[*Profile on GitHub.com*]], "Various other software projects")
   #cust-project-item([#cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profile on Printables.com*]], "Various 3D CAD models")
   #cust-project-item([#blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]], "Technical Blog")
 ]
@@ -152,14 +152,14 @@
   title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[INRIA]],
   location: "Roquencourt, France",
   date: "2010",
-  description: [Implementation of a website for viewing oriental manuscripts alongside their translations.]
+  description: [Built a website to view oriental manuscripts alongside their translations.]
 )
 
 #resume-entry(
   title: [#link("https://www.ibisc.univ-evry.fr/")[#box(image("img/ibisc.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[IBISC]],
   location: "Evry, France",
   date: "2009",
-  description: [Biological modeling: conception of a cancer tumor propagation model to study PA-1 molecule impact.]
+  description: [Biological modeling: developed a cancer tumor propagation model to study PA-1 molecule impact.]
 )
 
 = Skills
@@ -170,7 +170,7 @@
   grid.cell[
     == System
     #cust-resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD", "NetBSD"))
-    #cust-resume-skill-item("Virtualization", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo"))
+    #cust-resume-skill-item("Virtualization", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo CD"))
     #cust-resume-skill-item("Packaging", ("deb", "rpm", "ebuild", "pkgsrc"))
     #cust-resume-skill-item("Deployment", ("Puppet", "SaltStack", "Ansible", "Kickstart", "Preseed", "Terraform", "Boto", "PXE"))
     #cust-resume-skill-item("Network", ("Keepalived", "OpenVPN", "DHCPd"))
@@ -180,17 +180,17 @@
     == Service
     #cust-resume-skill-item("Web Server", ("Apache", "Lighttpd", "Nginx", "Tomcat"))
     #cust-resume-skill-item("Directory", ("OpenLDAP", "Samba AD"))
-    #cust-resume-skill-item("Misc", ("Bind", "Ntpd", "Cups", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
-    #cust-resume-skill-item("Monitoring", ("Nagios", "NRPE", "NewRelic", "Logstash", "Snmpd", "OpenTSDB", "Grafana", "CollectD"))
-    #cust-resume-skill-item("Database", ("MySQL/MariaDB", "PostgreSQL", "Redis", "DynamoDB", "RDS", "Etcd"))
-    #cust-resume-skill-item("Security", ("Syslog-ng", "Rsyslog", "OpenSSH", "Sssd", "IPTables", "PF", "Stunnel"))
+    #cust-resume-skill-item("Misc", ("BIND", "ntpd", "CUPS", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
+    #cust-resume-skill-item("Monitoring", ("Nagios", "NRPE", "New Relic", "Logstash", "snmpd", "OpenTSDB", "Grafana", "collectd"))
+    #cust-resume-skill-item("Database", ("MySQL/MariaDB", "PostgreSQL", "Redis", "DynamoDB", "Amazon RDS", "etcd"))
+    #cust-resume-skill-item("Security", ("syslog-ng", "rsyslog", "OpenSSH", "SSSD", "iptables", "PF", "stunnel"))
     #cust-resume-skill-item("Queueing", ("Kafka", "Redis"))
   ],
   grid.cell[
     == Programming
     #cust-resume-skill-item("Language", ("Golang", "Python", "C", "Shell/Bash", "Javascript", "Perl", "Ocaml"))
     #cust-resume-skill-item("SCM", ("Git", "Subversion", "Mercurial"))
-    #cust-resume-skill-item("Framework", ("CherryPy", "Flask", "Echo", "Gorm", "React", "Bootstrap"))
+    #cust-resume-skill-item("Framework", ("CherryPy", "Flask", "Echo", "GORM", "React", "Bootstrap"))
     #cust-resume-skill-item("Specification", ("Swagger/OpenAPI", "UML"))
     #cust-resume-skill-item("Build", ("Make", "CMake", "GCC", "Clang"))
   ],
@@ -199,7 +199,7 @@
     #cust-resume-skill-item("Network Theory", ("Security", "Routing", "QoS", "TCP/IP", "ATM", "MPLS"))
     #cust-resume-skill-item("Computer Sciences", ("Operations research", "Compilation", "Graph Theory", "Data analysis", "UML"))
     #cust-resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", "LaTeX", "LibreOffice"))
-    #cust-resume-skill-item("Tools", ("Jira", "Confluence", "Github", "Vim", "Travis-ci", "Jenkins", "Slack"))
+    #cust-resume-skill-item("Tools", ("Jira", "Confluence", "GitHub", "Vim", "Travis CI", "Jenkins", "Slack"))
     #cust-resume-skill-item("Methodology", ("Agile/Scrum", "MIL-STD-498"))
   ]
 )
@@ -208,7 +208,7 @@
 
 #resume-item[
   - French: Native
-  - English: Fluent (TOEIC score of 940/990, daily practice)
+  - English: Fluent (TOEIC 940/990; daily use)
 ]
 
 = Education
@@ -217,7 +217,7 @@
   title: [#link("https://www.sorbonne-universite.fr/")[#box(image("img/sorbonne-university.svg", height: 14pt))] #h(1pt) - Sorbonne Université/UPMC],
   location: "Paris, France",
   date: "2010–2011",
-  description: "Master degree in network theory (double degree). Subjects: Routing, QoS, protocols, simulation."
+  description: "Master's degree in network theory (double degree). Subjects: Routing, QoS, protocols, simulation."
 )
 
 #resume-entry(
@@ -237,7 +237,7 @@
 = Personal Interests
 
 #resume-item[
-  - Tickering & Sharing: 3D printing & modeling, Electronic, Open Source development.
+  - Tinkering & Sharing: 3D printing & modeling, Electronics, Open Source development.
   - Music: Guitar and piano practice.
-  - Learning: Curious on a wide range of topics, from Science to Design, Economics or History.
+  - Learning: Curious about a wide range of topics, from Science to Design, Economics or History.
 ]
