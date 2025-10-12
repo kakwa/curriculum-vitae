@@ -207,8 +207,8 @@
 = Language
 
 #resume-item[
-  - French: Native
-  - English: Fluent (TOEIC 940/990; daily use)
+  - 🇫🇷 French: Native
+  - 🇬🇧 English: Fluent (TOEIC 940/990; daily use)
 ]
 
 = Education

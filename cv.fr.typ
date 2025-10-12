@@ -207,8 +207,8 @@
 = Langues
 
 #resume-item[
-  - Français: Langue maternelle
-  - Anglais: Courant (TOEIC 940/990, pratique quotidienne)
+  - 🇫🇷 Français: Langue maternelle
+  - 🇬🇧 Anglais: Courant (TOEIC 940/990, pratique quotidienne)
 ]
 
 = Formation
