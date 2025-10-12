@@ -33,7 +33,7 @@
 
 #show: resume.with(
   author: (
-    firstname: "Pierre-Francois",
+    firstname: "Pierre-François",
     lastname: "Carpentier",
     email: "carpentier.pf@gmail.com",
     phone: "+33 (0) 670 471 017",
@@ -48,7 +48,7 @@
         link: "https://technically.kakwalab.ovh/",
       ),
       (
-        text: "CAD/3DP",
+        text: "CAD/3D Printing",
         icon: "cube",
         link: "https://www.printables.com/@kakwa_3337391/models",
       ),
@@ -69,10 +69,10 @@
 = Experience
 
 #resume-entry(
-  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Adobe Inc. - Senior Software Engineer & SRE / Technical Lead],
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Senior Software Engineer & SRE / Technical Lead],
   location: "Paris, France",
   date: "2020–present",
-  description: "Technical lead of a small team focused on internal tooling & core infrastructure services."
+  description: [#emph[Adobe Inc.] — Technical lead of a team focused on internal tooling & core infrastructure services.]
 )
 
 #resume-item[
@@ -87,10 +87,10 @@
 ]
 
 #resume-entry(
-  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Adobe Inc. - SRE/DevOps Engineer],
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - SRE/DevOps Engineer],
   location: "Arcueil, France",
   date: "2016–2020",
-  description: "SRE in an international operation team, with a focus on automation & complex troubleshooting."
+  description: [#emph[Adobe Inc.] — SRE in an international operation team, with a focus on automation & complex troubleshooting.]
 )
 
 #resume-item[
@@ -107,10 +107,10 @@
 ]
 
 #resume-entry(
-  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - CS Group - System & Integration Engineer],
+  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - System & Integration Engineer],
   location: "Le Plessis Robinson, France",
   date: "2011–2016",
-  description: "COTS and custom development integration for complex systems serving public & enterprise clients.",
+  description: [#emph[CS Group] — COTS and custom development integration for complex systems serving public & enterprise clients.],
 )
 
 #resume-item[
@@ -142,24 +142,24 @@
 = Internships
 
 #resume-entry(
-  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - Communication & Systèmes],
+  title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[Communication & Systèmes]],
   location: "Le Plessis Robinson, France",
   date: "2011",
-  description: "Implementation of end-to-end encrypted mailing list leveraging X509, S/MIME, RSA proxy re-encryption & key trees."
+  description: [Implementation of end-to-end encrypted mailing list leveraging X509, S/MIME, RSA proxy re-encryption & key trees.]
 )
 
 #resume-entry(
-  title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", height: 12pt))] #h(1pt) - INRIA],
+  title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[INRIA]],
   location: "Roquencourt, France",
   date: "2010",
-  description: "Within European project IDEAS: implemented website for viewing oriental manuscripts alongside their translations."
+  description: [Implementation of a website for viewing oriental manuscripts alongside their translations.]
 )
 
 #resume-entry(
-  title: [#link("https://www.ibisc.univ-evry.fr/")[#box(image("img/ibisc.svg", height: 12pt))] #h(1pt) - IBISC],
+  title: [#link("https://www.ibisc.univ-evry.fr/")[#box(image("img/ibisc.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[IBISC]],
   location: "Evry, France",
   date: "2009",
-  description: "Biological modeling: conception of a cancer tumor propagation model to study PA-1 molecule impact."
+  description: [Biological modeling: conception of a cancer tumor propagation model to study PA-1 molecule impact.]
 )
 
 = Skills
