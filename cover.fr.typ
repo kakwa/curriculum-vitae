@@ -14,7 +14,7 @@
       "SRE",
       "Architecture Système",
     ),
-    signature: "Cordialement,",
+    signature: image("img/signature.svg", format: "svg", width: 150pt),
   ),
   language: "fr",
   date: datetime.today().display(),
@@ -37,9 +37,10 @@
 #letter-heading(job-position: "POSITION", addressee: "Madame, Monsieur")
 
 #coverletter-content[
-  Merci d’examiner ma candidature au poste de POSITION chez COMPANY.
+  Merci d’examiner ma candidature au poste de POSITION.
   Je serais enthousiaste à l’idée de contribuer et d’améliorer EXEMPLE.
 ]
+
 #coverletter-content[
   Je suis autonome, curieux, adaptable et habitué à évoluer dans des environnements complexes;
   je suis donc confiant dans ma capacité à monter en compétence et contribuer rapidement au succès de
@@ -58,7 +59,7 @@
 
 #coverletter-content[
   Cette envie de créer, couplé à une grande curiosité contribue à me rendre proactif
-  et un meilleur problem-solver, des qualités qui, je le crois,
+  et meilleur dans la recherche de solution, des qualités qui, je le crois,
   se traduiraient par des contributions concrètes au sein de votre équipe.
 ]
 #coverletter-content[
