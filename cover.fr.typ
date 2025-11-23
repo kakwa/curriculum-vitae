@@ -12,7 +12,7 @@
     positions: (
       "Ingénieur Logiciel",
       "SRE",
-      "Architecte Système",
+      "Architecture Système",
     ),
     signature: "Cordialement,",
   ),
@@ -39,11 +39,14 @@
 #coverletter-content[
   Merci d’examiner ma candidature au poste de POSITION chez COMPANY.
   Je serais enthousiaste à l’idée de contribuer et d’améliorer EXEMPLE.
-
+]
+#coverletter-content[
   Je suis autonome, curieux, adaptable et habitué à évoluer dans des environnements complexes;
   je suis donc confiant dans ma capacité à monter en compétence et contribuer rapidement au succès de
   votre entreprise.
+]
 
+#coverletter-content[
   L’informatique est pour moi plus qu’une activité professionnelle, c’est aussi
   loisir que je pratique sur mon temps libre, aux côtés d’activités de fabrication
   (impression 3D, bricolage, électronique). Je suis le créateur et mainteneur
@@ -51,11 +54,14 @@
   #link("https://www.printables.com/@kakwa_3337391")[modélisation 3D (CAO)] ainsi
   qu’à la rédaction #link("https://technically.kakwalab.ovh/")[d'articles techniques].
   N’hésitez pas à consulter ces projets.
+]
 
+#coverletter-content[
   Cette envie de créer, couplé à une grande curiosité contribue à me rendre proactif
   et un meilleur problem-solver, des qualités qui, je le crois,
   se traduiraient par des contributions concrètes au sein de votre équipe.
-
+]
+#coverletter-content[
   Je serais heureux d’échanger avec vous afin d’évaluer mon adéquation avec
   votre organisation.
 ]
