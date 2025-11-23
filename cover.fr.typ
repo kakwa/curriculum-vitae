@@ -48,23 +48,22 @@
 ]
 
 #coverletter-content[
-  L’informatique est pour moi plus qu’une activité professionnelle, c’est aussi
-  loisir que je pratique sur mon temps libre, aux côtés d’activités de fabrication
+  L’informatique va au dela d'un simple activité professionnelle pour moi, c’est aussi
+  une passion que je pratique sur mon temps libre, aux côtés d’activités de fabrication
   (impression 3D, bricolage, électronique). Je suis le créateur et mainteneur
-  de #link("https://github.com/kakwa")[plusieurs petits projets open‑source], et je me suis récemment intéressé à la
-  #link("https://www.printables.com/@kakwa_3337391")[modélisation 3D (CAO)] ainsi
-  qu’à la rédaction #link("https://technically.kakwalab.ovh/")[d'articles techniques].
+  de #link("https://github.com/kakwa")[plusieurs petits projets open‑source],
+  et je me suis récemment intéressé à la #link("https://www.printables.com/@kakwa_3337391")[modélisation 3D (CAO)]
+  ainsi qu’à la rédaction #link("https://technically.kakwalab.ovh/")[d'articles techniques].
   N’hésitez pas à consulter ces projets.
 ]
 
 #coverletter-content[
   Cette envie de créer, couplé à une grande curiosité contribue à me rendre proactif
-  et meilleur dans la recherche de solution, des qualités qui, je le crois,
-  se traduiraient par des contributions concrètes au sein de votre équipe.
+  et meilleur dans la recherche de solution, des qualités qui, je pense,
+  se traduiront par des contributions tangibles au sein de vos équipes.
 ]
+
 #coverletter-content[
-  Je serais heureux d’échanger avec vous afin d’évaluer mon adéquation avec
-  votre organisation.
+  Je serais heureux d’échanger avec vous plus en détail afin d’évaluer si mon profil
+  conviendrait au poste et à votre organisation.
 ]
-
-
