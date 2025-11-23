@@ -14,7 +14,7 @@
       "System Architecture",
       "SRE",
     ),
-    signature: "Sincerely,",
+    signature: image("img/signature.svg", format: "svg", width: 150pt),
   ),
   language: "en",
   date: datetime.today().display(),

@@ -706,7 +706,7 @@
     align(right)[
       #pad(bottom: 5pt)[
         #block[
-          #set text(size: 32pt, style: "normal", font: header-font)
+          #set text(size: 28pt, style: "normal", font: header-font)
           #if language == "zh" or language == "ja" [
             #text(accent-color, weight: "bold")[#author.lastname]#text(
               weight: "bold",
@@ -844,13 +844,15 @@
   let signature = {
     align(bottom)[
       #pad(bottom: 2em)[
-        #if ("signature" in author) {
-          author.signature
-        }
         #text(weight: "light")[#linguify("sincerely", from: lang_data)#if (
             language != "de"
-          ) [#sym.comma]] \
-        #text(weight: "bold")[#author.firstname #author.lastname] \ \
+          ) [#sym.comma]]
+        #if ("signature" in author) {
+          linebreak()
+          author.signature
+          linebreak()
+        }
+        #text(weight: "bold")[#author.firstname #author.lastname]
       ]
     ]
   }

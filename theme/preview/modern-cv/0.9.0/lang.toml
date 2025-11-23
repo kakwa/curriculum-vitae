@@ -52,8 +52,8 @@ dear = "Cher/Chère"
 cover-letter = "Lettre de motivation"
 attached = "Ci-joint"
 curriculum-vitae = "Curriculum Vitae"
-sincerely = "Sincèrement"
-letter-position-pretext = "Demande d'emploi pour"
+sincerely = " Veuillez agréer mes salutations distinguées"
+letter-position-pretext = "Candidature pour"
 
 [lang.ru]
 resume = "Резюме"
