@@ -48,7 +48,7 @@
 ]
 
 #coverletter-content[
-  L’informatique va au dela d'un simple activité professionnelle pour moi, c’est aussi
+  L’informatique va au‑delà d’une simple activité professionnelle pour moi, c’est aussi
   une passion que je pratique sur mon temps libre, aux côtés d’activités de fabrication
   (impression 3D, bricolage, électronique). Je suis le créateur et mainteneur
   de #link("https://github.com/kakwa")[plusieurs petits projets open‑source],
@@ -58,8 +58,8 @@
 ]
 
 #coverletter-content[
-  Cette envie de créer, couplé à une grande curiosité contribue à me rendre proactif
-  et meilleur dans la recherche de solution, des qualités qui, je pense,
+  Cette envie de créer, couplée à une grande curiosité contribue à me rendre proactif
+  et meilleur dans la recherche de solutions, des qualités qui, je pense,
   se traduiront par des contributions tangibles au sein de vos équipes.
 ]
 

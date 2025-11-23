@@ -27,14 +27,14 @@
 
 #hiring-entity-info(
   entity-info: (
-    target: "Company Recruitement Team",
+    target: "Company Recruitment Team",
     name: "COMPANY",
     street-address: "123 Example Street",
     city: "Anytown, ST 12345",
   ),
 )
 
-#letter-heading(job-position: "POSITION", addressee: "Sir or Madame")
+#letter-heading(job-position: "POSITION", addressee: "Sir or Madam")
 
 #coverletter-content[
   Thank you for considering my application for the POSITION role at COMPANY.
@@ -43,12 +43,12 @@
 
 #coverletter-content[
   I’m autonomous, always learning, adaptable and fully capable of navigating complex
-  environments, so I’m confident I can quickly ramp up across and be a valuable
+  environments, so I’m confident I can quickly ramp up and be a valuable
   contributor to your company.
 ]
 
 #coverletter-content[
-  Computer science is more than a professional activity for me, it’s a hobbie I
+  Computer science is more than a professional activity for me, it’s a hobby I
   pursue in my free time alongside broader “maker” activities (3D printing,
   tinkering, electronics). I’m the creator and maintainer of #link("https://github.com/kakwa")[several small open‑source projects],
   and lately I’ve been exploring #link("https://www.printables.com/@kakwa_3337391")[CAD 3D modeling] and writing about
