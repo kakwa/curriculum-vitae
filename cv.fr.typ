@@ -1,4 +1,5 @@
 #import "@preview/modern-cv:0.9.0": *
+#import "@preview/swank-tex:0.1.0": *
 
 #let github-icon = box(fa-icon("github", fill: color-darknight))
 #let cube-icon = box(fa-icon("cube", fill: color-darknight))
@@ -198,7 +199,7 @@
     == Autre
     #cust-resume-skill-item("Théorie Réseau", ("Sécurité", "Routage", "QoS", "TCP/IP", "ATM", "MPLS"))
     #cust-resume-skill-item("Informatique", ("Recherche opérationnelle", "Compilation", "Théorie des graphes", "Analyse de données", "UML"))
-    #cust-resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", "LaTeX", "LibreOffice"))
+    #cust-resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", LaTeX, "LibreOffice"))
     #cust-resume-skill-item("Outils", ("Jira", "Confluence", "GitHub", "Vim", "Travis CI", "Jenkins", "Slack"))
     #cust-resume-skill-item("Méthodologie", ("Agile/Scrum", "MIL-STD-498"))
   ]
