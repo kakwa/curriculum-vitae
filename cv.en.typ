@@ -199,7 +199,7 @@
     == Other
     #cust-resume-skill-item("Network Theory", ("Security", "Routing", "QoS", "TCP/IP", "ATM", "MPLS"))
     #cust-resume-skill-item("Computer Sciences", ("Operations research", "Compilation", "Graph Theory", "Data analysis", "UML"))
-    #cust-resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", LaTeX, "LibreOffice"))
+    #cust-resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", LaTeX, text(rgb("#239dad"))[#strong[typst]], "LibreOffice"))
     #cust-resume-skill-item("Tools", ("Jira", "Confluence", "GitHub", "Vim", "Travis CI", "Jenkins", "Slack"))
     #cust-resume-skill-item("Methodology", ("Agile/Scrum", "MIL-STD-498"))
   ]
