@@ -41,7 +41,7 @@
     github: "kakwa",
     linkedin: "pfcarpentier",
     address: "114 rue de la Glacière, 75013 Paris",
-    positions: ("Senior Software Engineer, SRE & System Architect",),
+    positions: ("Software Engineering", "Site Reliability Engineer", "System Architecture", "OSS Contributor"),
     custom: (
       (
         text: "blog",
@@ -55,7 +55,7 @@
       ),
     ),
   ),
-  keywords: ("SRE", "DevOps", "Cloud", "Automation", "Kubernetes", "AWS"),
+  keywords: ("Software Engineering","Site Reliability Engineer", "DevOps", "Cloud", "Automation", "Kubernetes", "AWS", "Python", "Golang", "Open Source"),
   description: "Senior SRE/DevOps engineer with 15 years of experience designing, deploying, and operating large-scale cloud-native and on-premises infrastructures",
   profile-picture: image("img/ID.jpg"),
   date: datetime.today().display(),
@@ -70,61 +70,59 @@
 = Experience
 
 #resume-entry(
-  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Senior Software Engineer & SRE / Technical Lead],
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Senior Software Engineer, SRE & Technical Lead],
   location: "Paris, France",
   date: "2020–present",
-  description: [#emph[Adobe Inc.] — Technical lead of a team focused on internal tooling & core infrastructure services.]
+  description: [#emph[Adobe Inc.] — Technical lead of a team developing and operating mass emailing systems]
 )
 
 #resume-item[
-  - Agile team management (Scrum Master) and tasks organization & scheduling.
-  - Coordinate cross-team and cross-geo initiatives (APAC, US, EU).
-  - Architect, design, and develop core services (Go/REST/PostgreSQL/Redis).
-  - Act as internal PM to gather requirements, define features, and prioritize delivery.
-  - Build and maintain CI/CD pipelines (Jenkins, Docker, Argo CD, Kubernetes).
-  - Define monitoring and paging: alerts, runbooks, on-call rotations (New Relic, PagerDuty, Riemann).
-  - Develop data engineering and ETL scripts for migration and reconciliation (Python).
-  - Build control panels, reporting, and inventory UIs (React, JavaScript, TypeScript).
+  - Coordination of cross-team and cross-geo initiatives (APAC, US, EU).
+  - Architect and deploy components for a large-scale email platform delivering 1B+ emails per day (Go, REST API, SQL, Redis).
+  - Breaking down projects into clear and actionable tasks/epics for developers while enabling easy progress tracking for management (Scrum, Jira, Agile Project Management).
+  - Build control & command UIs safely empowering consultants, support and operation (React, JavaScript, TypeScript).
+  - Gather requirements, specify functionalities, and prioritize delivery of new features (Product Management).
+  - Build and maintain CI/CD pipelines across a dozen services or components (Jenkins, Docker, ArgoCD, Kubernetes)
+  - Define monitoring and paging policies: alerts, runbooks, for 24-7 on-call rotation (New Relic, PagerDuty, Riemann).
+  - Develop ETL scripts for data migration and reconciliation (Python).
 ]
 
 #resume-entry(
-  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - SRE/DevOps Engineer],
+  title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Site Reliability Engineer],
   location: "Arcueil, France",
   date: "2016–2020",
-  description: [#emph[Adobe Inc.] — SRE in an international operation team, with a focus on automation & complex troubleshooting.]
+  description: [#emph[Adobe Inc.] — SRE/DevOps in a global operation team managing +5k virtual servers]
 )
 
 #resume-item[
-  - Rolled out and maintained automation tooling (SaltStack, Ansible, Terraform, AWS CloudFormation).
-  - DC-to-cloud migration of large marketing and analytics platforms (tooling, procedures, execution).
-  - Wrote documentation and operational procedures (Confluence, Markdown, reStructuredText).
-  - Configured mass emailling deliverability (SPF, DKIM, DMARC; feedback loops).
-  - Designed, developed, and distributed internal tooling (Python, Go, Artifactory).
-  - Implemented CI, unit testing, and coverage (Jenkins pipelines, pytest, go test).
-  - Optimized AWS costs.
-  - Established cross-geo on-call handover procedures (US, India, Ireland, France).
-  - Troubleshot complex product and customer's implementation issues.
-  - Analyzed and optimized analytics SQL queries and tuned databases (PostgreSQL, Amazon RDS).
+  - Roll-out of automation tooling managing +5K servers (SaltStack, Ansible, Terraform, AWS CloudFormation).
+  - DC-to-Cloud migration of large (+2TB) marketing and analytics platforms (tooling, procedures, execution).
+  - SPF/DKIM/DMARC/FBL/PTR configuration for mass-emailing at up to 15M emails/hour per customer.
+  - Design, development, documentation and distribution of internal tools & components (Python, Go, Confluence, Markdown).
+  - Setup of CI, unit testing, and coverage measurement (Jenkins pipelines, Artifactory, pytest, go test).
+  - AWS cost optimization recommendations leading to a ~30% bill reduction.
+  - Resolved complex product and customer implementation issues.
+  - Analyze and optimize complex analytics SQL queries and general DB tuning (PostgreSQL, Amazon RDS).
 ]
 
 #resume-entry(
   title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - System & Integration Engineer],
-  location: "Le Plessis Robinson, France",
+  location: "Le Plessis-Robinson, France",
   date: "2011–2016",
   description: [#emph[CS Group] — COTS and custom development integration for complex systems serving public & enterprise clients.],
 )
 
 #resume-item[
-  - Designed and automated bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
-  - Streamlined build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
-  - Deployed & integrated IT services: DNS, mail, directories, and web services (BIND, Postfix, Roundcube, Trac, IRC).
-  - Designed HA and replication for SQL, LDAP, and web stacks (Nginx, Keepalived, OpenLDAP, MySQL).
-  - Developed and maintained automation scripts and operational tooling (Python, Shell, Ruby, Perl).
-  - Implemented monitoring and log centralization (Nagios, SNMP, Logstash, rsyslog).
-  - Authored installation documentation, reference handbook, and QA procedures (reStructuredText, TestLink).
+  - Design and automation of bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
+  - Design high availability and replication strategy for 99.95% availability (Nginx, Keepalived, OpenLDAP, MySQL).
+  - Streamline build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
+  - Deploy & integrate IT services: DNS, mail, directories, and web services (BIND, Postfix, Roundcube, Trac, IRC).
+  - Development and maintenance of automation scripts and operational tooling (Python, Shell, Ruby, Perl).
+  - Implementation of monitoring and log centralization (Nagios, SNMP, Logstash, rsyslog).
+  - Drafting of installation procedures, reference manual, and QA checklists (reStructuredText, TestLink).
 ]
 
-= Projects
+= Open Source Projects
 
 #resume-item[
   #cust-project-item([#github-icon #link("https://github.com/kakwa/ldapcherry")[*kakwa/ldapcherry*]], "Directory and IAM management web app (Python, CherryPy)")
@@ -134,7 +132,6 @@
   #cust-project-item([#github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]], "Monte Carlo simulator modeling in-game loot box economics (Go + React)")
   #cust-project-item([#github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]], "RFC-3161 cryptographic timestamp server (C, OpenSSL)")
   #cust-project-item([#github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]], "Puppet module managing Samba shares and AD DC setups")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/silly-sun-server")[*kakwa/silly-sun-server*]], "Sun Fire V100 rebuild into a home server (FreeCAD, Go, Ansible, C, NetBSD)")
   #cust-project-item([#github-icon #link("https://github.com/kakwa?tab=repositories")[*Profile on GitHub.com*]], "Various other software projects")
   #cust-project-item([#cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profile on Printables.com*]], "Various 3D CAD models")
   #cust-project-item([#blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]], "Technical Blog")
@@ -144,21 +141,21 @@
 
 #resume-entry(
   title: [#link("https://www.csgroup.eu/")[#box(image("img/cs-group.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[Communication & Systèmes]],
-  location: "Le Plessis Robinson, France",
+  location: "Le Plessis-Robinson, France",
   date: "2011",
   description: [Implementation of end-to-end encrypted mailing list leveraging X509, S/MIME, RSA proxy re-encryption & key trees.]
 )
 
 #resume-entry(
   title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[INRIA]],
-  location: "Roquencourt, France",
+  location: "Rocquencourt, France",
   date: "2010",
   description: [Built a website to view oriental manuscripts alongside their translations.]
 )
 
 #resume-entry(
   title: [#link("https://www.ibisc.univ-evry.fr/")[#box(image("img/ibisc.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[IBISC]],
-  location: "Evry, France",
+  location: "Évry, France",
   date: "2009",
   description: [Biological modeling: developed a cancer tumor propagation model to study PA-1 molecule impact.]
 )
@@ -170,26 +167,25 @@
   gutter: 15pt,
   grid.cell[
     == System
-    #cust-resume-skill-item("OS", ("Debian/Ubuntu", "RedHat EL/CentOS", "Gentoo", "FreeBSD", "NetBSD"))
+    #cust-resume-skill-item("OS", ("Debian/Ubuntu", "RHEL", "Gentoo", "Free/Open/NetBSD"))
     #cust-resume-skill-item("Virtualization", ("ESXi", "VirtualBox", "Docker", "KVM", "LXD", "OpenVZ", "Kubernetes/Argo CD"))
     #cust-resume-skill-item("Packaging", ("deb", "rpm", "ebuild", "pkgsrc"))
     #cust-resume-skill-item("Deployment", ("Puppet", "SaltStack", "Ansible", "Kickstart", "Preseed", "Terraform", "Boto", "PXE"))
-    #cust-resume-skill-item("Network", ("Keepalived", "OpenVPN", "DHCPd"))
-    #cust-resume-skill-item("Cloud", ("AWS", "Azure"))
+    #cust-resume-skill-item("Network", ("Keepalived", "OpenVPN", "DHCPd", "Bind"))
+    #cust-resume-skill-item("Cloud", ("AWS", "Azure", "OVH"))
   ],
   grid.cell[
     == Service
     #cust-resume-skill-item("Web Server", ("Apache", "Lighttpd", "Nginx", "Tomcat"))
-    #cust-resume-skill-item("Directory", ("OpenLDAP", "Samba AD"))
-    #cust-resume-skill-item("Misc", ("BIND", "ntpd", "CUPS", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
-    #cust-resume-skill-item("Monitoring", ("Nagios", "NRPE", "New Relic", "Logstash", "snmpd", "OpenTSDB", "Grafana", "collectd"))
+    #cust-resume-skill-item("Misc", ("OpenLDAP", "ntpd", "CUPS", "Bacula", "Postfix", "Dovecot", "Samba", "NFS"))
+    #cust-resume-skill-item("Monitoring", ("Nagios", "NewRelic", "Logstash", "snmpd", "Grafana", "collectd"))
     #cust-resume-skill-item("Database", ("MySQL/MariaDB", "PostgreSQL", "DynamoDB", "Amazon RDS", "etcd"))
-    #cust-resume-skill-item("Security", ("syslog-ng", "rsyslog", "OpenSSH", "SSSD", "iptables", "PF", "stunnel"))
+    #cust-resume-skill-item("Security", ("rsyslog", "OpenSSH", "SSSD", "iptables", "PF", "stunnel"))
     #cust-resume-skill-item("Queueing", ("Kafka", "Redis"))
   ],
   grid.cell[
     == Programming
-    #cust-resume-skill-item("Language", ("Golang", "Python", "C", "Shell/Bash", "Javascript", "Perl", "Ocaml"))
+    #cust-resume-skill-item("Language", ("Golang", "Python", "C", "Shell/Bash", "JavaScript/TypeScript"))
     #cust-resume-skill-item("SCM", ("Git", "Subversion", "Mercurial"))
     #cust-resume-skill-item("Framework", ("CherryPy", "Flask", "Echo", "GORM", "React", "Bootstrap"))
     #cust-resume-skill-item("Specification", ("Swagger/OpenAPI", "UML"))
@@ -198,9 +194,9 @@
   grid.cell[
     == Other
     #cust-resume-skill-item("Network Theory", ("Security", "Routing", "QoS", "TCP/IP", "ATM", "MPLS"))
-    #cust-resume-skill-item("Computer Sciences", ("Operations research", "Compilation", "Graph Theory", "Data analysis", "UML"))
+    #cust-resume-skill-item("Computer Science", ("Operations research", "Graph Theory", "Data analysis", "UML"))
     #cust-resume-skill-item("Documentation", ("Vim", "reStructuredText", "Markdown", LaTeX, text(rgb("#239dad"))[#strong[typst]], "LibreOffice"))
-    #cust-resume-skill-item("Tools", ("Jira", "Confluence", "GitHub", "Vim", "Travis CI", "Jenkins", "Slack"))
+    #cust-resume-skill-item("Tools", ("Jira", "Confluence", "GitHub", "Vim", "Jenkins", "Slack"))
     #cust-resume-skill-item("Methodology", ("Agile/Scrum", "MIL-STD-498"))
   ]
 )
@@ -222,17 +218,17 @@
 )
 
 #resume-entry(
-  title: [#link("https://www.ensiie.fr/")[#box(image("img/ensiie.svg", height: 15pt))] #h(1pt) - Ecole Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise],
-  location: "Evry, France",
+  title: [#link("https://www.ensiie.fr/")[#box(image("img/ensiie.svg", height: 15pt))] #h(1pt) - École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise],
+  location: "Évry, France",
   date: "2008–2011",
-  description: "Computer sciences engineering diploma. Software, OS, Network, Mathematics."
+  description: "Computer science engineering diploma. Software, OS, Network, Mathematics."
 )
 
 #resume-entry(
   title: "Lycée de Kerichen",
   location: "Brest, France",
   date: "2005–2008",
-  description: "Classe Préparatoire aux Grandes Ecoles — Mathematics, Physics, Computer Sciences."
+  description: "Classe Préparatoire aux Grandes Écoles — Mathematics, Physics, Computer Science."
 )
 
 = Personal Interests
