@@ -1,4 +1,4 @@
-#import "@preview/modern-cv:0.9.0": *
+#import "@preview/modern-cv:0.10.0": *
 
 #show: coverletter.with(
   author: (
@@ -11,7 +11,7 @@
     address: "114 rue de la Glacière, 75013 Paris",
     positions: (
       "Ingénieur Logiciel",
-      "SRE",
+      "Site Reliability Engineer",
       "Architecture Système",
     ),
     signature: image("img/signature.svg", format: "svg", width: 150pt),
@@ -36,34 +36,21 @@
 
 #letter-heading(job-position: "POSITION", addressee: "Madame, Monsieur")
 
-#coverletter-content[
-  Merci d’examiner ma candidature au poste de POSITION.
-  Je serais enthousiaste à l’idée de contribuer et d’améliorer EXEMPLE.
-]
+Merci d'examiner ma candidature au poste de POSITION.
+Je serais enthousiaste à l'idée de contribuer et d'améliorer PRODUIT.
 
-#coverletter-content[
-  Je suis autonome, curieux, adaptable et habitué à évoluer dans des environnements complexes;
-  je suis donc confiant dans ma capacité à monter en compétence et contribuer rapidement au succès de
-  votre entreprise.
-]
+Étant autonome, curieux, adaptable et habitué à évoluer dans des environnements complexes;
+je suis pleinement confiant en ma capacité à monter en compétence et contribuer rapidement
+au succès de votre entreprise.
 
-#coverletter-content[
-  L’informatique va au‑delà d’une simple activité professionnelle pour moi, c’est aussi
-  une passion que je pratique sur mon temps libre, aux côtés d’activités de fabrication
-  (impression 3D, bricolage, électronique). Je suis le créateur et mainteneur
-  de #link("https://github.com/kakwa")[plusieurs petits projets open‑source],
-  et je me suis récemment intéressé à la #link("https://www.printables.com/@kakwa_3337391")[modélisation 3D (CAO)]
-  ainsi qu’à la rédaction #link("https://technically.kakwalab.ovh/")[d'articles techniques].
-  N’hésitez pas à consulter ces projets.
-]
+L'informatique va au-delà d'une simple activité professionnelle, c'est aussi pour moi
+une passion que je pratique sur mon temps libre aux côtés d'activités de fabrication au sens large
+(impression 3D, bricolage, électronique). Cette passion que je partage volontiers via
+#link("https://github.com/kakwa")[mes projets open-source publiés sur GitHub], plusieurs #link("https://www.printables.com/@kakwa_3337391")[modèles 3D mis à disposition sur Printables] ou encore au travers de la rédaction #link("https://technically.kakwalab.ovh/")[d'articles plongeant dans ces sujets sur mon blog].
 
-#coverletter-content[
-  Cette envie de créer, couplée à une grande curiosité contribue à me rendre proactif
-  et meilleur dans la recherche de solutions, des qualités qui, je pense,
-  se traduiront par des contributions tangibles au sein de vos équipes.
-]
+Cette envie de créer constamment, couplée à une grande curiosité, contribue à faire de moi
+une personne proactive et toujours à la recherche de solutions, solutions que je n'hésite pas à partager.
+Ces qualités, je pense, se traduiront par des contributions tangibles au sein de vos équipes.
 
-#coverletter-content[
-  Je serais heureux d’échanger avec vous plus en détail afin d’évaluer si mon profil
-  conviendrait au poste et à votre organisation.
-]
+Je serais heureux d'échanger avec vous plus en détail afin d'évaluer si mon profil
+conviendrait au poste et à votre organisation.

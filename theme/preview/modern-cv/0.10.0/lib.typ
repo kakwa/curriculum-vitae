@@ -77,6 +77,61 @@
   ]
 }
 
+/// Header name at `max-pt`, stepped down until it fits the layout slot (long first names, etc.).
+/// - cover-letter-cjk: cover letter uses bold CJK given name; resume uses thin.
+#let __fitted-header-name(
+  author,
+  accent-color,
+  header-font,
+  language,
+  name-align,
+  max-pt: 32pt,
+  min-pt: 17pt,
+  cover-letter-cjk: false,
+) = {
+  align(name-align)[
+    #pad(bottom: 5pt)[
+      #layout(size => context {
+        let max-w = size.width
+        let piece(sz) = [
+          #set text(size: sz, style: "normal", font: header-font)
+          #if language == "zh" or language == "ja" [
+            #text(accent-color, weight: "bold")[#author.lastname]#text(
+              weight: if cover-letter-cjk { "bold" } else { "thin" },
+            )[#author.firstname]
+          ] else [
+            #text(accent-color, weight: "thin")[#author.firstname]
+            #text(weight: "bold")[#author.lastname]
+          ]
+        ]
+        let steps = calc.ceil((max-pt - min-pt) / 0.5pt + 1)
+        let sz = {
+          let out = min-pt
+          for step in range(steps) {
+            let candidate = max-pt - step * 0.5pt
+            if measure(piece(candidate)).width <= max-w {
+              out = candidate
+              break
+            }
+          }
+          out
+        }
+        block(width: 100%)[
+          #set text(size: sz, style: "normal", font: header-font)
+          #if language == "zh" or language == "ja" [
+            #text(accent-color, weight: "bold")[#author.lastname]#text(
+              weight: if cover-letter-cjk { "bold" } else { "thin" },
+            )[#author.firstname]
+          ] else [
+            #text(accent-color, weight: "thin")[#author.firstname]
+            #text(weight: "bold")[#author.lastname]
+          ]
+        ]
+      })
+    ]
+  ]
+}
+
 #let __coverletter_footer(
   author,
   language,
@@ -477,23 +532,14 @@
     __apply_smallcaps(it.body, use-smallcaps)
   }
 
-  let name = {
-    align(center)[
-      #pad(bottom: 5pt)[
-        #block[
-          #set text(size: 32pt, style: "normal", font: header-font)
-          #if language == "zh" or language == "ja" [
-            #text(accent-color, weight: "bold")[#author.lastname]#text(
-              weight: "thin",
-            )[#author.firstname]
-          ] else [
-            #text(accent-color, weight: "thin")[#author.firstname]
-            #text(weight: "bold")[#author.lastname]
-          ]
-        ]
-      ]
-    ]
-  }
+  let name = __fitted-header-name(
+    author,
+    accent-color,
+    header-font,
+    language,
+    center,
+    cover-letter-cjk: false,
+  )
 
   let positions = {
     set text(accent-color, size: 9pt, weight: "regular")
@@ -847,24 +893,14 @@
     ]
   ]
 
-  let name = {
-    align(right)[
-      #pad(bottom: 5pt)[
-        #block[
-          #set text(size: 32pt, style: "normal", font: header-font)
-          #if language == "zh" or language == "ja" [
-            #text(accent-color, weight: "bold")[#author.lastname]#text(
-              weight: "bold",
-            )[#author.firstname]
-          ] else [
-            #text(accent-color, weight: "thin")[#author.firstname]
-            #text(weight: "bold")[#author.lastname]
-          ]
-
-        ]
-      ]
-    ]
-  }
+  let name = __fitted-header-name(
+    author,
+    accent-color,
+    header-font,
+    language,
+    right,
+    cover-letter-cjk: true,
+  )
 
   let positions = {
     set text(accent-color, size: 9pt, weight: "regular")
@@ -905,7 +941,7 @@
   let letter-heading = {
     grid(
       columns: (1fr, 2fr),
-      rows: 100pt,
+      rows: auto,
       align(left + horizon)[
         #block(
           clip: true,

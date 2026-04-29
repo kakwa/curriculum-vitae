@@ -1,4 +1,4 @@
-#import "@preview/modern-cv:0.9.0": *
+#import "@preview/modern-cv:0.10.0": *
 
 #show: coverletter.with(
   author: (
@@ -11,8 +11,8 @@
     address: "114 rue de la Glacière, 75013 Paris",
     positions: (
       "Software Engineer",
+      "Site Reliability Engineer",
       "System Architecture",
-      "SRE",
     ),
     signature: image("img/signature.svg", format: "svg", width: 150pt),
   ),
@@ -36,33 +36,21 @@
 
 #letter-heading(job-position: "POSITION", addressee: "Sir or Madam")
 
-#coverletter-content[
-  Thank you for considering my application for the POSITION role at COMPANY.
-  I would be excited by the opportunity to contribute and improve EXAMPLE.
-]
+Thank you for considering my application for the POSITION role.
+I would be excited by the opportunity to contribute to and improve PRODUCT.
 
-#coverletter-content[
-  I’m autonomous, always learning, adaptable and fully capable of navigating complex
-  environments, so I’m confident I can quickly ramp up and be a valuable
-  contributor to your company.
-]
+As someone who is autonomous, curious, adaptable, and used to working in complex environments;
+I am fully confident in my ability to ramp up quickly and contribute to your company's success.
 
-#coverletter-content[
-  Computer science is more than a professional activity for me, it’s a hobby I
-  pursue in my free time alongside broader “maker” activities (3D printing,
-  tinkering, electronics). I’m the creator and maintainer of #link("https://github.com/kakwa")[several small open‑source projects],
-  and lately I’ve been exploring #link("https://www.printables.com/@kakwa_3337391")[CAD 3D modeling] and writing about
-  #link("https://technically.kakwalab.ovh/")[technical topics]. Feel free to check these projects out.
-]
+Computer science is more than a job for me. It is also a passion I pursue in my free time
+alongside broader maker activities (3D printing, DIY, electronics). I am also glad to share that
+passion through #link("https://github.com/kakwa")[my open-source projects on GitHub],
+several #link("https://www.printables.com/@kakwa_3337391")[3D models published on Printables],
+and #link("https://technically.kakwalab.ovh/")[in-depth articles on these topics on my blog].
 
-#coverletter-content[
-  This drive to tinker and genuine curiosity helps make me more proactive and a better
-  problem solver, qualities that I believe would translate into meaningful
-  contributions to your team.
-]
+This constant drive to create, coupled with a genuine curiosity, helps make me
+someone proactive and always looking for solutions, solutions I am happy to share.
+I believe these qualities will translate into tangible contributions within your teams.
 
-#coverletter-content[
-  I would be glad to discuss whether I could be a good fit for your organization.
-]
-
-
+I would be glad to speak with you in more detail to explore whether my profile would suit
+the role and your organization.
