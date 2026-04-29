@@ -80,7 +80,7 @@
   - Coordination of cross-team and cross-geo initiatives (APAC, US, EU).
   - Architect and deploy components for large-scale email platforms delivering 1B+ emails per day (Go, REST API, SQL, Redis).
   - Break down projects into actionable tasks for developers, while providing clear progress tracking for leadership (Scrum, Jira, Agile, Project Management).
-  - Build control & command UIs to safely empower deliverability consultants, support and operation (React, JavaScript, TypeScript).
+  - Build control & command UIs to safely empower deliverability consultants, support and operations (React, JavaScript, TypeScript).
   - Gather requirements, specify functionalities, and prioritize delivery of new features (Product Management).
   - Build and maintain CI/CD pipelines across a dozen services or components (Jenkins, Docker, ArgoCD, Kubernetes)
   - Develop ETL scripts for data migration and inventory reconciliation (Python).
@@ -101,7 +101,6 @@
   - Design, development, documentation and distribution of internal tools/components (Python, Go, Confluence, Markdown).
   - CI/CD setup, unit testing & coverage measurement (Jenkins pipelines, Artifactory, pytest, go test).
   - AWS cost optimization recommendations leading to a ~20% bill reduction.
-  - Resolved complex product and customer implementation issues.
   - Analyze and optimize DB queries and schemas leading to up to 20x performance improvements (PostgreSQL, Amazon RDS).
 ]
 
@@ -113,6 +112,7 @@
 )
 
 #resume-item[
+  - System and software integration in high-constraint domains like nuclear energy and air traffic management.
   - Design and automation of bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
   - Design high availability and replication strategy for 99.95% availability (Nginx, Keepalived, OpenLDAP, MySQL).
   - Streamline build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).

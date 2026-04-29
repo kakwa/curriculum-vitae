@@ -41,7 +41,7 @@
     github: "kakwa",
     linkedin: "pfcarpentier",
     address: "114 rue de la Glacière, 75013 Paris",
-    positions: ("Ingénierie logicielle", "Site Reliabilty Engineer", "Architecture système", "Contributeur open source"),
+    positions: ("Ingénierie logicielle", "Site Reliability Engineer", "Architecture système", "Contributeur open source"),
     custom: (
       (
         text: "tech blog",
@@ -77,10 +77,10 @@
 )
 
 #resume-item[
-  - Coordination d'initiatives inter-régions, produits et équipes (APAC, États-Unis, Europe).
-  - Architecture et déploiement de composants pour des plateformes d'emailing à grande échelle (+1 milliard d'envois par jour) (Go, API REST, SQL, Redis).
+  - Coordination d'initiatives et projets inter-régions, produits et équipes (APAC, États-Unis, Europe).
+  - Architecture et déploiement de services supportant de l'emailing à grande échelle (+1 milliard emails/jour) (Go, API REST, Redis).
   - Décomposition de projets en tâches actionnables pour les développeurs, avec suivi d'avancement clair pour la hiérarchie (Scrum, Jira, méthodes agiles, gestion de projet).
-  - Conception et réalistion d'interfaces de controles commandes rendant autonomes les consultants délivrabilité, le support et l'exploitation (React, JavaScript, TypeScript).
+  - Conception et réalisation d'interfaces de contrôle et de commande rendant autonomes les consultants en délivrabilité, le support et l'exploitation (React, JavaScript, TypeScript).
   - Recueil des besoins, spécification des fonctionnalités et priorisation des roadmaps (product management).
   - Gestion des pipelines CI/CD pour une dizaine de services et composants (Jenkins, Docker, Argo CD, Kubernetes).
   - Scripts ETL pour migration de données et réconciliation d'inventaires (Python).
@@ -91,7 +91,7 @@
   title: [#link("https://www.adobe.com")[#box(image("img/adobe.svg", height: 12pt))] #h(1pt) - Site Reliability Engineer],
   location: "Arcueil, France",
   date: "2016–2020",
-  description: [#emph[Adobe Inc.] — SRE/DevOps au sein d'une équipe international opérant des plateformes marketing B2C]
+  description: [#emph[Adobe Inc.] — SRE/DevOps au sein d'une équipe internationale opérant des plateformes marketing B2C]
 )
 
 #resume-item[
@@ -101,7 +101,7 @@
   - Conception, développement, documentation et distribution d'outillage internes (Python, Go, Confluence, Markdown).
   - Mise en place CI/CD, tests unitaires et mesure de code coverage (pipelines Jenkins, Artifactory, pytest, go test).
   - Recommandations d'optimisation ayant conduit à une réduction d'environ 20 % des coûts AWS.
-  - Analyse de requêtes et de schémas DB avec réduction du temps d'exécution d'un facteur 20 ou plus (PostgreSQL, Amazon RDS).
+  - Analyse de requêtes et de schémas DB avec réduction du temps d'exécution d'un facteur 20 et plus (PostgreSQL, Amazon RDS).
 ]
 
 #resume-entry(
@@ -112,6 +112,7 @@
 )
 
 #resume-item[
+  - Intégration système et logicielle dans des domaines à fortes contraintes, notamment nucléaire et gestion du trafic aérien.
   - Conception et automatisation de déploiements bare-metal et virtualisés (Puppet, Kickstart, PXE).
   - Stratégie de redondance et de réplication ciblant une disponibilité de 99,95 % (Nginx, Keepalived, OpenLDAP, MySQL).
   - Rationalisation du build, du packaging et du versioning de logiciels internes et tiers (.deb/.rpm, Jenkins).
@@ -130,7 +131,7 @@
   #cust-project-item([#github-icon #link("https://github.com/kakwa/pakste")[*kakwa/pakste*]], "Framework de packaging logiciel .deb/.rpm (Makefile + shell)")
   #cust-project-item([#github-icon #link("https://github.com/kakwa/wows-whaling-simulator")[*kakwa/wows-whaling-simulator*]], "Simulation Monte‑Carlo interactive de l'économie de loot boxes (Golang + React)")
   #cust-project-item([#github-icon #link("https://github.com/kakwa/uts-server")[*kakwa/uts-server*]], "Serveur d'horodatage cryptographique RFC‑3161 (C + OpenSSL)")
-  #cust-project-item([#github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]], "Module Puppet pour Samba, avec gestion des partages et controlleur AD")
+  #cust-project-item([#github-icon #link("https://github.com/kakwa/puppet-samba")[*kakwa/puppet-samba*]], "Module Puppet pour Samba, avec gestion des partages et contrôleur AD")
   #cust-project-item([#github-icon #link("https://github.com/kakwa?tab=repositories")[*Profil sur GitHub.com*]], "Mes autres projets logiciels.")
   #cust-project-item([#cube-icon #link("https://www.printables.com/@kakwa_3337391/models")[*Profil sur Printables.com*]], "Modèles CAO 3D publiés.")
   #cust-project-item([#blog-icon #link("https://technically.kakwalab.ovh/")[*technically.kakwalab.ovh*]], "Blog technique.")
@@ -149,7 +150,7 @@
   title: [#link("https://www.inria.fr/")[#box(image("img/inria.svg", height: 12pt))] #h(1pt) - #text(style: "italic", weight: "regular")[INRIA]],
   location: "Rocquencourt, France",
   date: "2010",
-  description: [Réalisation d'un site web permettant la consultation e manuscrits orientaux aux côtés de leurs traductions.]
+  description: [Réalisation d'un site web permettant la consultation des manuscrits orientaux aux côtés de leurs traductions.]
 )
 
 #resume-entry(
@@ -213,14 +214,14 @@
   title: [#link("https://www.sorbonne-universite.fr/")[#box(image("img/sorbonne-university.svg", height: 14pt))] #h(1pt) - Sorbonne Université/UPMC],
   location: "Paris, France",
   date: "2010–2011",
-  description: "Master en théorie des réseaux (double diplôme). routage, QoS, protocoles, simulation."
+  description: "Master en théorie des réseaux (double diplôme). Routage, QoS, protocoles, simulation."
 )
 
 #resume-entry(
   title: [#link("https://www.ensiie.fr/")[#box(image("img/ensiie.svg", height: 15pt))] #h(1pt) - École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise],
   location: "Évry, France",
   date: "2008–2011",
-  description: "Diplôme d'ingénieur en informatique. développement logiciel, systèmes, réseaux, mathématiques."
+  description: "Diplôme d'ingénieur en informatique. Développement logiciel, systèmes, réseaux, mathématiques."
 )
 
 #resume-entry(
