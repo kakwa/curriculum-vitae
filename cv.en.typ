@@ -77,14 +77,14 @@
 )
 
 #resume-item[
-  - Coordination of cross-team and cross-geo initiatives (APAC, US, EU).
-  - Architect and deploy components for large-scale email platforms delivering 1B+ emails per day (Go, REST API, SQL, Redis).
-  - Break down projects into actionable tasks for developers, while providing clear progress tracking for leadership (Scrum, Jira, Agile, Project Management).
-  - Build control & command UIs to safely empower deliverability consultants, support and operations (React, JavaScript, TypeScript).
-  - Gather requirements, specify functionalities, and prioritize delivery of new features (Product Management).
-  - Build and maintain CI/CD pipelines across a dozen services or components (Jenkins, Docker, ArgoCD, Kubernetes)
+  - Coordinate cross-team and cross-geo initiatives (APAC, US, EU).
+  - Architect and deploy services for large-scale email platforms delivering 1B+ emails per day (Go, REST API, Redis).
+  - Break projects into actionable tasks for developers and track progress for leadership (Scrum, Jira, Agile).
+  - Build control & command UIs empowering deliverability consultants, support, and ops (React, TypeScript).
+  - Gather requirements, specify features, and prioritize roadmaps.
+  - Build and maintain CI/CD pipelines across a dozen services (Jenkins, Docker, ArgoCD, Kubernetes).
   - Develop ETL scripts for data migration and inventory reconciliation (Python).
-  - Define monitoring alerts, runbooks and escalation policies for 24/7 on-call rotation (New Relic, PagerDuty, Riemann).
+  - Define monitoring alerts, runbooks, and escalation policies for 24/7 on-call (New Relic, PagerDuty).
 ]
 
 #resume-entry(
@@ -95,13 +95,13 @@
 )
 
 #resume-item[
-  - Roll-out of automation tooling managing +5K servers (SaltStack, Ansible, Terraform, AWS CloudFormation).
-  - DC-to-Cloud migration of large (+2TB) marketing and analytics platforms (tooling, procedures, execution).
+  - Roll out automation tooling managing +5K servers (SaltStack, Ansible, Terraform, CloudFormation).
+  - DC-to-Cloud migration of +2TB marketing and analytics platforms.
   - SPF/DKIM/DMARC/FBL/PTR configuration for mass-emailing at up to 15M emails/hour per customer.
-  - Design, development, documentation and distribution of internal tools/components (Python, Go, Confluence, Markdown).
-  - CI/CD setup, unit testing & coverage measurement (Jenkins pipelines, Artifactory, pytest, go test).
+  - Build and document internal tools (Python, Go).
+  - CI/CD setup, unit testing, and coverage measurement (Jenkins, Artifactory, pytest).
   - AWS cost optimization recommendations leading to a ~20% bill reduction.
-  - Analyze and optimize DB queries and schemas leading to up to 20x performance improvements (PostgreSQL, Amazon RDS).
+  - Optimize DB queries and schemas for up to 20x performance improvements (PostgreSQL, Amazon RDS).
 ]
 
 #resume-entry(
@@ -112,13 +112,13 @@
 )
 
 #resume-item[
-  - System and software integration in high-constraint domains like nuclear energy and air traffic management.
-  - Design and automation of bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
+  - System and software integration in high-constraint environments (nuclear, air traffic management).
+  - Automation of bare-metal & virtualized deployments (Puppet, Kickstart, PXE).
   - Design high availability and replication strategy for 99.95% availability (Nginx, Keepalived, OpenLDAP, MySQL).
   - Streamline build, packaging and versioning of custom and third-party software (.deb/.rpm, Jenkins).
   - Deploy & integrate IT services: DNS, mail, directories, and web services (BIND, Postfix, Roundcube, Trac, IRC).
-  - Development and maintenance of automation scripts and operational tooling (Python, Shell, Ruby, Perl).
-  - Implementation of monitoring and log centralization (Nagios, SNMP, Logstash, rsyslog).
+  - Development of automation scripts and tooling.
+  - Monitoring and log centralization setup (Nagios, SNMP, Logstash, rsyslog).
   - Documentation of installation procedures, reference manual, and QA checklists (reStructuredText, TestLink).
 ]
 
