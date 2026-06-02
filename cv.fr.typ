@@ -77,14 +77,14 @@
 )
 
 #resume-item[
-  - Coordination d'initiatives et projets inter-régions, produits et équipes (APAC, États-Unis, Europe).
-  - Architecture et déploiement de services supportant de l'emailing à grande échelle (+1 milliard emails/jour) (Go, API REST, Redis).
-  - Décomposition de projets en tâches actionnables pour les développeurs, avec suivi d'avancement clair pour la hiérarchie (Scrum, Jira, méthodes agiles, gestion de projet).
-  - Conception et réalisation d'interfaces de contrôle et de commande rendant autonomes les consultants en délivrabilité, le support et l'exploitation (React, JavaScript, TypeScript).
-  - Recueil des besoins, spécification des fonctionnalités et priorisation des roadmaps (product management).
-  - Gestion des pipelines CI/CD pour une dizaine de services et composants (Jenkins, Docker, Argo CD, Kubernetes).
+  - Coordination d'initiatives inter-équipes et inter-régions (APAC, États-Unis, Europe).
+  - Architecture et déploiement de services d'emailing à grande échelle (+1 milliard emails/jour) (Go, API REST, Redis).
+  - Décomposition de projets en tâches actionnables et suivi d'avancement pour la hiérarchie (Scrum, Jira, Agile).
+  - Conception d'interfaces de contrôle rendant autonomes les consultants en délivrabilité, le support et l'exploitation (React, TypeScript).
+  - Recueil des besoins, spécification et priorisation des roadmaps.
+  - Gestion des pipelines CI/CD pour une dizaine de services (Jenkins, Docker, Argo CD, Kubernetes).
   - Scripts ETL pour migration de données et réconciliation d'inventaires (Python).
-  - Définition d'alertes, runbooks et politiques d'escalade pour astreinte 24/7 (New Relic, PagerDuty, Riemann).
+  - Définition d'alertes, runbooks et politiques d'escalade pour astreinte 24/7 (New Relic, PagerDuty).
 ]
 
 #resume-entry(
@@ -95,13 +95,13 @@
 )
 
 #resume-item[
-  - Déploiement d'outillage d'automatisation gérant plus de 5000 serveurs (SaltStack, Ansible, Terraform, AWS CloudFormation).
-  - Migration datacenter vers cloud de plateformes marketing à fort volume (+2 To) (outillage, procédures, exécution).
+  - Déploiement d'outillage d'automatisation gérant +5000 serveurs (SaltStack, Ansible, Terraform, CloudFormation).
+  - Migration datacenter vers cloud de plateformes marketing (+2 To).
   - Configuration SPF/DKIM/DMARC/FBL/PTR pour l'emailing de masse jusqu'à 15 M d'emails/heure et par client.
-  - Conception, développement, documentation et distribution d'outillage internes (Python, Go, Confluence, Markdown).
-  - Mise en place CI/CD, tests unitaires et mesure de code coverage (pipelines Jenkins, Artifactory, pytest, go test).
+  - Développement et documentation d'outils internes (Python, Go).
+  - Mise en place CI/CD, tests unitaires et mesure de couverture (Jenkins, Artifactory, pytest).
   - Recommandations d'optimisation ayant conduit à une réduction d'environ 20 % des coûts AWS.
-  - Analyse de requêtes et de schémas DB avec réduction du temps d'exécution d'un facteur 20 et plus (PostgreSQL, Amazon RDS).
+  - Optimisation de requêtes et schémas DB avec gains de performance jusqu'à 20x (PostgreSQL, Amazon RDS).
 ]
 
 #resume-entry(
@@ -112,14 +112,14 @@
 )
 
 #resume-item[
-  - Intégration système et logicielle dans des domaines à fortes contraintes, notamment nucléaire et gestion du trafic aérien.
-  - Conception et automatisation de déploiements bare-metal et virtualisés (Puppet, Kickstart, PXE).
+  - Intégration système et logicielle dans des environnements à fortes contraintes (nucléaire, contrôle aérien).
+  - Automatisation de déploiements bare-metal et virtualisés (Puppet, Kickstart, PXE).
   - Stratégie de redondance et de réplication ciblant une disponibilité de 99,95 % (Nginx, Keepalived, OpenLDAP, MySQL).
   - Rationalisation du build, du packaging et du versioning de logiciels internes et tiers (.deb/.rpm, Jenkins).
   - Déploiement et intégration de services IT : DNS, messagerie, annuaires et services web (BIND, Postfix, Roundcube, Trac, IRC).
-  - Développement et maintenance de scripts d'automatisation et d'outils d'exploitation (Python, Shell, Ruby, Perl).
-  - Mise en place de supervision et de centralisation de log (Nagios, SNMP, Logstash, rsyslog).
-  - Rédaction des procédures d'installation, manuels de référence et fiches de tests QA (reStructuredText, TestLink).
+  - Développement de scripts d'automatisation et d'outillage.
+  - Mise en place de la supervision et de la centralisation de logs (Nagios, SNMP, Logstash, rsyslog).
+  - Rédaction des procédures d'installation, manuels de référence et fiches de tests QA.
 ]
 
 = Projets Open Source
